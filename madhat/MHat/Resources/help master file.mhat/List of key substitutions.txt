@@ -1,0 +1,49 @@
+⌘header⟪List of key substitutions⟫
+
+Here is a list of key substitutions implemented in the editor window to facilitate entering ⌘madhat logo．'s ⌘intralink⟪List of special symbols；special symbols⟫.
+⌘newline⟪10⟫
+
+⌘begin list．
+
+
+* The keystroke "\" is substituted with a command symbol 【⌘】.
+
+* The keystroke Option-"\" produces an ordinary "\" character.
+
+
+* The keystroke "$" is substituted with a math mode shift command: 【M̂⟪⟫】, or 【M̂: 】 if the cursor is positioned at the beginning of a paragraph.
+
+* The keystroke Option-"$" produces an ordinary "$" character.
+
+* The keystroke "." (an ordinary period) is substituted with a close command character 【．】 if it is entered when entering a command name is in progress.
+
+* The keystroke ";" (a semicolon) is substituted with a primary list delimiter 【；】.
+
+* The keystroke Option-";" produces an ordinary ";" character.
+
+* The keystroke "#" is substituted with a secondary list delimiter 【；】.
+
+* The keystroke Option-"#" produces an ordinary '#' character.
+
+* The keystroke "[" is substituted with an "open block" 【⟪】 symbol.
+
+* The keystroke Option-"[" produces an ordinary "[" character.
+
+* The keystroke "]" is substituted with an "close block" 【⟫】 symbol.
+
+* The keystroke Option-"]" produces an ordinary "]" character.
+
+* The keystroke "%" is substituted with a comment symbol 【％】.
+
+* The keystroke Option-"%" produces an ordinary "%" character.
+
+
+* The keystroke "@" is substituted with an attributes symbol 【＠】.
+
+* The keystroke Option-"@" produces an ordinary "@" character.
+
+* The keystroke Option-"/" produces an assignment symbol 【←】
+
+
+
+⌘end list．

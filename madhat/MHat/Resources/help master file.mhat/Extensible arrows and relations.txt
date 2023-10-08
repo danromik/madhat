@@ -1,0 +1,68 @@
+⌘header⟪Extensible arrows and relations⟫
+
+
+⌘begin list．
+
+* 〖⌘annotated right arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible right arrow with optional annotations above and below it
+
+* 〖⌘annotated double right arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible double right arrow with optional annotations above and below it
+
+* 〖⌘annotated left arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible left arrow with optional annotations above and below it
+
+* 〖⌘annotated double left arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible double left arrow with optional annotations above and below it
+
+* 〖⌘annotated left right arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible bidirectional (left-right) arrow with optional annotations above and below it
+
+* 〖⌘annotated double left right arrow⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible double bidirectional (left-right) arrow with optional annotations above and below it
+
+
+
+* 〖⌘annotated equal⟪⁓top annotation⁓；⁓bottom annotation⁓⟫〗
+
+An extensible equal sign with optional annotations above and below it
+
+
+
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+M̂: 
+sum_⟪k=1⟫^n ⌘frac⟪(-1)^k；k⟫ ⌘annotated right arrow⟪；n to infty⟫ log 2
+⌘newline．
+⌘bbmath⟪P⟫( ⌘frac⟪X_1 + ... + X_n；⌘sqrt⟪n⟫ mu⟫ <= t) ⌘annotated right arrow⟪；n to infty⟫ ⌘frac⟪1；⌘sqrt⟪2 pi⟫⟫ int_⟪-infty⟫^t e^⟪-x^2⟫dx
+⌘newline．
+⌘frac⟪X_1 + ... + X_n；⌘sqrt⟪n⟫ mu⟫ ⌘annotated right arrow⟪D；n to infty⟫ N(0,1)
+⌘newline．
+⌘frac⟪X_1 + ... + X_n；⌘sqrt⟪n⟫ mu⟫ ⌘annotated double right arrow⟪；n to infty⟫ N(0,1)
+⌘newline．
+N(0,1) ⌘annotated double left arrow⟪；n to infty⟫ 
+⌘frac⟪X_1 + ... + X_n；⌘sqrt⟪n⟫ mu⟫
+⌘newline．
+⌘frac⟪X+Y；⌘sqrt⟪2⟫⟫ ⌘annotated equal⟪T̂⟪⌘italic⟪dist⟫⟫；⟫ X
+
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* Keywords for ordinary arrows are described in the ⌘intralink⟪Binary relations；binary relations⟫ page
+
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

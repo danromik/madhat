@@ -1,0 +1,177 @@
+⌘header⟪Customizing the notebook styles⟫
+
+A ⌘bold⟪style⟫ is a set of parameters specifying the way text is formatted, i.e., which font and font weight it is set in, its color, etc. In the ⌘intralink⟪Notebook configuration；notebook configuration⟫ code you can define a set of styles to use in your notebook. Each style has a name. Certain style names are reserved to specify standard, predefined types of text (for example, 【default】 refers to the default style used for normal text; 【header】 is the style name used for headers). Other names can be used to define custom styles to suit your own particular needs.
+
+The syntax for defining styles is as follows:
+
+⌘begin list．
+
+* 【⌘⌘define style⟪⁓style name⁓；⁓list of style commands⟫⁓】
+
+Defines a named style. This can be either one of the standard names for predefined styles, or a custom style name to be used in a ⌘intralink⟪Styling text；【⌘styled⟪⁓...⁓⟫】 text styling wrapper⟫. The standard predefined style names are:
+
+⌘begin list．
+
+* 【default】
+
+* 【url hyperlink】
+
+* 【text hyperlink】
+
+* 【intralink】
+
+* 【header】
+
+* 【subheader】
+
+* 【subsubheader】
+
+* 【paraheader】
+
+* 【superheader】
+
+⌘end list．
+
+
+⌘end list．
+
+
+⌘paragraph header⟪Style inheritance.⟫ When you define a style, including the ⌘intralink⟪Attributes；attribute⟫ 【inherits from←⁓style name⁓】 in the command argument block specifies that the style you are defining should inherit its properties from another style you already defined. This allows endowing the set of styles with a hierarchical structure.
+
+For example, the default notebook configuration code defines a set of styles with the following commands:
+
+【+％ Start by defining a base style all other styles will inherit from
+⌘⌘define style⟪base；％
+⌘font size⟪14⟫％
+⌘font cluster⟪Latin Modern⟫％
+⟫】
+
+【+％ Now define the default style for normal text
+⌘⌘define style⟪default；％
+＠⟪inherits from←base⟫％
+％ add styling commands here if you want the default style to differ from the base style
+⟫】
+
+【+％ Style definitions for links
+⌘⌘define style⟪％
+＠⟪inherits from←base⟫％
+link；⌘bold on．％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←link⟫％
+hyperlink；⌘color⟪0.1；0；0.65⟫％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←hyperlink⟫％
+text hyperlink；％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←hyperlink⟫％
+url hyperlink；⌘font⟪Latin Modern Sans⟫％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←link⟫％
+intralink；⌘color⟪0.6；0.05；0⟫％
+⟫】
+
+【+％ Style definitions for headers
+⌘⌘define style⟪％
+＠⟪inherits from←base⟫％
+headers base；⌘bold on．％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+superheader；⌘font size⟪32⟫⌘color⟪0.7；0；0⟫％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+header；⌘font size⟪24⟫％
+⟫
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+subheader；⌘font size⟪18⟫％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+subsubheader；⌘font size⟪14⟫％
+⟫】
+
+【+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+paraheader；⌘font size⟪14⟫％
+⟫】
+
+This creates hierarchical inheritance relationships between the named styles illustrated in the diagram below:
+
+＠⟪align←center⟫⌘graphics canvas⟪％
+＠⟪％
+width←460；height←300；％
+min x←0；max x←4.4；min y←0；max y←3；no crop％
+⟫％
+⟪⌘stroke color⟪light gray⟫
+⌘frame．⟫
+⌘stroke color⟪gray⟫
+⌘centered annotation⟪2；2.8＃【base】⟫
+⌘arrow⟪1.8；2.75＃1.1；2.4⟫
+⌘centered annotation⟪0.8；2.3＃【default】⟫
+⌘arrow⟪2；2.65＃2；2.44⟫
+⌘centered annotation⟪2；2.3＃【link】⟫
+⌘arrow⟪2；2.17＃2；1.93⟫
+⌘centered annotation⟪2；1.8＃【intralink】⟫
+⌘arrow⟪1.8；2.27＃1.15；1.9⟫
+⌘centered annotation⟪0.8；1.8＃【hyperlink】⟫
+⌘arrow⟪1；1.66＃1.58；1.23⟫
+⌘centered annotation⟪0.7；0.9＃【text hyperlink】⟫
+⌘arrow⟪0.75；1.66＃0.7；1.03⟫
+⌘centered annotation⟪2.1；1.1＃【url hyperlink】⟫
+⌘arrow⟪2.2；2.75＃2.76；2.43⟫
+⌘centered annotation⟪3.2；2.3＃【headers base】⟫
+⌘arrow⟪3.48；2.17＃3.6；1.94⟫
+⌘annotation⟪3.6；1.75＃【header】⟫
+⌘arrow⟪3.3；2.17＃3.5；1.54⟫
+⌘annotation⟪3.5；1.35＃【subheader】⟫
+⌘arrow⟪3.15；2.17＃3.4；1.14⟫
+⌘annotation⟪3.35；0.95＃【subsubheader】⟫
+⌘arrow⟪3.；2.17＃3.2；0.74⟫
+⌘annotation⟪3.1；0.55＃【superheader】⟫
+⌘arrow⟪2.85；2.17＃2.9；0.34⟫
+⌘annotation⟪2.8；0.15＃【paraheader】⟫
+⟫
+
+
+
+
+
+Given such an inheritance structure, making a change to one style affects that style and potentially all others that inherit from it. This makes it easier to achieve a consistent look for your notebook and to quickly make changes when you want to, in such a way that the change will affect precisely the set of styles it should logically apply to.
+
+⌘subsubheader⟪See also:⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Styling text；Styling text⟫
+
+* ⌘intralink⟪Headers and subheaders；Headers and subheaders⟫
+
+* ⌘intralink⟪Links；Hyperlinks and intralinks⟫
+
+* ⌘intralink⟪Notebook configuration；Notebook configuration⟫
+
+* ⌘intralink⟪Notebook metadata；Customizing the notebook metadata⟫
+
+* ⌘intralink⟪Notebook page geometry；Customizing the page geometry⟫
+
+* ⌘intralink⟪Notebook line and paragraph spacing；Customizing the notebook line and paragraph spacing⟫
+
+* ⌘intralink⟪Notebook PDF export settings；Customizing the PDF export settings⟫
+
+⌘end list．
+
+

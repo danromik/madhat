@@ -1,0 +1,89 @@
+⌘header⟪Binary operators⟫
+
+⌘begin list．
+
+* ⌘bold⟪Arithmetic operators:⟫
+
+⌘begin list．
+
+* 〖+〗, 〖plus〗    M̂⟪+⟫
+
+* 〖-〗, 〖minus〗    M̂⟪-⟫
+
+* 〖+-〗, 〖plusminus〗    M̂⟪+-⟫
+
+* 〖-+〗, 〖minusplus〗    M̂⟪-+⟫
+
+* 〖*〗, 〖times〗    M̂⟪*⟫
+
+* 〖**〗, 〖dot〗    M̂⟪**⟫
+
+* 〖***〗, 〖convolve〗    M̂⟪***⟫
+
+* 〖/〗, 〖dividedby〗    M̂⟪/⟫
+
+⌘end list．
+
+* ⌘bold⟪Miscellaneous algebra operators:⟫
+
+⌘begin list．
+
+* 〖fatdot〗    M̂⟪fatdot⟫
+
+⌘end list．
+
+* ⌘bold⟪Set-theoretic operators:⟫
+
+⌘begin list．
+
+* 〖intersection〗    M̂⟪intersection⟫
+
+* 〖bigintersection〗    M̂⟪bigintersection⟫
+
+* 〖union〗    M̂⟪union⟫
+
+* 〖bigunion〗    M̂⟪bigunion⟫
+
+⌘end list．
+
+* ⌘bold⟪Logic operators:⟫
+
+⌘begin list．
+
+* 〖conjunction〗,  〖and〗    M̂⟪conjunction⟫
+
+* 〖bigconjunction〗,  〖bigand〗    M̂⟪bigconjunction⟫
+
+* 〖disjunction〗,  〖or〗    M̂⟪disjunction⟫
+
+* 〖bigdisjunction〗,  〖bigor〗    M̂⟪bigdisjunction⟫
+
+⌘end list．
+
+* ⌘bold⟪Ellipses:⟫
+
+⌘begin list．
+
+* 〖centerdots〗    M̂⟪centerdots⟫
+
+* 〖verticaldots〗    M̂⟪verticaldots⟫
+
+* 〖sedots〗    M̂⟪sedots⟫
+
+* 〖nedots〗    M̂⟪nedots⟫
+
+⌘end list．
+
+
+
+
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

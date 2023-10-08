@@ -1,0 +1,70 @@
+⌘header⟪Operators⟫
+
+⌘subheader⟪Large operators that adjust their size according to the display mode:⟫
+
+⌘begin list．
+
+* 〖sum〗
+
+Summation symbol M̂⟪sum⟫
+
+* 〖product〗,  〖prod〗
+
+Product symbol M̂⟪prod⟫
+
+* 〖integral〗,  〖int〗
+
+Integral sign M̂⟪int⟫
+
+* 〖contourintegral〗, 〖contourint〗
+
+Contour integral sign M̂⟪contourint⟫
+
+* 〖doubleintegral〗, 〖doubleint〗
+
+Double integral sign M̂⟪doubleint⟫
+
+* 〖tripleintegral〗, 〖tripleint〗
+
+Triple integral sign M̂⟪tripleint⟫
+
+⌘end list．
+
+
+
+⌘subheader⟪Operators of a fixed size:⟫
+
+⌘begin list．
+
+
+* 〖nabla〗, 〖grad〗
+
+The gradient (nabla) operator M̂⟪nabla⟫
+
+* 〖smallsum〗, 〖bigsum〗
+
+Small and big summation symbols M̂⟪smallsum⟫, M̂⟪bigsum⟫
+
+* 〖smallproduct〗,  〖smallprod〗;   〖bigproduct〗,  〖bigprod〗
+
+Small and big product symbols M̂⟪smallprod⟫, M̂⟪bigprod⟫
+
+* 〖smallintegral〗,  〖smallint〗;   〖bigintegral〗,  〖bigint〗
+
+Small and big integral signs M̂⟪smallint⟫, M̂⟪smallintegral⟫
+
+* 〖smallcontourintegral〗,  〖smallcontourint〗;   〖bigcontourintegral〗,  〖bigcontourint〗
+
+Small and big contour integral signs M̂⟪smallcontourint⟫, M̂⟪bigcontourint⟫
+
+
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

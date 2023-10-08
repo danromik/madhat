@@ -1,0 +1,44 @@
+⌘header⟪Styling text in italic⟫
+
+The following commands are used to style text in italic:
+
+
+
+⌘begin list．
+
+* 【⌘italic on．】
+
+Turns on italic styling.
+
+* 【⌘italic off．】
+
+Turns off italic styling.
+
+* 【⌘italic text⟪⁓...text...⁓⟫】
+【⌘italic⟪⁓...text...⁓⟫】
+
+A wrapper for text that should be styled in italic.
+
+
+
+⌘end list．
+
+These commands do not affect the styling of mathematical symbols. See the help page on ⌘intralink⟪Mathematical font variants；mathematical font variants⟫.
+
+
+⌘subheader⟪Examples⟫
+
+The code 【+＠⟪align←center⟫⌘italic⟪This text is styled in italic.⟫】
+
+will typeset as 
+
+
+＠⟪align←center⟫⌘italic⟪This text is styled in italic.⟫
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Mathematical font variants⟫
+
+⌘end list．

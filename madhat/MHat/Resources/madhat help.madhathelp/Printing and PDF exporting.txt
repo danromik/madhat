@@ -1,0 +1,18 @@
+⌘header⟪Printing and PDF exporting⟫
+
+To print a notebook, select the Print option from the File menu of the main menu.
+
+To export a notebook as a PDF, select the Export to PDF option from the File menu.
+
+
+＠⟪align←center⟫⌘graphics canvas⟪％
+＠⟪％
+width←325；height←320；％
+min x←0；max x←380；min y←0；max y←380％
+⟫％
+⌘annotation⟪9；15＃⌘image⟪file-menu；0.85⟫⟫％
+⌘line thickness⟪3⟫⌘stroke color⟪red⟫％
+⌘rectangle⟪120；106＃325；136⟫％
+⌘rectangle⟪120；38＃325；65⟫
+⟫
+

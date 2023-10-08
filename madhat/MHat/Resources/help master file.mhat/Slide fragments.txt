@@ -1,0 +1,66 @@
+⌘header⟪Slide fragments⟫
+
+⌘intralink⟪Slide transitions；Slide transition commands⟫ offer a good level of control in partitioning your page content into slides, but still have a limited flexibility in that they only allow content to be ⌘italic⟪revealed⟫ in a linear fashion.
+
+An alternative mechanism that can be used in addition to, or in place of, slide transition commands, is that of ⌘bold⟪slide fragments⟫.
+
+A slide fragment is a piece of content that you would like to be visible only at a specified range of slides on the page. For example, if the page has 10 slides, you may want some content to appear at slide number 3, and disappear at slide number 7. This is done by wrapping the content in a 【⌘slide fragment⟪⁓...⁓⟫】 command. 
+
+Animations can be specified with an optional attributes block to control how the content appears, how it disappears, and how it moves and, in the case of graphics objects, changes shape, during the range of slides when it is visible.
+
+The syntax is described below.
+⌘newline⟪10⟫
+
+
+⌘begin list．
+
+* 【⌘slide fragment⟪⁓from index；to index；fragment contents⁓⟫】
+
+A fragment that will be visible only within a specified range of slides in the page, and which can be optionally animated in prescribed ways.
+
+⌘end list．
+
+⌘subheader⟪Attributes to modify the behavior of a slide fragment⟫
+
+
+⌘begin list．
+
+* 【animate in←⁓animation type⁓】
+
+A specification of the type of animation when the slide fragment appears. Allowed values are: "slide from left", "slide from right", "slide from top", "slide from bottom", "fade in", and "none". The default is "fade in".
+
+* 【animate out←⁓animation type⁓】
+
+A specification of the type of animation when the slide fragment disappears. Allowed values are: "slide to left", "slide to right", "slide to top", "slide to bottom", "fade out", and "none". The default is "fade out".
+
+* 【duration in←⁓duration⁓】, 【duration out←⁓duration⁓】
+
+A specification of the duration of the respective animations, in seconds. The default value is 0.6.
+
+* 【profile in←⁓profile⁓】, 【profile out←⁓profile⁓】
+
+Specify the profile for the respective animation. Allowed values are 【ease】, 【linear】, 【bounce】, and 【elastic】. The default is 【ease】.
+
+* 【move on transition】【+move on transition←⟪％
+⁓transition index 1⁓＃⁓x movement 1⁓；⁓y movement 1⁓＃％
+⁓transition index 2⁓＃⁓x movement 2⁓；⁓y movement 2⁓％
+⁓...⁓
+⁓transition index k⁓＃⁓x movement k⁓；⁓y movement k⁓％
+⟫】
+
+Animates the fragment by moving it on the specified list of transition indices, each time by the specified movement vector. 
+
+⌘bold⟪Note.⟫ The scale of the coordinates of the movement vector is normally interpreted in ordinary ("document") coordinates; however, if the slide fragment is inside a ⌘intralink⟪Graphics canvasses；graphics canvas⟫, then the coordinates are interpreted in the scale of the M̂⟪x⟫- and M̂⟪y⟫-coordinates of the graphics canvas. (A similar conditional interpretation of coordinates is made in the 【⌘annotate⟪⁓...⁓⟫】 command --- see the page on ⌘intralink⟪Graphics drawing；graphics drawing⟫.)
+
+* 【change on transition】【+change on transition←⟪％
+⁓transition index 1⁓；⁓property name 1⁓＃⁓list of values⁓＃％
+⁓transition index 2⁓；⁓property name 2⁓＃⁓list of values⁓＃％
+⁓...⁓
+⁓transition index k⁓；⁓property name k⁓＃⁓list of values⁓＃％
+⟫】
+
+Animates the fragment by changing its specified properties on the specified list of transition indices, each time to the specified value. 
+
+
+⌘end list．
+

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Light</string>
+		<key>font</key>
+		<string>Monaco</string>
+		<key>font size</key>
+		<integer>14</integer>
+		<key>background</key>
+		<array>
+			<string>0.988</string>
+			<string>0.96</string>
+			<string>0.886</string>
+			<string>1</string>
+		</array>
+		<key>insertion point</key>
+		<array>
+			<string>0</string>
+			<string>0</string>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>text</key>
+		<array>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>1</string>
+		</array>
+		<key>math</key>
+		<array>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>1</string>
+		</array>
+		<key>math background</key>
+		<array>
+			<string>0.85</string>
+			<string>0.9</string>
+			<string>0.85</string>
+			<string>1</string>
+		</array>
+		<key>command</key>
+		<array>
+			<string>0.25</string>
+			<string>0</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>unresolved command</key>
+		<array>
+			<string>1</string>
+			<string>0.6</string>
+			<string>0.2</string>
+			<string>1</string>
+		</array>
+		<key>math keyword</key>
+		<array>
+			<string>0.5</string>
+			<string>0.1</string>
+			<string>0.26</string>
+			<string>1</string>
+		</array>
+		<key>assignment</key>
+		<array>
+			<string>0</string>
+			<string>0</string>
+			<string>0.8</string>
+			<string>1</string>
+		</array>
+		<key>block marker</key>
+		<array>
+			<string>0</string>
+			<string>0</string>
+			<string>0.8</string>
+			<string>1</string>
+		</array>
+		<key>list delimiter</key>
+		<array>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>mode switch</key>
+		<array>
+			<string>0.25</string>
+			<string>0</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>comment</key>
+		<array>
+			<string>0.5</string>
+			<string>0.38</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>attributes</key>
+		<array>
+			<string>0</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>quoted code</key>
+		<array>
+			<string>0</string>
+			<string>0</string>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>quoted code background</key>
+		<array>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>code annotation</key>
+		<array>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>not scanned</key>
+		<array>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>selection</key>
+		<array>
+			<string>1</string>
+			<string>0.5</string>
+			<string>0</string>
+			<string>1</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Dark</string>
+		<key>font</key>
+		<string>Monaco</string>
+		<key>font size</key>
+		<integer>14</integer>
+		<key>background</key>
+		<array>
+			<string>0.16</string>
+			<string>0.17</string>
+			<string>0.18</string>
+			<string>1</string>
+		</array>
+		<key>insertion point</key>
+		<array>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+		</array>
+		<key>text</key>
+		<array>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>math</key>
+		<array>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>0.75</string>
+			<string>1</string>
+		</array>
+		<key>math background</key>
+		<array>
+			<string>0.26</string>
+			<string>0.26</string>
+			<string>0.26</string>
+			<string>1</string>
+		</array>
+		<key>command</key>
+		<array>
+			<string>1</string>
+			<string>0.4</string>
+			<string>0.68</string>
+			<string>1</string>
+		</array>
+		<key>unresolved command</key>
+		<array>
+			<string>1</string>
+			<string>0.8</string>
+			<string>0.2</string>
+			<string>1</string>
+		</array>
+		<key>math keyword</key>
+		<array>
+			<string>0.27</string>
+			<string>0.6</string>
+			<string>0.86</string>
+			<string>1</string>
+		</array>
+		<key>assignment</key>
+		<array>
+			<string>1</string>
+			<string>0.62</string>
+			<string>0.55</string>
+			<string>1</string>
+		</array>
+		<key>block marker</key>
+		<array>
+			<string>1</string>
+			<string>1</string>
+			<string>0</string>
+			<string>1</string>
+		</array>
+		<key>list delimiter</key>
+		<array>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>mode switch</key>
+		<array>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+		</array>
+		<key>comment</key>
+		<array>
+			<string>0.5</string>
+			<string>0.62</string>
+			<string>0.25</string>
+			<string>1</string>
+		</array>
+		<key>attributes</key>
+		<array>
+			<string>0</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>quoted code</key>
+		<array>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+			<string>1</string>
+		</array>
+		<key>quoted code background</key>
+		<array>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>1</string>
+		</array>
+		<key>code annotation</key>
+		<array>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+		</array>
+		<key>not scanned</key>
+		<array>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>0.25</string>
+			<string>1</string>
+		</array>
+		<key>selection</key>
+		<array>
+			<string>0.5</string>
+			<string>0.5</string>
+			<string>1</string>
+			<string>1</string>
+		</array>
+	</dict>
+</array>
+</plist>

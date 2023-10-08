@@ -1,0 +1,31 @@
+⌘header⟪The media library of a notebook⟫
+
+Every ⌘madhat logo． notebook contains a media library into which you can import image and video files. You access the media library by clicking the media library icon at the bottom left corner of the editor window, as shown in the screenshot:
+
+⌘graphics canvas⟪％
+＠⟪％
+width←450；height←410；％
+min x←0；max x←450；min y←-50；max y←360％；frame％
+⟫％
+⌘annotation⟪22；0＃⌘image⟪editor-window.jpg；0.25⟫⟫％
+⌘stroke color⟪red⟫⌘line thickness⟪2⟫⌘circle⟪78；29＃10⟫
+⌘stroke color⟪dark gray⟫⌘line thickness⟪1⟫⌘arrow⟪150；-20＃92；18⟫
+⌘centered annotation⟪180；-25＃media library icon⟫
+⟫
+
+
+The media library window for the notebook will appear, and allow you to import media files, view your existing files, reorder and rename them, etc. Here is a screenshot of the window:
+
+＠⟪align←center⟫⌘image⟪media-library.jpg；0.5⟫
+
+Once you have imported your files, you can add them as part of the content of your notebook pages by using the 【⌘image⟪⁓...⁓⟫】 and 【⌘video⟪⁓...⁓⟫】 commands, described in the help pages listed below.
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Images⟫
+
+* ⌘intralink⟪Videos⟫
+
+⌘end list．

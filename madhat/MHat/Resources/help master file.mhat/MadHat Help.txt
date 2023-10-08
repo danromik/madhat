@@ -1,0 +1,154 @@
+＠⟪align←center⟫＠⟪align←center⟫⌘header⟪⌘madhat logo． Help⟫
+Version 1.1.1 (April 2022)
+
+＠⟪align←center⟫Use the search bar to search for help on a specific topic, or browse the help topics suggested in the links below⌘newline⟪4⟫
+
+＠⟪align←center⟫For sample code and additional resources, go to ⌘hyperlink⟪https://madhat.design⟫⌘newline⟪8⟫
+
+⌘begin list．
+
+* Essential help topics:
+
+⌘begin list．
+
+* ⌘intralink⟪About this guide；About this help guide⟫
+
+
+* ⌘intralink⟪Introduction；Introduction to MadHat and MadHat notebooks⟫
+
+* ⌘intralink⟪Typing text；Typing text with MadHat⟫
+
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas with MadHat⟫
+
+* ⌘intralink⟪List of special symbols；Special symbols in MadHat⟫
+
+* ⌘intralink⟪List of key substitutions；Key substitutions in the editor window⟫
+
+
+
+⌘end list．
+
+* Help topics on the MadHat language:
+
+
+⌘begin list．
+
+* ⌘intralink⟪Blocks；Grouping content in blocks⟫
+
+* ⌘intralink⟪Commands；MadHat commands⟫
+
+* ⌘intralink⟪Attributes；Command attributes⟫
+
+* ⌘intralink⟪Delimited lists⟫
+
+* ⌘intralink⟪Notebook configuration⟫
+
+* ⌘intralink⟪Paragraphs⟫
+
+* ⌘intralink⟪Spaces and newlines⟫
+
+* ⌘intralink⟪Styling text；Styling text⟫
+
+* Text styling options: ⌘intralink⟪Bold text；bold⟫, ⌘intralink⟪Italic text；italic⟫, ⌘intralink⟪Text underlining；underlining⟫, ⌘intralink⟪Text strikethrough；strikethrough⟫, ⌘intralink⟪Text highlighting；highlighting⟫, ⌘intralink⟪Text substitutions；substitutions⟫
+
+* Setting ⌘intralink⟪Setting fonts；fonts⟫ and the ⌘intralink⟪Setting the font size；font size⟫
+
+* ⌘intralink⟪Colors⟫
+
+* ⌘intralink⟪Headers and subheaders⟫
+
+* ⌘intralink⟪Lists and outlining；Lists and their use for outlining⟫
+
+* ⌘intralink⟪Tables；Formatting tables⟫
+
+* ⌘intralink⟪Boxes；Formatting boxes⟫
+
+* ⌘intralink⟪Links；Hyperlinks and intralinks⟫
+
+* ⌘intralink⟪Slides；Creating slide presentations⟫
+
+* ⌘bold⟪Mathematical formatting topics:⟫
+
+⌘begin list．
+
+
+* ⌘intralink⟪Subscripts and superscripts；Subscripts and superscripts⟫
+
+* ⌘intralink⟪Fractions；Fractions⟫
+
+* ⌘intralink⟪Square roots；Square roots⟫
+
+* ⌘intralink⟪Greek letters⟫
+
+* ⌘intralink⟪Mathematical font variants；Mathematical font variants⟫
+
+* ⌘intralink⟪Differentials⟫
+
+* ⌘intralink⟪Operators；Standard mathematical operators⟫
+
+* ⌘intralink⟪Brackets⟫
+
+* ⌘intralink⟪Horizontal brackets；Horizontal brackets⟫
+
+* ⌘intralink⟪Extensible arrows and relations；Extensible symbols⟫
+
+* ⌘intralink⟪Special mathematical symbols；Special mathematical symbols⟫
+
+* ⌘intralink⟪Binary relations；Binary relations⟫
+
+* ⌘intralink⟪Binary operators；Binary operators⟫
+
+* ⌘intralink⟪Matrices；Matrices⟫
+
+* ⌘intralink⟪Mathematical decorations；Mathematical symbol decorations⟫
+
+⌘end list．
+
+* ⌘intralink⟪Images；Adding images to a page⟫
+
+* ⌘intralink⟪Videos；Adding videos to a page⟫
+
+* ⌘intralink⟪Graphics canvasses；Drawing graphics figures⟫
+
+* ⌘intralink⟪Graphics plotting；Plotting mathematical functions⟫
+
+⌘end list．
+
+* User interface topics:
+
+⌘begin list．
+
+％* ⌘intralink⟪The notebook editor window⟫
+％
+％* ⌘intralink⟪The notebook viewer window⟫
+％
+％* ⌘intralink⟪The notebook configuration panel⟫
+
+* ⌘intralink⟪The media library；The media library of a notebook⟫ 
+
+* ⌘intralink⟪Printing and PDF exporting；Printing and PDF exporting notebooks⟫
+
+* ⌘intralink⟪Exporting to LaTeX；Exporting notebooks to LaTeX⟫
+
+* ⌘intralink⟪Themes and the themes editor；Syntax highlighting themes and the themes editor⟫
+
+
+
+⌘end list．
+
+* Additional information:
+
+⌘begin list．
+
+％* ⌘intralink⟪Keyboard shortcuts⟫
+
+* ⌘intralink⟪About MadHat⟫
+
+* ⌘intralink⟪Changelog；MadHat version history and changelog⟫
+
+* ⌘intralink⟪Command and keyword index；Index of MadHat commands and keywords⟫
+
+⌘end list．
+
+⌘end list．

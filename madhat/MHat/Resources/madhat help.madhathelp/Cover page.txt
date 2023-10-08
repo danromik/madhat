@@ -1,0 +1,6 @@
+⌘newline⟪50⟫
+
+＠⟪align←center⟫＠⟪align←center⟫⌘image⟪madhat-logo-1000.png；0.12⟫
+⌘newline⟪10⟫⟪⌘font size⟪20⟫Version 1.1.1⟫
+⌘newline⟪10⟫⟪⌘font size⟪40⟫User Manual⟫
+⌘newline⟪18⟫Document version: April 20, 2022

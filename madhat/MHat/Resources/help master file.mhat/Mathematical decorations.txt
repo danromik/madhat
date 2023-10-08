@@ -1,0 +1,80 @@
+⌘header⟪Mathematical symbol decorations⟫
+
+⌘bold⟪Decorations⟫ are annotations on a mathematical symbol that denote an operation done to the object denoted by the symbol, or denote an entirely new symbol that relates to the original symbol in some way. Examples of decorations are the ⌘hyperlink⟪https://en.wikipedia.org/wiki/Hat_operator；hat operator⟫ and the ⌘hyperlink⟪https://mathworld.wolfram.com/Overdot.html；overdot⟫ notation.
+
+The following decoration commands are available in ⌘madhat logo．:
+⌘newline⟪6⟫
+
+⌘begin list．
+
+* 〖⌘overbar⟪⁓expression⁓⟫〗
+〖⌘bar⟪⁓expression⁓⟫〗
+
+Overbar decoration
+
+* 〖⌘underbar⟪⁓expression⁓⟫〗
+
+Underbar decoration
+
+* 〖⌘hat⟪⁓expression⁓⟫〗
+
+Hat decoration
+
+* 〖⌘tilde⟪⁓expression⁓⟫〗
+
+Tilde decoration
+
+* 〖⌘vector⟪⁓expression⁓⟫〗
+〖⌘vec⟪⁓expression⁓⟫〗
+
+Vector decoration
+
+* 〖⌘overdot⟪⁓expression⁓⟫〗
+
+Dot (time derivative) decoration
+
+* 〖⌘double dot⟪⁓expression⁓⟫〗
+〖⌘ddot⟪⁓expression⁓⟫〗
+
+Double dot (second time derivative) decoration
+
+* 〖⌘triple dot⟪⁓expression⁓⟫〗
+〖⌘dddot⟪⁓expression⁓⟫〗
+
+Triple dot (third time derivative) decoration
+
+⌘end list．
+
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* The code 〖+⌘tilde⟪F⟫(u) = int_⟪-infty⟫^⟪infty⟫ F(x)e^⟪-i u x⟫dx〗
+
+typesets as
+
+M̂: ⌘tilde⟪F⟫(u) = int_⟪-infty⟫^⟪infty⟫ F(x)e^⟪-i u x⟫dx
+
+
+* The code 〖+⌘ddot⟪x⟫ = ⌘vec⟪M⟫ ⌘tilde⟪tau⟫ - ⌘overdot⟪xi⟫ - ⌘underbar⟪lambda⟫〗
+
+typesets as
+
+M̂: 
+⌘ddot⟪x⟫ = ⌘vec⟪M⟫ ⌘tilde⟪tau⟫ - ⌘overdot⟪xi⟫ - ⌘underbar⟪lambda⟫
+
+M̂: ⌘bar⟪x+ i y⟫ = x - i y
+⌘newline．
+⌘overbar⟪(⌘overbar⟪x+ i y⟫)⟫ = x + i y
+
+⌘end list．
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

@@ -1,0 +1,58 @@
+⌘header⟪Graphics canvasses⟫
+
+The graphics canvas is the basic high-level object for graphics drawing. A graphics canvas will render as a rectangle of specified dimensions inside your document. Inside the canvas (or even outside it, if you disable cropping) you can draw lines, curves, shapes, and other graphical objects by including the appropriate commands. The syntax for creating a graphics canvas is:
+
+【+⌘graphics canvas⟪⁓list of graphics commands⁓⟫】
+
+An optional attributes block can be included; see below for a list of recognized attributes.
+
+Graphics commands are divided into several types, each described in a separate help page below:
+
+⌘begin list．
+
+* ⌘intralink⟪Graphics drawing；Drawing commands⟫
+
+* ⌘intralink⟪Graphics styling；Styling commands⟫
+
+* ⌘intralink⟪Graphics pen drawing；Pen drawing commands⟫
+
+* ⌘intralink⟪Graphics pen control；Pen control commands⟫
+
+* ⌘intralink⟪Graphics plotting；Mathematical plotting commands⟫
+
+⌘end list．
+
+The ⌘hyperlink⟪https://madhat.design/documentation/；documentation page⟫ of the ⌘madhat logo． website has code samples you can download with examples of how these commands are used in practice.
+
+
+⌘subheader⟪Attributes for a graphics canvas⟫
+
+The parameters to customize the graphics canvas are provided as attributes:
+
+⌘begin list．
+
+* 【width←⁓width⁓】
+
+Specify the width, in points. The default value is 200.
+
+* 【height←⁓height⁓】
+
+Specify the height, in points. The default value is 200.
+
+* 【min x←⁓min x⁓】, 【max x←⁓max x⁓】, 【min y←⁓min y⁓】, 【max y←⁓max y⁓】
+
+Specify the ranges for the M̂⟪x⟫ and M̂⟪y⟫ coordinates that are mapped to the canvas rectangle. The default values are 0 for 【⁓min x⁓】 and 【⁓min y⁓】, 10 for 【⁓max x⁓】 and 【⁓max y⁓】.
+
+* 【crop】, 【no crop】
+
+Specify whether the contents should be cropped to the image bounding rectangle. Cropping is enabled by default.
+
+⌘end list．
+
+
+⌘subheader⟪Quickly creating a graphics canvas⟫
+
+A convenient way to create a graphics canvas with a code block including some of the standard attributes is by selecting "Graphics Canvas" from the code templates menu in the top right corner of the editor window, as shown in this screenshot:
+
+＠⟪align←center⟫⌘image⟪graphics-screenshot.jpg；0.5⟫
+

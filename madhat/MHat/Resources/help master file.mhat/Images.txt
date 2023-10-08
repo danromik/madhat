@@ -1,0 +1,68 @@
+⌘header⟪Images⟫
+
+⌘begin list．
+
+* 【⌘image⟪⁓image file name⁓⟫】
+
+* 【⌘image⟪⁓image file name⁓；⁓scaling factor⁓⟫】
+
+Insert an image from the notebook's ⌘intralink⟪The media library；media library⟫. 
+
+If the scaling factor is provided, the image is scaled proportionally by that factor (this is an abbreviated syntax for providing a value for the 【scale】 attribute; see the list of attributes below allowing more detailed control over the sizing and positioning of the image.
+
+⌘end list．
+
+⌘subheader⟪Attributes⟫
+
+⌘begin list．
+
+* 【scale width←⁓scaling factor⁓】
+
+* 【scale height←⁓scaling factor⁓】
+
+* 【scale←⁓scaling factor⁓】
+
+* 【width←⁓width⁓】
+
+* 【height←⁓height⁓】
+
+* 【raise←⁓points⁓】
+
+* 【lower←⁓points⁓】
+
+* 【mathcenter】, 【no mathcenter】 -- a Boolean attribute that controls whether the image is vertically aligned to be flush with the baseline, or centered around the math axis
+
+
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* Some text, and a scaled picture inserted: ⌘image⟪＠⟪scale←0.2⟫cat.png⟫, then more text after the picture.
+
+* The same picture, stretched horizontally: ⌘image⟪＠⟪scale width←0.26；scale height←0.2⟫cat.png⟫.
+
+* The same picture, stretched vertically: ⌘image⟪＠⟪scale width←0.2；scale height←0.33⟫cat.png⟫.
+
+* The same picture, width 100 points: ⌘image⟪＠⟪width←100⟫cat.png⟫.
+
+* The same picture, width 100 points and raised: ⌘image⟪＠⟪width←100；raise←20⟫cat.png⟫. Then more text.
+
+* The same picture, width 100 points and lowered: ⌘image⟪＠⟪width←100；lower←50⟫cat.png⟫. Then more text.
+
+* Math-centered pictures inside a math equation: 
+
+M̂: int_0^1 F(⌘image⟪＠⟪scale←0.08；mathcenter⟫cat.png⟫) dx= ⌘image⟪＠⟪width←150；height←60；mathcenter⟫cat.png⟫
+
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Videos⟫
+
+⌘end list．

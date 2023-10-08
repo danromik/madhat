@@ -1,0 +1,100 @@
+⌘header⟪Subscripts and superscripts⟫
+
+In math mode, mathematical expressions can be annotated with subscripts and superscripts, either using the appropriate commands, or by using the  underscore and caret shorthand symbols. The syntax for both of these options is described below.⌘newline⟪10⟫
+
+⌘begin list．
+
+* ⌘bold⟪Command notation for subscripts and superscripts⟫
+
+〖+⌘subscript⟪⁓main expression⁓；⁓subscript expression⁓⟫〗
+
+Annotate the main expression with another expression as a subscript
+
+〖+⌘superscript⟪⁓main expression⁓；⁓superscript expression⁓⟫〗
+
+Annotate the main expression with another expression as a superscript
+
+〖+⌘subsuperscript⟪⁓main expression⁓；⁓subscript expression⁓；⁓superscript expression⁓⟫〗
+
+Annotate the main expression with a subscript and a superscript
+
+
+
+* ⌘bold⟪Underscore and caret shorthand notation⟫
+
+Subscripts and superscripts can be entered using the underscore 〖_〗 and caret 〖^〗 shorthand notation used in many computer algebra and typesetting packages.
+
+⌘begin list．
+
+* 〖⁓main expression⁓_⁓⁓subscript expression⁓〗 is equivalent to％
+⌘newline⟪12⟫〖⌘subscript⟪⁓main expression⁓；⁓subscript expression⁓⟫〗
+
+* 〖⁓main expression⁓^⁓⁓superscript expression⁓〗 is equivalent to％
+⌘newline⟪12⟫〖⌘superscript⟪⁓main expression⁓；⁓superscript expression⁓⟫〗
+
+* 〖⁓main expression⁓_⁓⁓subscript expression⁓^⁓⁓superscript expression⁓〗 and
+〖⁓main expression⁓^⁓⁓superscript expression⁓_⁓⁓subscript expression〗 are both equivalent to each other, and to 〖+⌘subsuperscript⟪⁓main expression⁓；⁓subscript expression⁓；⁓superscript expression⁓⟫〗
+
+
+⌘end list．⌘end list．
+
+⌘subheader⟪Example⟫
+
+Entering the code
+
+【+The equation for the Bernoulli lemniscate in the M̂⟪(X_1,X_2)⟫ coordinate system is M̂⟪(X_1^2 + X_2^2)^2 = 2c^2 (X_1^2-X_2^2)⟫.】
+
+produces
+
+The equation for the Bernoulli lemniscate in the M̂⟪(X_1,X_2)⟫ coordinate system is M̂⟪(X_1^2 + X_2^2)^2 = 2c^2 (X_1^2-X_2^2)⟫.
+
+
+⌘subheader⟪Pre-subscripts and pre-superscripts⟫
+
+⌘bold⟪Pre-subscripts⟫ and ⌘bold⟪pre-superscripts⟫ are annotations on a symbol that are attached to the symbol on its left side. (Together, they are sometimes referred to as ⌘bold⟪prescripts⟫.) MadHat supports adding any combination of a pre-subscript, pre-superscript, subscript and superscript annotation on an expression. This is done using the 〖⌘multiscript⟪⁓...⁓⟫〗 command.
+
+⌘begin list．
+
+* 〖⌘multiscript⟪⁓...⁓⟫〗〖+⌘multiscript⟪⁓main expression⁓；⁓subscript⁓；⁓superscript⁓；⁓presubscript⁓；⁓presuperscript⁓〗
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* Entering the code 【+Uranium-232 is an isotope of uranium with a half-life of 68.9 years. Its chemical symbol is M̂⟪⌘multiscript⟪⌘roman math⟪U⟫；；；；232⟫⟫.
+】
+
+typesets as
+
+Uranium-232 is an isotope of uranium with a half-life of 68.9 years. Its chemical symbol is M̂⟪⌘multiscript⟪⌘roman math⟪U⟫；；；；232⟫⟫.
+
+* The code 【+The binomial coefficient M̂⟪⌘binom⟪n；k⟫⟫ is sometimes denoted M̂⟪⌘multiscript⟪C；k；；n；⟫⟫.
+】
+
+typesets as
+
+The binomial coefficient M̂⟪⌘binom⟪n；k⟫⟫ is sometimes denoted M̂⟪⌘multiscript⟪C；k；；n；⟫⟫.
+
+* The code
+
+【+The Gauss hypergeometric function M̂⟪⌘multiscript⟪F；1；；2；⟫(a,b;c;z)⟫ can be evaluated using Euler's integral formula
+】％
+〖+⌘multiscript⟪F；1；；2；⟫(a,b;c;z) = ⌘frac⟪Gamma(c)；Gamma(b)Gamma(c-b)⟫ int_0^1 x^⟪b-1⟫ (1-x)^⟪c-b-1⟫ (1-z x)^⟪-a⟫ dx〗
+
+will appear as
+
+The Gauss hypergeometric function M̂⟪⌘multiscript⟪F；1；；2；⟫(a,b;c;z)⟫ can be evaluated using Euler's integral formula
+
+M̂: ⌘multiscript⟪F；1；；2；⟫(a,b;c;z) = ⌘frac⟪Gamma(c)；Gamma(b)Gamma(c-b)⟫ int_0^1 x^⟪b-1⟫ (1-x)^⟪c-b-1⟫ (1-z x)^⟪-a⟫ dx
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

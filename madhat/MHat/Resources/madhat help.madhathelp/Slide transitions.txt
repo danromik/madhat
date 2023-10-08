@@ -1,0 +1,54 @@
+⌘header⟪Slide transitions⟫
+
+Adding slide transitions to a page is as simple as including one of the slide transition commands below at the appropriate places in your content, with optional attributes to customize the transition.
+
+⌘begin list．
+
+* 【⌘pause．】
+
+Marks a slide transition point in a page. User action is needed to proceed to the next slide.
+
+％ this functionality is currently disabled:
+％* 【⌘pause⟪⁓delay⁓⟫】
+％
+％Marks a slide transition point in a page. The transition to the next slide will happen automatically after the specified delay, in seconds, when in ⌘intralink⟪Slides；auto-present mode⟫.
+
+⌘end list．
+
+The page will automatically calculate how many slides it has based on the number of slide transitions you included (unless you also included ⌘intralink⟪Slide fragments；slide fragments⟫, which could affect the calculation). For example, if there are M̂⟪4⟫ 【⌘pause】 commands, the page will have 5 slides (or more, with slide fragments).
+
+
+⌘subheader⟪Attributes to modify the behavior of a slide transition⟫
+
+⌘begin list．
+
+* 【animate in←⁓animation type⁓】
+
+A specification of the type of animation for the new content being revealed. Allowed values are: 【slide from left】, 【slide from right】, 【slide from top】, 【slide from bottom】, 【fade in】, and 【none】. The default is 【slide from right】.
+
+* 【duration←⁓duration⁓】
+
+A specification of the animation duration, in seconds. The default value is 0.6
+
+* 【profile←⁓animation profile⁓】
+
+Specify the profile for the animation. Allowed values are 【ease】, 【linear】, 【bounce】, and 【elastic】. The default is 【ease】.
+
+⌘end list．
+
+％ ***auto-present mode is currently disabled, so commenting out this section for now***
+％⌘subheader⟪Slide transitions to the next page⟫
+％
+％When you reach the last slide in a page, the next transition will take you to the first slide of the next page. By default this requires user action. Including a 【⌘next page in⟪⁓...⁓⟫】 command can make this happen automatically when in ⌘intralink⟪Slides；auto-present mode⟫.
+％
+％⌘begin list．
+％
+％
+％* 【⌘next page in⟪⁓delay⁓⟫】
+％
+％Specify that in auto-present mode, when reaching the last slide on a page, the notebook will navigate to the first slide of the next page after the specified delay, in seconds.
+％
+％
+％⌘end list．
+％
+

@@ -1,0 +1,42 @@
+⌘header⟪Special mathematical symbols⟫
+
+⌘begin list．
+
+* 〖infinity〗,   〖infty〗
+
+Infinity symbol M̂⟪infty⟫
+
+* 〖naturalnumbers〗
+
+The set of natural numbers M̂⟪naturalnumbers⟫
+
+* 〖integers〗
+
+The set of integers M̂⟪integers⟫
+
+* 〖rationals〗
+
+The set of rationals M̂⟪rationals⟫
+
+* 〖reals〗
+
+The set of reals M̂⟪reals⟫
+
+* 〖complexnumbers〗
+
+The set of complex numbers M̂⟪complexnumbers⟫
+
+* 〖hbar〗
+
+Planck's constant M̂⟪hbar⟫
+
+⌘end list．
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

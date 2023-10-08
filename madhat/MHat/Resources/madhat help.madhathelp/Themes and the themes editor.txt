@@ -1,0 +1,29 @@
+⌘header⟪Themes and the themes editor⟫
+
+⌘subheader⟪Syntax highlighting⟫
+
+The ⌘madhat logo． editor window applies syntax highlighting to your code so as to provide easy visual cues for the syntactical roles played by different parts of your content. This facilitates easy reading and editing of ⌘madhat logo． language content.
+
+The collection of colors constituting the settings for syntax highlighting, together with the choice of a font and font size in which to view your code, is referred to as a ⌘bold⟪theme⟫. ⌘madhat logo． provides pre-installed themes you can select for your content editing, and a ⌘bold⟪themes editor⟫ that enables you to define new themes to suit your personal preferences. Examples of syntax highlighting in the pre-installed themes are shown below:
+
+＠⟪align←center⟫％
+⌘table⟪＠⟪alignments←c⟫％
+⌘image⟪light-mode.jpg；0.6⟫＃％
+(a) A code snippet highlighted using the "Light" theme＃％
+⟪⌘color⟪0；0；0；0⟫.⟫＃％
+⌘image⟪dark-mode.jpg；0.6⟫＃％
+(b) A code snippet highlighted using the "Dark" theme％
+⟫
+
+％＠⟪align←center⟫⌘image⟪dark-mode.jpg；0.55⟫
+％
+％＠⟪align←center⟫⌘image⟪light-mode.jpg；0.55⟫
+
+⌘subheader⟪The themes editor⟫
+
+The themes editor offers an intuitive interface to create and edit new themes. It is accessed throught the ⌘madhat logo． Preferences window, accessible using the standard Mac keyboard shortcut ("Command-,"), or from the File menu. Here is a screenshot of the themes editor:
+
+⌘newline⟪5⟫
+
+＠⟪align←center⟫⌘image⟪themes-editor.jpg；0.6⟫
+

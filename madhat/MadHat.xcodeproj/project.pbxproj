@@ -1,0 +1,1600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150039C72716A845007B939F /* MHAppConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150039C62716A845007B939F /* MHAppConfigurationWindowController.m */; };
+		150173932685A388002A80D8 /* default-editor-themes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150173922685A388002A80D8 /* default-editor-themes.plist */; };
+		150181F324A71A4900D63678 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 150181F224A71A4900D63678 /* colors.plist */; };
+		1501EAC4254FEB91001D6BB9 /* MHCheckboxNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1501EAC3254FEB90001D6BB9 /* MHCheckboxNode.m */; };
+		1501EAC725505536001D6BB9 /* MHCheckboxExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1501EAC625505536001D6BB9 /* MHCheckboxExpression.m */; };
+		15050C6E24D4C83D00D7A8DF /* MHTransformedExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 15050C6D24D4C83D00D7A8DF /* MHTransformedExpression.m */; };
+		150EF6D5280E193500099F65 /* acknowledgements.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 150EF6D4280E193500099F65 /* acknowledgements.pdf */; };
+		150EF6D7280E194F00099F65 /* madhat-eula.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 150EF6D6280E194F00099F65 /* madhat-eula.pdf */; };
+		151092B224A1B2470046B32A /* BFPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 151092B124A1B2470046B32A /* BFPageControl.m */; };
+		1512131426BD009D00D48D6D /* MHTextSubstitutionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1512131326BD009D00D48D6D /* MHTextSubstitutionWrapper.m */; };
+		1512131726BD08A800D48D6D /* NSString+TextSubstitution.m in Sources */ = {isa = PBXBuildFile; fileRef = 1512131626BD08A800D48D6D /* NSString+TextSubstitution.m */; };
+		151255362721F54500AF6D2D /* math-kerning in Resources */ = {isa = PBXBuildFile; fileRef = 151255352721F54500AF6D2D /* math-kerning */; };
+		151255382721F55400AF6D2D /* bundled-fonts in Resources */ = {isa = PBXBuildFile; fileRef = 151255372721F55400AF6D2D /* bundled-fonts */; };
+		151AFA9626BB124800ED404B /* MHRenderedGlyphTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 151AFA9526BB124800ED404B /* MHRenderedGlyphTexture.m */; };
+		151EC07223DB3C8700CEFAE8 /* MHFancySpace_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 151EC07123DB3C8700CEFAE8 /* MHFancySpace_Old.m */; };
+		151EE17527058FAF00A2C4B9 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 151EE17427058FAF00A2C4B9 /* Credits.rtf */; };
+		15223D0224BD239B00602177 /* MHRichTextAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 15223D0124BD239B00602177 /* MHRichTextAtom.m */; };
+		1527559E24AA200600E6419C /* MHReformattingContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1527559D24AA200600E6419C /* MHReformattingContextManager.m */; };
+		152755A424AB3D9200E6419C /* MHAttributedStringTextAtom_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 152755A324AB3D9200E6419C /* MHAttributedStringTextAtom_Old.m */; };
+		1528C438253D6D180013EE89 /* MHImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528C437253D6D180013EE89 /* MHImage.m */; };
+		1528C43F253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.m in Sources */ = {isa = PBXBuildFile; fileRef = 1528C43E253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.m */; };
+		152FD53D271252CA00231138 /* PDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 152FD53C271252CA00231138 /* PDFKit.framework */; };
+		152FD5402712539B00231138 /* MHNotebook+ExportingAndPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = 152FD53F2712539B00231138 /* MHNotebook+ExportingAndPrinting.m */; };
+		1531AA5126B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531AA5026B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.m */; };
+		1531AA5426B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 1531AA5326B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.m */; };
+		1534908D24F40E370044D35A /* MHWhitespace.m in Sources */ = {isa = PBXBuildFile; fileRef = 1534908C24F40E370044D35A /* MHWhitespace.m */; };
+		15368E8C24D0BEAF00393DE8 /* MHContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15368E8B24D0BEAF00393DE8 /* MHContainer.m */; };
+		1536CC9D23E275A30060F9AE /* MHTypingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1536CC9C23E275A30060F9AE /* MHTypingStyle.m */; };
+		1537A0192793FE3E004CF8E8 /* themes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1537A0182793FE3E004CF8E8 /* themes.png */; };
+		153807B324B8B14A00CD2EA9 /* MHMathAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 153807B224B8B14A00CD2EA9 /* MHMathAtom.m */; };
+		153807BA24B8C01B00CD2EA9 /* MHOldTextualElementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 153807B924B8C01B00CD2EA9 /* MHOldTextualElementNode.m */; };
+		153807BD24B8C2A400CD2EA9 /* MHOldGlyphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 153807BC24B8C2A400CD2EA9 /* MHOldGlyphNode.m */; };
+		153807C024B8D03A00CD2EA9 /* MHGlyphAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 153807BF24B8D03A00CD2EA9 /* MHGlyphAtom.m */; };
+		153902D924BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.m in Sources */ = {isa = PBXBuildFile; fileRef = 153902D824BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.m */; };
+		153CBFD323B09A9000ADE1DF /* SKUtilities2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 153CBFD123B09A8F00ADE1DF /* SKUtilities2.xcassets */; };
+		153CC02323B09B0300ADE1DF /* MHPackageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFD623B09AFD00ADE1DF /* MHPackageManager.m */; };
+		153CC02623B09B0300ADE1DF /* MHTypesettingContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFDA23B09AFD00ADE1DF /* MHTypesettingContextManager.m */; };
+		153CC02823B09B0300ADE1DF /* SKSimpleTextNode_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFDC23B09AFD00ADE1DF /* SKSimpleTextNode_Old.m */; };
+		153CC02A23B09B0300ADE1DF /* MHRadical.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFE023B09AFD00ADE1DF /* MHRadical.m */; };
+		153CC02E23B09B0300ADE1DF /* MHSourceCodeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFEA23B09AFE00ADE1DF /* MHSourceCodeTextView.m */; };
+		153CC02F23B09B0300ADE1DF /* MHDecoratedExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFEB23B09AFE00ADE1DF /* MHDecoratedExpression.m */; };
+		153CC03023B09B0300ADE1DF /* MHMathFontSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFEC23B09AFE00ADE1DF /* MHMathFontSystem.m */; };
+		153CC03123B09B0300ADE1DF /* MHCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFED23B09AFE00ADE1DF /* MHCommand.m */; };
+		153CC03223B09B0300ADE1DF /* MHParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFEF23B09AFE00ADE1DF /* MHParagraph.m */; };
+		153CC03323B09B0300ADE1DF /* MHFraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFF023B09AFF00ADE1DF /* MHFraction.m */; };
+		153CC03523B09B0300ADE1DF /* NSBezierPath+QuartzUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFF423B09AFF00ADE1DF /* NSBezierPath+QuartzUtilities.m */; };
+		153CC03623B09B0300ADE1DF /* MHExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFF723B09AFF00ADE1DF /* MHExpression.m */; };
+		153CC03823B09B0300ADE1DF /* MHTextParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFFA23B09B0000ADE1DF /* MHTextParagraph.m */; };
+		153CC03923B09B0300ADE1DF /* MHColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CBFFB23B09B0000ADE1DF /* MHColorCommand.m */; };
+		153CC03B23B09B0300ADE1DF /* MHTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC00123B09B0000ADE1DF /* MHTable.m */; };
+		153CC03C23B09B0300ADE1DF /* MHVerticalLayoutContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC00323B09B0000ADE1DF /* MHVerticalLayoutContainer.m */; };
+		153CC04023B09B0300ADE1DF /* MHScriptedExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC00923B09B0100ADE1DF /* MHScriptedExpression.m */; };
+		153CC04123B09B0300ADE1DF /* MHPackage.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC00D23B09B0100ADE1DF /* MHPackage.m */; };
+		153CC04423B09B0300ADE1DF /* MHHorizontalLayoutContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC01223B09B0200ADE1DF /* MHHorizontalLayoutContainer.m */; };
+		153CC04523B09B0300ADE1DF /* MHPageViewerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC01323B09B0200ADE1DF /* MHPageViewerView.m */; };
+		153CC04723B09B0300ADE1DF /* standard.mhatpkg in Resources */ = {isa = PBXBuildFile; fileRef = 153CC01A23B09B0200ADE1DF /* standard.mhatpkg */; };
+		153CC04823B09B0300ADE1DF /* MHMathFontsLibraryEditingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC01B23B09B0200ADE1DF /* MHMathFontsLibraryEditingManager.m */; };
+		153CC04923B09B0300ADE1DF /* MHFormattingCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC01D23B09B0200ADE1DF /* MHFormattingCommand.m */; };
+		153CC04A23B09B0300ADE1DF /* MHMiscCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 153CC01E23B09B0300ADE1DF /* MHMiscCommand.m */; };
+		1542E81D24ADC88700183BA5 /* MHMathFontEditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1542E81C24ADC88700183BA5 /* MHMathFontEditorController.m */; };
+		15456D74254B997B006FDF20 /* MHConfigurationCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 15456D73254B997B006FDF20 /* MHConfigurationCommand.m */; };
+		1546AF3E277CF4C10026476F /* MHInlineMathContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546AF3D277CF4C10026476F /* MHInlineMathContainer.m */; };
+		154700D927271C3F007793A5 /* madhat-logo-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 154700D727271C3F007793A5 /* madhat-logo-small.png */; };
+		154700DA27271C3F007793A5 /* madhat-logo-smallx2.png in Resources */ = {isa = PBXBuildFile; fileRef = 154700D827271C3F007793A5 /* madhat-logo-smallx2.png */; };
+		1549BC4A24B916680037A383 /* MHMathGlyphAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1549BC4924B916680037A383 /* MHMathGlyphAtom.m */; };
+		1549BC4E24B98D110037A383 /* MHMultiformMathAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1549BC4D24B98D110037A383 /* MHMultiformMathAtom.m */; };
+		154ABEC6280F0C880068E053 /* madhat help.madhathelp in Resources */ = {isa = PBXBuildFile; fileRef = 154ABEC5280F0C880068E053 /* madhat help.madhathelp */; };
+		154B36D224DCEADD0085C7FC /* MHPenGraphicsPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B36D124DCEADD0085C7FC /* MHPenGraphicsPrimitive.m */; };
+		154B36D524DCEC240085C7FC /* MHPenGraphicsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 154B36D424DCEC240085C7FC /* MHPenGraphicsCommand.m */; };
+		154BE42426C3BAD900195619 /* MHDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 154BE42326C3BAD900195619 /* MHDocumentController.m */; };
+		154C2DAC2773DC6400E0C8BB /* MHPDFRenderingContextManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 154C2DAB2773DC6400E0C8BB /* MHPDFRenderingContextManager.m */; };
+		154C8F942555E81000DDD68F /* MHLeftCenterRightExpressionsLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 154C8F932555E81000DDD68F /* MHLeftCenterRightExpressionsLine.m */; };
+		1551DCFB2762B0490049B333 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1551DCFA2762B0490049B333 /* NSFileManager+DirectoryLocations.m */; };
+		15521B0926B669C400723F64 /* MHTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15521B0826B669C400723F64 /* MHTextNode.m */; };
+		1553D02524D273C700596D99 /* MHProfiler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1553D02424D273C700596D99 /* MHProfiler.m */; };
+		1556B3A624EC7EC000CD2FF0 /* MHParagraphEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1556B3A524EC7EC000CD2FF0 /* MHParagraphEnumerator.m */; };
+		1558C3F326B7BFAB00A0AD97 /* MHGlyphManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1558C3F226B7BFAB00A0AD97 /* MHGlyphManager.m */; };
+		155E1B7C26C859B9007416BB /* MHResourceDroppingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 155E1B7B26C859B9007416BB /* MHResourceDroppingView.m */; };
+		156411EE2520725200BA825B /* MHBoxCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 156411ED2520725200BA825B /* MHBoxCommand.m */; };
+		156439CB23DD6497000CF9FC /* MHSourceCodeTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 156439CA23DD6497000CF9FC /* MHSourceCodeTextStorage.m */; };
+		1564794E2540D60A001BD858 /* missing-image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1564794C2540D60A001BD858 /* missing-image.png */; };
+		1564794F2540D60A001BD858 /* missing-imagex2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1564794D2540D60A001BD858 /* missing-imagex2.png */; };
+		1569E3D32748E3AB007F4747 /* MHNotebookConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1569E3D22748E3AB007F4747 /* MHNotebookConfiguration.m */; };
+		156CF00726C22B080057ADF7 /* MHHelpNotebookSearchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 156CF00626C22B080057ADF7 /* MHHelpNotebookSearchField.m */; };
+		15700C6E23D1F7B8005FCFD2 /* MHSpriteKitScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 15700C6D23D1F7B8005FCFD2 /* MHSpriteKitScene.m */; };
+		15743E3D24DEE081001583D1 /* MHListCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 15743E3C24DEE081001583D1 /* MHListCommand.m */; };
+		15743E4324E1CA21001583D1 /* MHStyledMathWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15743E4224E1CA21001583D1 /* MHStyledMathWrapper.m */; };
+		1579727B26BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1579727A26BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.m */; };
+		157AD9F92495D07300EAF5C8 /* MHNotebookPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 157AD9F82495D07300EAF5C8 /* MHNotebookPage.m */; };
+		157D1ADE2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 157D1ADD2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.m */; };
+		157D1AE32539FC75001B6FC2 /* AssetLibrary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 157D1AE22539FC75001B6FC2 /* AssetLibrary.xib */; };
+		157D1AE6253A1AC1001B6FC2 /* MHAssetLibraryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 157D1AE5253A1AC1001B6FC2 /* MHAssetLibraryController.m */; };
+		157E1B6D269E0A6C004B0DC0 /* codetemplates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 157E1B6C269E0A6C004B0DC0 /* codetemplates.plist */; };
+		157FE04A26DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.m in Sources */ = {isa = PBXBuildFile; fileRef = 157FE04926DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.m */; };
+		158337012719DDEA00029FF3 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158337002719DDEA00029FF3 /* AVKit.framework */; };
+		1584AC3526AA98150014A06A /* defaultconfigurationcode.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1584AC3426AA98150014A06A /* defaultconfigurationcode.txt */; };
+		1587D8B923B175B200837721 /* MathFontEditor.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1587D8B823B175B200837721 /* MathFontEditor.xib */; };
+		1588FD7C26BBB55F00A7103E /* MHQuotedCodeExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1588FD7B26BBB55F00A7103E /* MHQuotedCodeExpression.m */; };
+		158A17DB25097E7700D21F0B /* MHAttributesCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 158A17DA25097E7700D21F0B /* MHAttributesCommand.m */; };
+		158AE85B268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AE85A268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.m */; };
+		158AE85E268DA5790022721C /* MHSourceCodeTextView+TouchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 158AE85D268DA5790022721C /* MHSourceCodeTextView+TouchBar.m */; };
+		158CB8E12748244B00DA14BD /* MHExportedPageNumberExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 158CB8E02748244B00DA14BD /* MHExportedPageNumberExpression.m */; };
+		158D0CC626B3CA6C0057828B /* NSSubordinateWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 158D0CC526B3CA6C0057828B /* NSSubordinateWindow.m */; };
+		158E6E0E24C1F2870010CFD1 /* MHGraphicsCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E6E0D24C1F2870010CFD1 /* MHGraphicsCanvas.m */; };
+		158E6E1124C21C8D0010CFD1 /* MHGraphicsCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E6E1024C21C8D0010CFD1 /* MHGraphicsCommand.m */; };
+		158E6E1624C251860010CFD1 /* MHGraphicsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 158E6E1524C251860010CFD1 /* MHGraphicsStyle.m */; };
+		15907ECD23AFD60900278DCD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15907ECC23AFD60900278DCD /* AppDelegate.m */; };
+		15907ED023AFD60900278DCD /* MHNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 15907ECF23AFD60900278DCD /* MHNotebook.m */; };
+		15907ED323AFD60900278DCD /* MHNotebook.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15907ED123AFD60900278DCD /* MHNotebook.xib */; };
+		15907ED523AFD60A00278DCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15907ED423AFD60A00278DCD /* Assets.xcassets */; };
+		15907ED823AFD60A00278DCD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15907ED623AFD60A00278DCD /* MainMenu.xib */; };
+		15907EDB23AFD60A00278DCD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15907EDA23AFD60A00278DCD /* main.m */; };
+		15935F1B23C3863B00675ECE /* MHSourceCodeGutterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15935F1A23C3863B00675ECE /* MHSourceCodeGutterView.m */; };
+		1595DD7823C8036100A9B4CF /* NSString+MathConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1595DD7723C8036100A9B4CF /* NSString+MathConversion.m */; };
+		159822BD25001B1000026AA2 /* MHStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 159822BC25001B1000026AA2 /* MHStyle.m */; };
+		159822C325001B4100026AA2 /* MHListStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 159822C225001B4100026AA2 /* MHListStyle.m */; };
+		159822C625001B4A00026AA2 /* MHBoxStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 159822C525001B4A00026AA2 /* MHBoxStyle.m */; };
+		159822C925004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 159822C825004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.m */; };
+		1598A0E524B5231300CEAE17 /* MHMathFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1598A0E424B5231300CEAE17 /* MHMathFontManager.m */; };
+		159C056926CADA0200CC7600 /* MHTestExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 159C056826CADA0200CC7600 /* MHTestExpression.m */; };
+		159F57CC24B7BDDD00967258 /* MHShapeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F57CB24B7BDDD00967258 /* MHShapeNode.m */; };
+		159F57CF24B7C1F900967258 /* MHOldTextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F57CE24B7C1F900967258 /* MHOldTextNode.m */; };
+		159F57D224B7C84F00967258 /* MHTextAtom.m in Sources */ = {isa = PBXBuildFile; fileRef = 159F57D124B7C84F00967258 /* MHTextAtom.m */; };
+		159FB01A23CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 159FB01923CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.m */; };
+		15A2EA1023BA62DD008C7606 /* SKUShapeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15A2EA0F23BA62DD008C7606 /* SKUShapeNode.m */; };
+		15AC4D7C24CC78DC00297139 /* MHGraphicsPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AC4D7B24CC78DC00297139 /* MHGraphicsPrimitive.m */; };
+		15AEEE9E24DC9B0A00377668 /* MHStyledTextWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AEEE9D24DC9B0A00377668 /* MHStyledTextWrapper.m */; };
+		15AFCCC023C2989700E3AB81 /* MHParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AFCCBF23C2989700E3AB81 /* MHParser.m */; };
+		15AFCCC623C2A42C00E3AB81 /* MHParser+TextMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AFCCC523C2A42C00E3AB81 /* MHParser+TextMode.m */; };
+		15AFCCC923C2A46F00E3AB81 /* MHParser+MathMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AFCCC823C2A46F00E3AB81 /* MHParser+MathMode.m */; };
+		15B6B58F26A37C6000A5870C /* MHSlideTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B6B58E26A37C6000A5870C /* MHSlideTransition.m */; };
+		15B758B423FA2AD200142A89 /* MHParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B758B323FA2AD200142A89 /* MHParagraphStyle.m */; };
+		15B7BF6024F9994C0056B926 /* MHNotebookConfigurationSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15B7BF5F24F9994C0056B926 /* MHNotebookConfigurationSheet.xib */; };
+		15B7BF6324F9A0D70056B926 /* MHNotebookConfigurationPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B7BF6224F9A0D70056B926 /* MHNotebookConfigurationPanelController.m */; };
+		15BCF37F2541FE280076C881 /* MHLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BCF37E2541FE280076C881 /* MHLink.m */; };
+		15BF9A7327155AEA00D9EE2F /* ConfigurationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BF9A7227155AEA00D9EE2F /* ConfigurationWindow.xib */; };
+		15C6329E26CB98850052922D /* MHMultiScriptedExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C6329D26CB98850052922D /* MHMultiScriptedExpression.m */; };
+		15C80CC724D36D3800469675 /* MHLinearContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C80CC624D36D3800469675 /* MHLinearContainer.m */; };
+		15CA18A326D8C644005E94CB /* MHVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CA18A226D8C644005E94CB /* MHVideo.m */; };
+		15CB4BC4275E9B5900AD0A25 /* MHSourceCodeEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB4BC3275E9B5900AD0A25 /* MHSourceCodeEditorTheme.m */; };
+		15CB4BC7275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB4BC6275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.m */; };
+		15CB98BE26E09A0F007686E1 /* MHMathFormulaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB98BD26E09A0F007686E1 /* MHMathFormulaParser.m */; };
+		15CB98C126E11C52007686E1 /* MHGraphicsPlottingPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CB98C026E11C52007686E1 /* MHGraphicsPlottingPrimitive.m */; };
+		15D092B123E3E3A70020B7A1 /* MHMathParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D092B023E3E3A70020B7A1 /* MHMathParagraph.m */; };
+		15D4178B26CD606D008846A5 /* NSAttributedString+QuickLineBreaking.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D4178A26CD606D008846A5 /* NSAttributedString+QuickLineBreaking.m */; };
+		15D4178E26CD6502008846A5 /* MHQuotedCodeParagraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D4178D26CD6502008846A5 /* MHQuotedCodeParagraph.m */; };
+		15D65CAE26FEF3CB002C53D8 /* NSURL+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D65CAD26FEF3CB002C53D8 /* NSURL+Compression.m */; };
+		15D65CB126FEF51C002C53D8 /* NSData+Compression.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D65CB026FEF51C002C53D8 /* NSData+Compression.m */; };
+		15D687D724D62D1C00FECDD1 /* MHCurveLayoutWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D687D624D62D1C00FECDD1 /* MHCurveLayoutWrapper.m */; };
+		15D687DA24D7243900FECDD1 /* DRSmartBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 15D687D924D7243900FECDD1 /* DRSmartBezierPath.m */; };
+		15DCD0E426B31309009D1A81 /* NSTableViewWithDeleteShortcut.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DCD0E326B31309009D1A81 /* NSTableViewWithDeleteShortcut.m */; };
+		15DFC3FD24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DFC3FC24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.m */; };
+		15DFC40024FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DFC3FF24FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.m */; };
+		15DFC40324FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DFC40224FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.m */; };
+		15DFC40824FDB48B00568503 /* MHTypesettingState.m in Sources */ = {isa = PBXBuildFile; fileRef = 15DFC40724FDB48B00568503 /* MHTypesettingState.m */; };
+		15E04D8226BFBE4B0089A243 /* NSScroller+KnobStyleExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E04D8126BFBE4B0089A243 /* NSScroller+KnobStyleExtension.m */; };
+		15E23F972694DE040023D18A /* MHSlideFragment.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E23F962694DE040023D18A /* MHSlideFragment.m */; };
+		15E44867252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E44866252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.m */; };
+		15E87DD4275E89B500163348 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E87DD3275E89B500163348 /* PreferencesWindow.xib */; };
+		15E87DD7275E8C9500163348 /* MHPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E87DD6275E8C9500163348 /* MHPreferencesWindowController.m */; };
+		15EC3BBE26940FAB0020BA37 /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 15EC3BBB26940FAB0020BA37 /* easing.c */; };
+		15EC3BBF26940FAB0020BA37 /* SKEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 15EC3BBD26940FAB0020BA37 /* SKEase.m */; };
+		15ED57C8249B299900A8B247 /* MHSlideTransitionCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 15ED57C7249B299900A8B247 /* MHSlideTransitionCommand.m */; };
+		15F0544C26B33522006814C4 /* IssueReporter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F0544B26B33522006814C4 /* IssueReporter.xib */; };
+		15F09A0224D2ABE5000708E6 /* MHPlaceholderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F09A0124D2ABE5000708E6 /* MHPlaceholderCommand.m */; };
+		15F38BDD26C7A65C00C91AEC /* MHIssueReporterWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F38BDC26C7A65C00C91AEC /* MHIssueReporterWindowController.m */; };
+		15F3949F26C0F6CC0074EAD0 /* MHHelpNotebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F3949E26C0F6CC0074EAD0 /* MHHelpNotebook.m */; };
+		15F7FC2624D4FDE300964A72 /* MHWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F7FC2524D4FDE300964A72 /* MHWrapper.m */; };
+		15F8120726B99C7000AA2B72 /* MHGlyphNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F8120626B99C7000AA2B72 /* MHGlyphNode.m */; };
+		15F8120A26B9A06700AA2B72 /* MHTextualElementNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F8120926B9A06700AA2B72 /* MHTextualElementNode.m */; };
+		15F9B97623CA4D1900CF0E28 /* MHBracket.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F9B97523CA4D1900CF0E28 /* MHBracket.m */; };
+		15FAA4E024AF131E005B090B /* NSTableViewWitkKeyPressDelegation.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA4DF24AF131E005B090B /* NSTableViewWitkKeyPressDelegation.m */; };
+		15FFE83A23F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 15FFE83923F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		150039C52716A845007B939F /* MHAppConfigurationWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAppConfigurationWindowController.h; sourceTree = "<group>"; };
+		150039C62716A845007B939F /* MHAppConfigurationWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAppConfigurationWindowController.m; sourceTree = "<group>"; };
+		150173922685A388002A80D8 /* default-editor-themes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "default-editor-themes.plist"; sourceTree = "<group>"; };
+		150181F224A71A4900D63678 /* colors.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		1501EAC2254FEB90001D6BB9 /* MHCheckboxNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHCheckboxNode.h; sourceTree = "<group>"; };
+		1501EAC3254FEB90001D6BB9 /* MHCheckboxNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHCheckboxNode.m; sourceTree = "<group>"; };
+		1501EAC525505536001D6BB9 /* MHCheckboxExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHCheckboxExpression.h; sourceTree = "<group>"; };
+		1501EAC625505536001D6BB9 /* MHCheckboxExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHCheckboxExpression.m; sourceTree = "<group>"; };
+		15050C6C24D4C83D00D7A8DF /* MHTransformedExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTransformedExpression.h; sourceTree = "<group>"; };
+		15050C6D24D4C83D00D7A8DF /* MHTransformedExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTransformedExpression.m; sourceTree = "<group>"; };
+		150EF6D4280E193500099F65 /* acknowledgements.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = acknowledgements.pdf; sourceTree = "<group>"; };
+		150EF6D6280E194F00099F65 /* madhat-eula.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "madhat-eula.pdf"; sourceTree = "<group>"; };
+		151092B024A1B2470046B32A /* BFPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPageControl.h; sourceTree = "<group>"; };
+		151092B124A1B2470046B32A /* BFPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPageControl.m; sourceTree = "<group>"; };
+		1512131226BD009D00D48D6D /* MHTextSubstitutionWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTextSubstitutionWrapper.h; sourceTree = "<group>"; };
+		1512131326BD009D00D48D6D /* MHTextSubstitutionWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTextSubstitutionWrapper.m; sourceTree = "<group>"; };
+		1512131526BD08A800D48D6D /* NSString+TextSubstitution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TextSubstitution.h"; sourceTree = "<group>"; };
+		1512131626BD08A800D48D6D /* NSString+TextSubstitution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextSubstitution.m"; sourceTree = "<group>"; };
+		151255352721F54500AF6D2D /* math-kerning */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "math-kerning"; sourceTree = "<group>"; };
+		151255372721F55400AF6D2D /* bundled-fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "bundled-fonts"; sourceTree = "<group>"; };
+		151AFA9426BB124800ED404B /* MHRenderedGlyphTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHRenderedGlyphTexture.h; sourceTree = "<group>"; };
+		151AFA9526BB124800ED404B /* MHRenderedGlyphTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHRenderedGlyphTexture.m; sourceTree = "<group>"; };
+		151EC07023DB3C8700CEFAE8 /* MHFancySpace_Old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHFancySpace_Old.h; sourceTree = "<group>"; };
+		151EC07123DB3C8700CEFAE8 /* MHFancySpace_Old.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHFancySpace_Old.m; sourceTree = "<group>"; };
+		151EE17427058FAF00A2C4B9 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		15223D0024BD239B00602177 /* MHRichTextAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHRichTextAtom.h; sourceTree = "<group>"; };
+		15223D0124BD239B00602177 /* MHRichTextAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHRichTextAtom.m; sourceTree = "<group>"; };
+		1527559C24AA200600E6419C /* MHReformattingContextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHReformattingContextManager.h; sourceTree = "<group>"; };
+		1527559D24AA200600E6419C /* MHReformattingContextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHReformattingContextManager.m; sourceTree = "<group>"; };
+		152755A224AB3D9200E6419C /* MHAttributedStringTextAtom_Old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAttributedStringTextAtom_Old.h; sourceTree = "<group>"; };
+		152755A324AB3D9200E6419C /* MHAttributedStringTextAtom_Old.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAttributedStringTextAtom_Old.m; sourceTree = "<group>"; };
+		1528C436253D6D180013EE89 /* MHImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHImage.h; sourceTree = "<group>"; };
+		1528C437253D6D180013EE89 /* MHImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHImage.m; sourceTree = "<group>"; };
+		1528C43D253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSImageViewWithOutboundDragging.h; sourceTree = "<group>"; };
+		1528C43E253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSImageViewWithOutboundDragging.m; sourceTree = "<group>"; };
+		152EFC162718B930000FB4A5 /* confintrotext.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = confintrotext.rtf; sourceTree = "<group>"; };
+		152FD53C271252CA00231138 /* PDFKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PDFKit.framework; path = System/Library/Frameworks/PDFKit.framework; sourceTree = SDKROOT; };
+		152FD53E2712539B00231138 /* MHNotebook+ExportingAndPrinting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHNotebook+ExportingAndPrinting.h"; sourceTree = "<group>"; };
+		152FD53F2712539B00231138 /* MHNotebook+ExportingAndPrinting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHNotebook+ExportingAndPrinting.m"; sourceTree = "<group>"; };
+		1531AA4F26B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeAutocompleteSuggestionsView.h; sourceTree = "<group>"; };
+		1531AA5026B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeAutocompleteSuggestionsView.m; sourceTree = "<group>"; };
+		1531AA5226B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHSourceCodeTextView+Autocomplete.h"; sourceTree = "<group>"; };
+		1531AA5326B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHSourceCodeTextView+Autocomplete.m"; sourceTree = "<group>"; };
+		1534908B24F40E370044D35A /* MHWhitespace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHWhitespace.h; sourceTree = "<group>"; };
+		1534908C24F40E370044D35A /* MHWhitespace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHWhitespace.m; sourceTree = "<group>"; };
+		15368E8A24D0BEAF00393DE8 /* MHContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHContainer.h; sourceTree = "<group>"; };
+		15368E8B24D0BEAF00393DE8 /* MHContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHContainer.m; sourceTree = "<group>"; };
+		1536CC9B23E275A30060F9AE /* MHTypingStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTypingStyle.h; sourceTree = "<group>"; };
+		1536CC9C23E275A30060F9AE /* MHTypingStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTypingStyle.m; sourceTree = "<group>"; };
+		1537A0182793FE3E004CF8E8 /* themes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = themes.png; sourceTree = "<group>"; };
+		153807B124B8B14A00CD2EA9 /* MHMathAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathAtom.h; sourceTree = "<group>"; };
+		153807B224B8B14A00CD2EA9 /* MHMathAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathAtom.m; sourceTree = "<group>"; };
+		153807B824B8C01B00CD2EA9 /* MHOldTextualElementNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHOldTextualElementNode.h; sourceTree = "<group>"; };
+		153807B924B8C01B00CD2EA9 /* MHOldTextualElementNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHOldTextualElementNode.m; sourceTree = "<group>"; };
+		153807BB24B8C2A400CD2EA9 /* MHOldGlyphNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHOldGlyphNode.h; sourceTree = "<group>"; };
+		153807BC24B8C2A400CD2EA9 /* MHOldGlyphNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHOldGlyphNode.m; sourceTree = "<group>"; };
+		153807BE24B8D03A00CD2EA9 /* MHGlyphAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGlyphAtom.h; sourceTree = "<group>"; };
+		153807BF24B8D03A00CD2EA9 /* MHGlyphAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGlyphAtom.m; sourceTree = "<group>"; };
+		153902D724BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHMathFontSystem+ExtensibleSymbols.h"; sourceTree = "<group>"; };
+		153902D824BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHMathFontSystem+ExtensibleSymbols.m"; sourceTree = "<group>"; };
+		153CBFCF23B09A8F00ADE1DF /* SKUtilities2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKUtilities2.h; sourceTree = "<group>"; };
+		153CBFD023B09A8F00ADE1DF /* SKUtilities2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKUtilities2.m; sourceTree = "<group>"; };
+		153CBFD123B09A8F00ADE1DF /* SKUtilities2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SKUtilities2.xcassets; sourceTree = "<group>"; };
+		153CBFD523B09AFD00ADE1DF /* SKSimpleTextNode_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKSimpleTextNode_Old.h; sourceTree = "<group>"; };
+		153CBFD623B09AFD00ADE1DF /* MHPackageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPackageManager.m; sourceTree = "<group>"; };
+		153CBFDA23B09AFD00ADE1DF /* MHTypesettingContextManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTypesettingContextManager.m; sourceTree = "<group>"; };
+		153CBFDC23B09AFD00ADE1DF /* SKSimpleTextNode_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKSimpleTextNode_Old.m; sourceTree = "<group>"; };
+		153CBFDD23B09AFD00ADE1DF /* MHTypesettingContextManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTypesettingContextManager.h; sourceTree = "<group>"; };
+		153CBFE023B09AFD00ADE1DF /* MHRadical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHRadical.m; sourceTree = "<group>"; };
+		153CBFE223B09AFD00ADE1DF /* MHNewline_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHNewline_Old.h; sourceTree = "<group>"; };
+		153CBFE323B09AFD00ADE1DF /* MHFormattingCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFormattingCommand.h; sourceTree = "<group>"; };
+		153CBFE423B09AFE00ADE1DF /* MHNewline_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHNewline_Old.m; sourceTree = "<group>"; };
+		153CBFE623B09AFE00ADE1DF /* MHRadical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHRadical.h; sourceTree = "<group>"; };
+		153CBFE723B09AFE00ADE1DF /* MHPackageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPackageManager.h; sourceTree = "<group>"; };
+		153CBFE823B09AFE00ADE1DF /* MHDecoratedExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHDecoratedExpression.h; sourceTree = "<group>"; };
+		153CBFEA23B09AFE00ADE1DF /* MHSourceCodeTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeTextView.m; sourceTree = "<group>"; };
+		153CBFEB23B09AFE00ADE1DF /* MHDecoratedExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHDecoratedExpression.m; sourceTree = "<group>"; };
+		153CBFEC23B09AFE00ADE1DF /* MHMathFontSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMathFontSystem.m; sourceTree = "<group>"; };
+		153CBFED23B09AFE00ADE1DF /* MHCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHCommand.m; sourceTree = "<group>"; };
+		153CBFEE23B09AFE00ADE1DF /* MHExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHExpression.h; sourceTree = "<group>"; };
+		153CBFEF23B09AFE00ADE1DF /* MHParagraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHParagraph.m; sourceTree = "<group>"; };
+		153CBFF023B09AFF00ADE1DF /* MHFraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFraction.m; sourceTree = "<group>"; };
+		153CBFF223B09AFF00ADE1DF /* MHTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTable.h; sourceTree = "<group>"; };
+		153CBFF323B09AFF00ADE1DF /* NSBezierPath+QuartzUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+QuartzUtilities.h"; sourceTree = "<group>"; };
+		153CBFF423B09AFF00ADE1DF /* NSBezierPath+QuartzUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+QuartzUtilities.m"; sourceTree = "<group>"; };
+		153CBFF523B09AFF00ADE1DF /* MHCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHCommand.h; sourceTree = "<group>"; };
+		153CBFF723B09AFF00ADE1DF /* MHExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHExpression.m; sourceTree = "<group>"; };
+		153CBFF823B09AFF00ADE1DF /* MHVerticalLayoutContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHVerticalLayoutContainer.h; sourceTree = "<group>"; };
+		153CBFFA23B09B0000ADE1DF /* MHTextParagraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTextParagraph.m; sourceTree = "<group>"; };
+		153CBFFB23B09B0000ADE1DF /* MHColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHColorCommand.m; sourceTree = "<group>"; };
+		153CBFFF23B09B0000ADE1DF /* MadHat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MadHat.h; sourceTree = "<group>"; };
+		153CC00023B09B0000ADE1DF /* MHPageViewerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPageViewerView.h; sourceTree = "<group>"; };
+		153CC00123B09B0000ADE1DF /* MHTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTable.m; sourceTree = "<group>"; };
+		153CC00223B09B0000ADE1DF /* MHSourceCodeTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeTextView.h; sourceTree = "<group>"; };
+		153CC00323B09B0000ADE1DF /* MHVerticalLayoutContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHVerticalLayoutContainer.m; sourceTree = "<group>"; };
+		153CC00423B09B0000ADE1DF /* MHFraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHFraction.h; sourceTree = "<group>"; };
+		153CC00523B09B0000ADE1DF /* MHSpace_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHSpace_Old.m; sourceTree = "<group>"; };
+		153CC00823B09B0100ADE1DF /* MHTextAtom_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHTextAtom_Old.m; sourceTree = "<group>"; };
+		153CC00923B09B0100ADE1DF /* MHScriptedExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHScriptedExpression.m; sourceTree = "<group>"; };
+		153CC00C23B09B0100ADE1DF /* MHMiscCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMiscCommand.h; sourceTree = "<group>"; };
+		153CC00D23B09B0100ADE1DF /* MHPackage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPackage.m; sourceTree = "<group>"; };
+		153CC01023B09B0100ADE1DF /* MHHorizontalLayoutContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHHorizontalLayoutContainer.h; sourceTree = "<group>"; };
+		153CC01123B09B0100ADE1DF /* MHMathFontSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMathFontSystem.h; sourceTree = "<group>"; };
+		153CC01223B09B0200ADE1DF /* MHHorizontalLayoutContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHHorizontalLayoutContainer.m; sourceTree = "<group>"; };
+		153CC01323B09B0200ADE1DF /* MHPageViewerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHPageViewerView.m; sourceTree = "<group>"; };
+		153CC01423B09B0200ADE1DF /* MHMathFontsLibraryEditingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHMathFontsLibraryEditingManager.h; sourceTree = "<group>"; };
+		153CC01623B09B0200ADE1DF /* MHTextAtom_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTextAtom_Old.h; sourceTree = "<group>"; };
+		153CC01723B09B0200ADE1DF /* MHSpace_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHSpace_Old.h; sourceTree = "<group>"; };
+		153CC01823B09B0200ADE1DF /* MHMathAtom+MHCommand_Old.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MHMathAtom+MHCommand_Old.m"; sourceTree = "<group>"; };
+		153CC01923B09B0200ADE1DF /* MHTextParagraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHTextParagraph.h; sourceTree = "<group>"; };
+		153CC01A23B09B0200ADE1DF /* standard.mhatpkg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = standard.mhatpkg; sourceTree = "<group>"; };
+		153CC01B23B09B0200ADE1DF /* MHMathFontsLibraryEditingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMathFontsLibraryEditingManager.m; sourceTree = "<group>"; };
+		153CC01C23B09B0200ADE1DF /* MHPackage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHPackage.h; sourceTree = "<group>"; };
+		153CC01D23B09B0200ADE1DF /* MHFormattingCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHFormattingCommand.m; sourceTree = "<group>"; };
+		153CC01E23B09B0300ADE1DF /* MHMiscCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHMiscCommand.m; sourceTree = "<group>"; };
+		153CC01F23B09B0300ADE1DF /* MHMathAtom+MHCommand_Old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MHMathAtom+MHCommand_Old.h"; sourceTree = "<group>"; };
+		153CC02023B09B0300ADE1DF /* MHColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHColorCommand.h; sourceTree = "<group>"; };
+		153CC02123B09B0300ADE1DF /* MHScriptedExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHScriptedExpression.h; sourceTree = "<group>"; };
+		153CC02223B09B0300ADE1DF /* MHParagraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHParagraph.h; sourceTree = "<group>"; };
+		1542E81B24ADC88700183BA5 /* MHMathFontEditorController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathFontEditorController.h; sourceTree = "<group>"; };
+		1542E81C24ADC88700183BA5 /* MHMathFontEditorController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathFontEditorController.m; sourceTree = "<group>"; };
+		15456D72254B997B006FDF20 /* MHConfigurationCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHConfigurationCommand.h; sourceTree = "<group>"; };
+		15456D73254B997B006FDF20 /* MHConfigurationCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHConfigurationCommand.m; sourceTree = "<group>"; };
+		1546AF3C277CF4C10026476F /* MHInlineMathContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHInlineMathContainer.h; sourceTree = "<group>"; };
+		1546AF3D277CF4C10026476F /* MHInlineMathContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHInlineMathContainer.m; sourceTree = "<group>"; };
+		154700D727271C3F007793A5 /* madhat-logo-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "madhat-logo-small.png"; sourceTree = "<group>"; };
+		154700D827271C3F007793A5 /* madhat-logo-smallx2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "madhat-logo-smallx2.png"; sourceTree = "<group>"; };
+		1549BC4824B916680037A383 /* MHMathGlyphAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathGlyphAtom.h; sourceTree = "<group>"; };
+		1549BC4924B916680037A383 /* MHMathGlyphAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathGlyphAtom.m; sourceTree = "<group>"; };
+		1549BC4C24B98D110037A383 /* MHMultiformMathAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMultiformMathAtom.h; sourceTree = "<group>"; };
+		1549BC4D24B98D110037A383 /* MHMultiformMathAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMultiformMathAtom.m; sourceTree = "<group>"; };
+		154ABEC5280F0C880068E053 /* madhat help.madhathelp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "madhat help.madhathelp"; sourceTree = "<group>"; };
+		154B36D024DCEADD0085C7FC /* MHPenGraphicsPrimitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHPenGraphicsPrimitive.h; sourceTree = "<group>"; };
+		154B36D124DCEADD0085C7FC /* MHPenGraphicsPrimitive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPenGraphicsPrimitive.m; sourceTree = "<group>"; };
+		154B36D324DCEC240085C7FC /* MHPenGraphicsCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHPenGraphicsCommand.h; sourceTree = "<group>"; };
+		154B36D424DCEC240085C7FC /* MHPenGraphicsCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPenGraphicsCommand.m; sourceTree = "<group>"; };
+		154BE42226C3BAD900195619 /* MHDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHDocumentController.h; sourceTree = "<group>"; };
+		154BE42326C3BAD900195619 /* MHDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHDocumentController.m; sourceTree = "<group>"; };
+		154C2DAA2773DC6400E0C8BB /* MHPDFRenderingContextManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHPDFRenderingContextManager.h; sourceTree = "<group>"; };
+		154C2DAB2773DC6400E0C8BB /* MHPDFRenderingContextManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPDFRenderingContextManager.m; sourceTree = "<group>"; };
+		154C8F922555E81000DDD68F /* MHLeftCenterRightExpressionsLine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHLeftCenterRightExpressionsLine.h; sourceTree = "<group>"; };
+		154C8F932555E81000DDD68F /* MHLeftCenterRightExpressionsLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLeftCenterRightExpressionsLine.m; sourceTree = "<group>"; };
+		1551DCF92762B0490049B333 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		1551DCFA2762B0490049B333 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		15521B0726B669C400723F64 /* MHTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTextNode.h; sourceTree = "<group>"; };
+		15521B0826B669C400723F64 /* MHTextNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTextNode.m; sourceTree = "<group>"; };
+		1553D02324D273C700596D99 /* MHProfiler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHProfiler.h; sourceTree = "<group>"; };
+		1553D02424D273C700596D99 /* MHProfiler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHProfiler.m; sourceTree = "<group>"; };
+		1556B3A424EC7EC000CD2FF0 /* MHParagraphEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHParagraphEnumerator.h; sourceTree = "<group>"; };
+		1556B3A524EC7EC000CD2FF0 /* MHParagraphEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHParagraphEnumerator.m; sourceTree = "<group>"; };
+		1558C3F126B7BFAB00A0AD97 /* MHGlyphManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGlyphManager.h; sourceTree = "<group>"; };
+		1558C3F226B7BFAB00A0AD97 /* MHGlyphManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGlyphManager.m; sourceTree = "<group>"; };
+		155E1B7A26C859B9007416BB /* MHResourceDroppingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHResourceDroppingView.h; sourceTree = "<group>"; };
+		155E1B7B26C859B9007416BB /* MHResourceDroppingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHResourceDroppingView.m; sourceTree = "<group>"; };
+		156411EC2520725200BA825B /* MHBoxCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHBoxCommand.h; sourceTree = "<group>"; };
+		156411ED2520725200BA825B /* MHBoxCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHBoxCommand.m; sourceTree = "<group>"; };
+		156439C923DD6497000CF9FC /* MHSourceCodeTextStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeTextStorage.h; sourceTree = "<group>"; };
+		156439CA23DD6497000CF9FC /* MHSourceCodeTextStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeTextStorage.m; sourceTree = "<group>"; };
+		1564794C2540D60A001BD858 /* missing-image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missing-image.png"; sourceTree = "<group>"; };
+		1564794D2540D60A001BD858 /* missing-imagex2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "missing-imagex2.png"; sourceTree = "<group>"; };
+		1569E3D12748E3AB007F4747 /* MHNotebookConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHNotebookConfiguration.h; sourceTree = "<group>"; };
+		1569E3D22748E3AB007F4747 /* MHNotebookConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHNotebookConfiguration.m; sourceTree = "<group>"; };
+		156CF00526C22B080057ADF7 /* MHHelpNotebookSearchField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHHelpNotebookSearchField.h; sourceTree = "<group>"; };
+		156CF00626C22B080057ADF7 /* MHHelpNotebookSearchField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHHelpNotebookSearchField.m; sourceTree = "<group>"; };
+		156E78CC23C175EC00169865 /* MHMultiformMathAtom_Old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMultiformMathAtom_Old.h; sourceTree = "<group>"; };
+		156E78CD23C175EC00169865 /* MHMultiformMathAtom_Old.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMultiformMathAtom_Old.m; sourceTree = "<group>"; };
+		15700C6C23D1F7B8005FCFD2 /* MHSpriteKitScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSpriteKitScene.h; sourceTree = "<group>"; };
+		15700C6D23D1F7B8005FCFD2 /* MHSpriteKitScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSpriteKitScene.m; sourceTree = "<group>"; };
+		15743E3B24DEE081001583D1 /* MHListCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHListCommand.h; sourceTree = "<group>"; };
+		15743E3C24DEE081001583D1 /* MHListCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHListCommand.m; sourceTree = "<group>"; };
+		15743E4124E1CA21001583D1 /* MHStyledMathWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHStyledMathWrapper.h; sourceTree = "<group>"; };
+		15743E4224E1CA21001583D1 /* MHStyledMathWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHStyledMathWrapper.m; sourceTree = "<group>"; };
+		1579727926BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeLayoutManager.h; sourceTree = "<group>"; };
+		1579727A26BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeLayoutManager.m; sourceTree = "<group>"; };
+		157AD9F72495D07300EAF5C8 /* MHNotebookPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHNotebookPage.h; sourceTree = "<group>"; };
+		157AD9F82495D07300EAF5C8 /* MHNotebookPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHNotebookPage.m; sourceTree = "<group>"; };
+		157D1ADC2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHNotebook+AssetLibrary.h"; sourceTree = "<group>"; };
+		157D1ADD2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHNotebook+AssetLibrary.m"; sourceTree = "<group>"; };
+		157D1ADF2539E677001B6FC2 /* MHTypographyConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTypographyConstants.h; sourceTree = "<group>"; };
+		157D1AE12539E709001B6FC2 /* MHStyleIncludes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHStyleIncludes.h; sourceTree = "<group>"; };
+		157D1AE22539FC75001B6FC2 /* AssetLibrary.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetLibrary.xib; sourceTree = "<group>"; };
+		157D1AE4253A1AC1001B6FC2 /* MHAssetLibraryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAssetLibraryController.h; sourceTree = "<group>"; };
+		157D1AE5253A1AC1001B6FC2 /* MHAssetLibraryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAssetLibraryController.m; sourceTree = "<group>"; };
+		157D5CC32717F7B500DE9FBE /* confstrings.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = confstrings.rtf; sourceTree = "<group>"; };
+		157E1B6C269E0A6C004B0DC0 /* codetemplates.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = codetemplates.plist; sourceTree = "<group>"; };
+		157FE04826DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKVideoNodeWithBugWorkaround.h; sourceTree = "<group>"; };
+		157FE04926DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKVideoNodeWithBugWorkaround.m; sourceTree = "<group>"; };
+		158337002719DDEA00029FF3 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		1584AC3426AA98150014A06A /* defaultconfigurationcode.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = defaultconfigurationcode.txt; sourceTree = "<group>"; };
+		1587D8B823B175B200837721 /* MathFontEditor.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MathFontEditor.xib; sourceTree = "<group>"; };
+		1588FD7A26BBB55F00A7103E /* MHQuotedCodeExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHQuotedCodeExpression.h; sourceTree = "<group>"; };
+		1588FD7B26BBB55F00A7103E /* MHQuotedCodeExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHQuotedCodeExpression.m; sourceTree = "<group>"; };
+		158A17D925097E7700D21F0B /* MHAttributesCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAttributesCommand.h; sourceTree = "<group>"; };
+		158A17DA25097E7700D21F0B /* MHAttributesCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAttributesCommand.m; sourceTree = "<group>"; };
+		158AE859268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHSourceCodeTextView+ColorSchemes_Old.h"; sourceTree = "<group>"; };
+		158AE85A268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHSourceCodeTextView+ColorSchemes_Old.m"; sourceTree = "<group>"; };
+		158AE85C268DA5790022721C /* MHSourceCodeTextView+TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHSourceCodeTextView+TouchBar.h"; sourceTree = "<group>"; };
+		158AE85D268DA5790022721C /* MHSourceCodeTextView+TouchBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHSourceCodeTextView+TouchBar.m"; sourceTree = "<group>"; };
+		158CB8DF2748244B00DA14BD /* MHExportedPageNumberExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHExportedPageNumberExpression.h; sourceTree = "<group>"; };
+		158CB8E02748244B00DA14BD /* MHExportedPageNumberExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHExportedPageNumberExpression.m; sourceTree = "<group>"; };
+		158D0CC426B3CA6C0057828B /* NSSubordinateWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSSubordinateWindow.h; sourceTree = "<group>"; };
+		158D0CC526B3CA6C0057828B /* NSSubordinateWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSSubordinateWindow.m; sourceTree = "<group>"; };
+		158E6E0C24C1F2870010CFD1 /* MHGraphicsCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGraphicsCanvas.h; sourceTree = "<group>"; };
+		158E6E0D24C1F2870010CFD1 /* MHGraphicsCanvas.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGraphicsCanvas.m; sourceTree = "<group>"; };
+		158E6E0F24C21C8D0010CFD1 /* MHGraphicsCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGraphicsCommand.h; sourceTree = "<group>"; };
+		158E6E1024C21C8D0010CFD1 /* MHGraphicsCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGraphicsCommand.m; sourceTree = "<group>"; };
+		158E6E1424C251860010CFD1 /* MHGraphicsStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGraphicsStyle.h; sourceTree = "<group>"; };
+		158E6E1524C251860010CFD1 /* MHGraphicsStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGraphicsStyle.m; sourceTree = "<group>"; };
+		159066C4273B2B8F00E586EF /* MHUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHUserDefaults.h; sourceTree = "<group>"; };
+		15907EC823AFD60900278DCD /* MadHat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadHat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		15907ECB23AFD60900278DCD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		15907ECC23AFD60900278DCD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		15907ECE23AFD60900278DCD /* MHNotebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHNotebook.h; sourceTree = "<group>"; };
+		15907ECF23AFD60900278DCD /* MHNotebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHNotebook.m; sourceTree = "<group>"; };
+		15907ED223AFD60900278DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MHNotebook.xib; sourceTree = "<group>"; };
+		15907ED423AFD60A00278DCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		15907ED723AFD60A00278DCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		15907ED923AFD60A00278DCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15907EDA23AFD60A00278DCD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15907EDC23AFD60A00278DCD /* MHat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MHat.entitlements; sourceTree = "<group>"; };
+		15935F1923C3863B00675ECE /* MHSourceCodeGutterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeGutterView.h; sourceTree = "<group>"; };
+		15935F1A23C3863B00675ECE /* MHSourceCodeGutterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeGutterView.m; sourceTree = "<group>"; };
+		1595DD7623C8036100A9B4CF /* NSString+MathConversion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+MathConversion.h"; sourceTree = "<group>"; };
+		1595DD7723C8036100A9B4CF /* NSString+MathConversion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+MathConversion.m"; sourceTree = "<group>"; };
+		159822BB25001B1000026AA2 /* MHStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHStyle.h; sourceTree = "<group>"; };
+		159822BC25001B1000026AA2 /* MHStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHStyle.m; sourceTree = "<group>"; };
+		159822C125001B4100026AA2 /* MHListStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHListStyle.h; sourceTree = "<group>"; };
+		159822C225001B4100026AA2 /* MHListStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHListStyle.m; sourceTree = "<group>"; };
+		159822C425001B4A00026AA2 /* MHBoxStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHBoxStyle.h; sourceTree = "<group>"; };
+		159822C525001B4A00026AA2 /* MHBoxStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHBoxStyle.m; sourceTree = "<group>"; };
+		159822C725004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHTypesettingContextManager+ListStyle.h"; sourceTree = "<group>"; };
+		159822C825004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHTypesettingContextManager+ListStyle.m"; sourceTree = "<group>"; };
+		1598A0E324B5231300CEAE17 /* MHMathFontManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathFontManager.h; sourceTree = "<group>"; };
+		1598A0E424B5231300CEAE17 /* MHMathFontManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathFontManager.m; sourceTree = "<group>"; };
+		159C056726CADA0200CC7600 /* MHTestExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTestExpression.h; sourceTree = "<group>"; };
+		159C056826CADA0200CC7600 /* MHTestExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTestExpression.m; sourceTree = "<group>"; };
+		159F57CA24B7BDDD00967258 /* MHShapeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHShapeNode.h; sourceTree = "<group>"; };
+		159F57CB24B7BDDD00967258 /* MHShapeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHShapeNode.m; sourceTree = "<group>"; };
+		159F57CD24B7C1F900967258 /* MHOldTextNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHOldTextNode.h; sourceTree = "<group>"; };
+		159F57CE24B7C1F900967258 /* MHOldTextNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHOldTextNode.m; sourceTree = "<group>"; };
+		159F57D024B7C84F00967258 /* MHTextAtom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTextAtom.h; sourceTree = "<group>"; };
+		159F57D124B7C84F00967258 /* MHTextAtom.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTextAtom.m; sourceTree = "<group>"; };
+		159FB01823CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHSourceCodeTextView+UserEditingHandler.h"; sourceTree = "<group>"; };
+		159FB01923CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHSourceCodeTextView+UserEditingHandler.m"; sourceTree = "<group>"; };
+		15A2EA0E23BA62DD008C7606 /* SKUShapeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SKUShapeNode.h; sourceTree = "<group>"; };
+		15A2EA0F23BA62DD008C7606 /* SKUShapeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SKUShapeNode.m; sourceTree = "<group>"; };
+		15AC4D7A24CC78DC00297139 /* MHGraphicsPrimitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGraphicsPrimitive.h; sourceTree = "<group>"; };
+		15AC4D7B24CC78DC00297139 /* MHGraphicsPrimitive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGraphicsPrimitive.m; sourceTree = "<group>"; };
+		15AEEE9C24DC9B0A00377668 /* MHStyledTextWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHStyledTextWrapper.h; sourceTree = "<group>"; };
+		15AEEE9D24DC9B0A00377668 /* MHStyledTextWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHStyledTextWrapper.m; sourceTree = "<group>"; };
+		15AFCCBE23C2989700E3AB81 /* MHParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHParser.h; sourceTree = "<group>"; };
+		15AFCCBF23C2989700E3AB81 /* MHParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHParser.m; sourceTree = "<group>"; };
+		15AFCCC423C2A42C00E3AB81 /* MHParser+TextMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHParser+TextMode.h"; sourceTree = "<group>"; };
+		15AFCCC523C2A42C00E3AB81 /* MHParser+TextMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHParser+TextMode.m"; sourceTree = "<group>"; };
+		15AFCCC723C2A46F00E3AB81 /* MHParser+MathMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHParser+MathMode.h"; sourceTree = "<group>"; };
+		15AFCCC823C2A46F00E3AB81 /* MHParser+MathMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHParser+MathMode.m"; sourceTree = "<group>"; };
+		15B6B58D26A37C6000A5870C /* MHSlideTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSlideTransition.h; sourceTree = "<group>"; };
+		15B6B58E26A37C6000A5870C /* MHSlideTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSlideTransition.m; sourceTree = "<group>"; };
+		15B758B223FA2AD200142A89 /* MHParagraphStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHParagraphStyle.h; sourceTree = "<group>"; };
+		15B758B323FA2AD200142A89 /* MHParagraphStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHParagraphStyle.m; sourceTree = "<group>"; };
+		15B7BF5F24F9994C0056B926 /* MHNotebookConfigurationSheet.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MHNotebookConfigurationSheet.xib; sourceTree = "<group>"; };
+		15B7BF6124F9A0D70056B926 /* MHNotebookConfigurationPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHNotebookConfigurationPanelController.h; sourceTree = "<group>"; };
+		15B7BF6224F9A0D70056B926 /* MHNotebookConfigurationPanelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHNotebookConfigurationPanelController.m; sourceTree = "<group>"; };
+		15BCF37D2541FE280076C881 /* MHLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHLink.h; sourceTree = "<group>"; };
+		15BCF37E2541FE280076C881 /* MHLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLink.m; sourceTree = "<group>"; };
+		15BF9A7227155AEA00D9EE2F /* ConfigurationWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationWindow.xib; sourceTree = "<group>"; };
+		15C6329C26CB98850052922D /* MHMultiScriptedExpression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMultiScriptedExpression.h; sourceTree = "<group>"; };
+		15C6329D26CB98850052922D /* MHMultiScriptedExpression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMultiScriptedExpression.m; sourceTree = "<group>"; };
+		15C7B53A23EF43DD0059DD40 /* MHParser+SpecialSymbols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHParser+SpecialSymbols.h"; sourceTree = "<group>"; };
+		15C80CC524D36D3800469675 /* MHLinearContainer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHLinearContainer.h; sourceTree = "<group>"; };
+		15C80CC624D36D3800469675 /* MHLinearContainer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHLinearContainer.m; sourceTree = "<group>"; };
+		15CA18A126D8C644005E94CB /* MHVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHVideo.h; sourceTree = "<group>"; };
+		15CA18A226D8C644005E94CB /* MHVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHVideo.m; sourceTree = "<group>"; };
+		15CB4BC2275E9B5900AD0A25 /* MHSourceCodeEditorTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeEditorTheme.h; sourceTree = "<group>"; };
+		15CB4BC3275E9B5900AD0A25 /* MHSourceCodeEditorTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeEditorTheme.m; sourceTree = "<group>"; };
+		15CB4BC5275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSourceCodeEditorThemeManager.h; sourceTree = "<group>"; };
+		15CB4BC6275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSourceCodeEditorThemeManager.m; sourceTree = "<group>"; };
+		15CB98BC26E09A0F007686E1 /* MHMathFormulaParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathFormulaParser.h; sourceTree = "<group>"; };
+		15CB98BD26E09A0F007686E1 /* MHMathFormulaParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathFormulaParser.m; sourceTree = "<group>"; };
+		15CB98BF26E11C52007686E1 /* MHGraphicsPlottingPrimitive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGraphicsPlottingPrimitive.h; sourceTree = "<group>"; };
+		15CB98C026E11C52007686E1 /* MHGraphicsPlottingPrimitive.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGraphicsPlottingPrimitive.m; sourceTree = "<group>"; };
+		15D092AF23E3E3A70020B7A1 /* MHMathParagraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathParagraph.h; sourceTree = "<group>"; };
+		15D092B023E3E3A70020B7A1 /* MHMathParagraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathParagraph.m; sourceTree = "<group>"; };
+		15D4178926CD606D008846A5 /* NSAttributedString+QuickLineBreaking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+QuickLineBreaking.h"; sourceTree = "<group>"; };
+		15D4178A26CD606D008846A5 /* NSAttributedString+QuickLineBreaking.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+QuickLineBreaking.m"; sourceTree = "<group>"; };
+		15D4178C26CD6502008846A5 /* MHQuotedCodeParagraph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHQuotedCodeParagraph.h; sourceTree = "<group>"; };
+		15D4178D26CD6502008846A5 /* MHQuotedCodeParagraph.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHQuotedCodeParagraph.m; sourceTree = "<group>"; };
+		15D65CAC26FEF3CB002C53D8 /* NSURL+Compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+Compression.h"; sourceTree = "<group>"; };
+		15D65CAD26FEF3CB002C53D8 /* NSURL+Compression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Compression.m"; sourceTree = "<group>"; };
+		15D65CAF26FEF51C002C53D8 /* NSData+Compression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Compression.h"; sourceTree = "<group>"; };
+		15D65CB026FEF51C002C53D8 /* NSData+Compression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Compression.m"; sourceTree = "<group>"; };
+		15D687D524D62D1C00FECDD1 /* MHCurveLayoutWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHCurveLayoutWrapper.h; sourceTree = "<group>"; };
+		15D687D624D62D1C00FECDD1 /* MHCurveLayoutWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHCurveLayoutWrapper.m; sourceTree = "<group>"; };
+		15D687D824D7243900FECDD1 /* DRSmartBezierPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRSmartBezierPath.h; sourceTree = "<group>"; };
+		15D687D924D7243900FECDD1 /* DRSmartBezierPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRSmartBezierPath.m; sourceTree = "<group>"; };
+		15DCD0E226B31309009D1A81 /* NSTableViewWithDeleteShortcut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewWithDeleteShortcut.h; sourceTree = "<group>"; };
+		15DCD0E326B31309009D1A81 /* NSTableViewWithDeleteShortcut.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewWithDeleteShortcut.m; sourceTree = "<group>"; };
+		15DFC3FB24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHTypesettingContextManager+TypingStyle.h"; sourceTree = "<group>"; };
+		15DFC3FC24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHTypesettingContextManager+TypingStyle.m"; sourceTree = "<group>"; };
+		15DFC3FE24FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHTypesettingContextManager+ParagraphStyle.h"; sourceTree = "<group>"; };
+		15DFC3FF24FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHTypesettingContextManager+ParagraphStyle.m"; sourceTree = "<group>"; };
+		15DFC40124FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MHTypesettingContextManager+GraphicsStyle.h"; sourceTree = "<group>"; };
+		15DFC40224FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MHTypesettingContextManager+GraphicsStyle.m"; sourceTree = "<group>"; };
+		15DFC40624FDB48B00568503 /* MHTypesettingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTypesettingState.h; sourceTree = "<group>"; };
+		15DFC40724FDB48B00568503 /* MHTypesettingState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTypesettingState.m; sourceTree = "<group>"; };
+		15E04D8026BFBE4B0089A243 /* NSScroller+KnobStyleExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSScroller+KnobStyleExtension.h"; sourceTree = "<group>"; };
+		15E04D8126BFBE4B0089A243 /* NSScroller+KnobStyleExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSScroller+KnobStyleExtension.m"; sourceTree = "<group>"; };
+		15E23F952694DE040023D18A /* MHSlideFragment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSlideFragment.h; sourceTree = "<group>"; };
+		15E23F962694DE040023D18A /* MHSlideFragment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSlideFragment.m; sourceTree = "<group>"; };
+		15E44865252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHAnnotatedHorizontalExtensibleSymbol.h; sourceTree = "<group>"; };
+		15E44866252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHAnnotatedHorizontalExtensibleSymbol.m; sourceTree = "<group>"; };
+		15E87DD3275E89B500163348 /* PreferencesWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		15E87DD5275E8C9500163348 /* MHPreferencesWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHPreferencesWindowController.h; sourceTree = "<group>"; };
+		15E87DD6275E8C9500163348 /* MHPreferencesWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPreferencesWindowController.m; sourceTree = "<group>"; };
+		15EC3BB926940FAB0020BA37 /* SKEase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKEase.h; sourceTree = "<group>"; };
+		15EC3BBA26940FAB0020BA37 /* EasingDeclarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasingDeclarations.h; sourceTree = "<group>"; };
+		15EC3BBB26940FAB0020BA37 /* easing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = easing.c; sourceTree = "<group>"; };
+		15EC3BBC26940FAB0020BA37 /* easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = easing.h; sourceTree = "<group>"; };
+		15EC3BBD26940FAB0020BA37 /* SKEase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKEase.m; sourceTree = "<group>"; };
+		15ED57C6249B299900A8B247 /* MHSlideTransitionCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHSlideTransitionCommand.h; sourceTree = "<group>"; };
+		15ED57C7249B299900A8B247 /* MHSlideTransitionCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHSlideTransitionCommand.m; sourceTree = "<group>"; };
+		15F0544B26B33522006814C4 /* IssueReporter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IssueReporter.xib; sourceTree = "<group>"; };
+		15F09A0024D2ABE5000708E6 /* MHPlaceholderCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHPlaceholderCommand.h; sourceTree = "<group>"; };
+		15F09A0124D2ABE5000708E6 /* MHPlaceholderCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHPlaceholderCommand.m; sourceTree = "<group>"; };
+		15F38BDB26C7A65C00C91AEC /* MHIssueReporterWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHIssueReporterWindowController.h; sourceTree = "<group>"; };
+		15F38BDC26C7A65C00C91AEC /* MHIssueReporterWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHIssueReporterWindowController.m; sourceTree = "<group>"; };
+		15F3949D26C0F6CC0074EAD0 /* MHHelpNotebook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHHelpNotebook.h; sourceTree = "<group>"; };
+		15F3949E26C0F6CC0074EAD0 /* MHHelpNotebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHHelpNotebook.m; sourceTree = "<group>"; };
+		15F7235E23C7D9BB0093AE14 /* MHMathAtom_Old.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHMathAtom_Old.h; sourceTree = "<group>"; };
+		15F7235F23C7D9BB0093AE14 /* MHMathAtom_Old.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHMathAtom_Old.m; sourceTree = "<group>"; };
+		15F7FC2424D4FDE300964A72 /* MHWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHWrapper.h; sourceTree = "<group>"; };
+		15F7FC2524D4FDE300964A72 /* MHWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHWrapper.m; sourceTree = "<group>"; };
+		15F8120526B99C7000AA2B72 /* MHGlyphNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHGlyphNode.h; sourceTree = "<group>"; };
+		15F8120626B99C7000AA2B72 /* MHGlyphNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHGlyphNode.m; sourceTree = "<group>"; };
+		15F8120826B9A06700AA2B72 /* MHTextualElementNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHTextualElementNode.h; sourceTree = "<group>"; };
+		15F8120926B9A06700AA2B72 /* MHTextualElementNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHTextualElementNode.m; sourceTree = "<group>"; };
+		15F9B97423CA4D1900CF0E28 /* MHBracket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MHBracket.h; sourceTree = "<group>"; };
+		15F9B97523CA4D1900CF0E28 /* MHBracket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MHBracket.m; sourceTree = "<group>"; };
+		15FAA4DE24AF131E005B090B /* NSTableViewWitkKeyPressDelegation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTableViewWitkKeyPressDelegation.h; sourceTree = "<group>"; };
+		15FAA4DF24AF131E005B090B /* NSTableViewWitkKeyPressDelegation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTableViewWitkKeyPressDelegation.m; sourceTree = "<group>"; };
+		15FFE83823F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SKNode+MHSomeConvenienceMethods.h"; sourceTree = "<group>"; };
+		15FFE83923F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SKNode+MHSomeConvenienceMethods.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15907EC523AFD60900278DCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158337012719DDEA00029FF3 /* AVKit.framework in Frameworks */,
+				152FD53D271252CA00231138 /* PDFKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		152FD53B271252CA00231138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				158337002719DDEA00029FF3 /* AVKit.framework */,
+				152FD53C271252CA00231138 /* PDFKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		153807B424B8BF5A00CD2EA9 /* SpriteKit stuff */ = {
+			isa = PBXGroup;
+			children = (
+				15FFE83823F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.h */,
+				15FFE83923F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.m */,
+				159F57CA24B7BDDD00967258 /* MHShapeNode.h */,
+				159F57CB24B7BDDD00967258 /* MHShapeNode.m */,
+				1501EAC2254FEB90001D6BB9 /* MHCheckboxNode.h */,
+				1501EAC3254FEB90001D6BB9 /* MHCheckboxNode.m */,
+				15521B0726B669C400723F64 /* MHTextNode.h */,
+				15521B0826B669C400723F64 /* MHTextNode.m */,
+				1558C3F126B7BFAB00A0AD97 /* MHGlyphManager.h */,
+				1558C3F226B7BFAB00A0AD97 /* MHGlyphManager.m */,
+				15F8120526B99C7000AA2B72 /* MHGlyphNode.h */,
+				15F8120626B99C7000AA2B72 /* MHGlyphNode.m */,
+				15F8120826B9A06700AA2B72 /* MHTextualElementNode.h */,
+				15F8120926B9A06700AA2B72 /* MHTextualElementNode.m */,
+				151AFA9426BB124800ED404B /* MHRenderedGlyphTexture.h */,
+				151AFA9526BB124800ED404B /* MHRenderedGlyphTexture.m */,
+			);
+			name = "SpriteKit stuff";
+			sourceTree = "<group>";
+		};
+		153CBFCE23B09A6500ADE1DF /* SKUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFCF23B09A8F00ADE1DF /* SKUtilities2.h */,
+				153CBFD023B09A8F00ADE1DF /* SKUtilities2.m */,
+				153CBFD123B09A8F00ADE1DF /* SKUtilities2.xcassets */,
+			);
+			path = SKUtilities;
+			sourceTree = "<group>";
+		};
+		153CC04B23B09B1100ADE1DF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				15907ECB23AFD60900278DCD /* AppDelegate.h */,
+				15907ECC23AFD60900278DCD /* AppDelegate.m */,
+				150039C52716A845007B939F /* MHAppConfigurationWindowController.h */,
+				150039C62716A845007B939F /* MHAppConfigurationWindowController.m */,
+				154BE42226C3BAD900195619 /* MHDocumentController.h */,
+				154BE42326C3BAD900195619 /* MHDocumentController.m */,
+				15E87DD5275E8C9500163348 /* MHPreferencesWindowController.h */,
+				15E87DD6275E8C9500163348 /* MHPreferencesWindowController.m */,
+				156109C2249C477E004B5623 /* Notebooks */,
+				153CC05423B09E8C00ADE1DF /* Mhat language */,
+				153CC05123B09D7900ADE1DF /* MHExpression and subclasses */,
+				153807B424B8BF5A00CD2EA9 /* SpriteKit stuff */,
+				153CC05323B09DE400ADE1DF /* Font editor */,
+				15F38BDE26C7A66900C91AEC /* Issue reporter */,
+				153CC04D23B09B5F00ADE1DF /* Auxiliary classes and categories */,
+				15563D3E24F3795F00A9A6E2 /* Experimental */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		153CC04D23B09B5F00ADE1DF /* Auxiliary classes and categories */ = {
+			isa = PBXGroup;
+			children = (
+				1551DCF92762B0490049B333 /* NSFileManager+DirectoryLocations.h */,
+				1551DCFA2762B0490049B333 /* NSFileManager+DirectoryLocations.m */,
+				15B6B58D26A37C6000A5870C /* MHSlideTransition.h */,
+				15B6B58E26A37C6000A5870C /* MHSlideTransition.m */,
+				15EC3BB826940F9C0020BA37 /* SpriteKit-Easing */,
+				151092B024A1B2470046B32A /* BFPageControl.h */,
+				151092B124A1B2470046B32A /* BFPageControl.m */,
+				153CBFF323B09AFF00ADE1DF /* NSBezierPath+QuartzUtilities.h */,
+				153CBFF423B09AFF00ADE1DF /* NSBezierPath+QuartzUtilities.m */,
+				1595DD7623C8036100A9B4CF /* NSString+MathConversion.h */,
+				1595DD7723C8036100A9B4CF /* NSString+MathConversion.m */,
+				15A2EA0E23BA62DD008C7606 /* SKUShapeNode.h */,
+				15A2EA0F23BA62DD008C7606 /* SKUShapeNode.m */,
+				15D687D824D7243900FECDD1 /* DRSmartBezierPath.h */,
+				15D687D924D7243900FECDD1 /* DRSmartBezierPath.m */,
+				1528C43D253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.h */,
+				1528C43E253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.m */,
+				15DCD0E226B31309009D1A81 /* NSTableViewWithDeleteShortcut.h */,
+				15DCD0E326B31309009D1A81 /* NSTableViewWithDeleteShortcut.m */,
+				158D0CC426B3CA6C0057828B /* NSSubordinateWindow.h */,
+				158D0CC526B3CA6C0057828B /* NSSubordinateWindow.m */,
+				1512131526BD08A800D48D6D /* NSString+TextSubstitution.h */,
+				1512131626BD08A800D48D6D /* NSString+TextSubstitution.m */,
+				15E04D8026BFBE4B0089A243 /* NSScroller+KnobStyleExtension.h */,
+				15E04D8126BFBE4B0089A243 /* NSScroller+KnobStyleExtension.m */,
+				15D4178926CD606D008846A5 /* NSAttributedString+QuickLineBreaking.h */,
+				15D4178A26CD606D008846A5 /* NSAttributedString+QuickLineBreaking.m */,
+				157FE04826DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.h */,
+				157FE04926DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.m */,
+				15D65CAC26FEF3CB002C53D8 /* NSURL+Compression.h */,
+				15D65CAD26FEF3CB002C53D8 /* NSURL+Compression.m */,
+				15D65CAF26FEF51C002C53D8 /* NSData+Compression.h */,
+				15D65CB026FEF51C002C53D8 /* NSData+Compression.m */,
+			);
+			name = "Auxiliary classes and categories";
+			sourceTree = "<group>";
+		};
+		153CC04E23B09BC200ADE1DF /* Housekeeping */ = {
+			isa = PBXGroup;
+			children = (
+				15AFCCCA23C2D03800E3AB81 /* Old stuff */,
+				15907ED423AFD60A00278DCD /* Assets.xcassets */,
+				15907ED923AFD60A00278DCD /* Info.plist */,
+				15907EDA23AFD60A00278DCD /* main.m */,
+				15907EDC23AFD60A00278DCD /* MHat.entitlements */,
+			);
+			name = Housekeeping;
+			sourceTree = "<group>";
+		};
+		153CC05123B09D7900ADE1DF /* MHExpression and subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				153CC05523B09EF600ADE1DF /* Base classes */,
+				153CC05723B09F6200ADE1DF /* Layout classes */,
+				159F57C924B7A56D00967258 /* Atom classes */,
+				15DC3C5E24ACFA1600059A54 /* Math formatting classes */,
+				153CC05623B09F3D00ADE1DF /* MHCommand and subclasses */,
+				15563D4024F37A8700A9A6E2 /* Styling classes */,
+				15AC4D7D24CC78F900297139 /* Graphics classes */,
+				153CC05823B09F8400ADE1DF /* All other classes */,
+			);
+			name = "MHExpression and subclasses";
+			sourceTree = "<group>";
+		};
+		153CC05223B09DC100ADE1DF /* Parser classes */ = {
+			isa = PBXGroup;
+			children = (
+				15C7B53A23EF43DD0059DD40 /* MHParser+SpecialSymbols.h */,
+				15AFCCBE23C2989700E3AB81 /* MHParser.h */,
+				15AFCCBF23C2989700E3AB81 /* MHParser.m */,
+				15AFCCC423C2A42C00E3AB81 /* MHParser+TextMode.h */,
+				15AFCCC523C2A42C00E3AB81 /* MHParser+TextMode.m */,
+				15AFCCC723C2A46F00E3AB81 /* MHParser+MathMode.h */,
+				15AFCCC823C2A46F00E3AB81 /* MHParser+MathMode.m */,
+			);
+			name = "Parser classes";
+			sourceTree = "<group>";
+		};
+		153CC05323B09DE400ADE1DF /* Font editor */ = {
+			isa = PBXGroup;
+			children = (
+				153CC01423B09B0200ADE1DF /* MHMathFontsLibraryEditingManager.h */,
+				153CC01B23B09B0200ADE1DF /* MHMathFontsLibraryEditingManager.m */,
+				1542E81B24ADC88700183BA5 /* MHMathFontEditorController.h */,
+				1542E81C24ADC88700183BA5 /* MHMathFontEditorController.m */,
+				15FAA4DE24AF131E005B090B /* NSTableViewWitkKeyPressDelegation.h */,
+				15FAA4DF24AF131E005B090B /* NSTableViewWitkKeyPressDelegation.m */,
+			);
+			name = "Font editor";
+			sourceTree = "<group>";
+		};
+		153CC05423B09E8C00ADE1DF /* Mhat language */ = {
+			isa = PBXGroup;
+			children = (
+				1584AC3326A913FC0014A06A /* Context managers */,
+				1598A0E324B5231300CEAE17 /* MHMathFontManager.h */,
+				1598A0E424B5231300CEAE17 /* MHMathFontManager.m */,
+				153CC01123B09B0100ADE1DF /* MHMathFontSystem.h */,
+				153CBFEC23B09AFE00ADE1DF /* MHMathFontSystem.m */,
+				153902D724BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.h */,
+				153902D824BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.m */,
+				153CC01C23B09B0200ADE1DF /* MHPackage.h */,
+				153CC00D23B09B0100ADE1DF /* MHPackage.m */,
+				153CBFE723B09AFE00ADE1DF /* MHPackageManager.h */,
+				153CBFD623B09AFD00ADE1DF /* MHPackageManager.m */,
+				158E6E1324C2447C0010CFD1 /* Style classes */,
+				153CC05223B09DC100ADE1DF /* Parser classes */,
+				15CB98BC26E09A0F007686E1 /* MHMathFormulaParser.h */,
+				15CB98BD26E09A0F007686E1 /* MHMathFormulaParser.m */,
+			);
+			name = "Mhat language";
+			sourceTree = "<group>";
+		};
+		153CC05523B09EF600ADE1DF /* Base classes */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFEE23B09AFE00ADE1DF /* MHExpression.h */,
+				153CBFF723B09AFF00ADE1DF /* MHExpression.m */,
+				15368E8A24D0BEAF00393DE8 /* MHContainer.h */,
+				15368E8B24D0BEAF00393DE8 /* MHContainer.m */,
+				15C80CC524D36D3800469675 /* MHLinearContainer.h */,
+				15C80CC624D36D3800469675 /* MHLinearContainer.m */,
+				15F7FC2424D4FDE300964A72 /* MHWrapper.h */,
+				15F7FC2524D4FDE300964A72 /* MHWrapper.m */,
+				1534908B24F40E370044D35A /* MHWhitespace.h */,
+				1534908C24F40E370044D35A /* MHWhitespace.m */,
+			);
+			name = "Base classes";
+			sourceTree = "<group>";
+		};
+		153CC05623B09F3D00ADE1DF /* MHCommand and subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFF523B09AFF00ADE1DF /* MHCommand.h */,
+				153CBFED23B09AFE00ADE1DF /* MHCommand.m */,
+				15F09A0024D2ABE5000708E6 /* MHPlaceholderCommand.h */,
+				15F09A0124D2ABE5000708E6 /* MHPlaceholderCommand.m */,
+				158A17D925097E7700D21F0B /* MHAttributesCommand.h */,
+				158A17DA25097E7700D21F0B /* MHAttributesCommand.m */,
+				153CC02023B09B0300ADE1DF /* MHColorCommand.h */,
+				153CBFFB23B09B0000ADE1DF /* MHColorCommand.m */,
+				153CBFE323B09AFD00ADE1DF /* MHFormattingCommand.h */,
+				153CC01D23B09B0200ADE1DF /* MHFormattingCommand.m */,
+				153CC00C23B09B0100ADE1DF /* MHMiscCommand.h */,
+				153CC01E23B09B0300ADE1DF /* MHMiscCommand.m */,
+				15ED57C6249B299900A8B247 /* MHSlideTransitionCommand.h */,
+				15ED57C7249B299900A8B247 /* MHSlideTransitionCommand.m */,
+				15743E3B24DEE081001583D1 /* MHListCommand.h */,
+				15743E3C24DEE081001583D1 /* MHListCommand.m */,
+				156411EC2520725200BA825B /* MHBoxCommand.h */,
+				156411ED2520725200BA825B /* MHBoxCommand.m */,
+				15456D72254B997B006FDF20 /* MHConfigurationCommand.h */,
+				15456D73254B997B006FDF20 /* MHConfigurationCommand.m */,
+			);
+			name = "MHCommand and subclasses";
+			sourceTree = "<group>";
+		};
+		153CC05723B09F6200ADE1DF /* Layout classes */ = {
+			isa = PBXGroup;
+			children = (
+				15563D3F24F379F200A9A6E2 /* Paragraphs */,
+				153CC01023B09B0100ADE1DF /* MHHorizontalLayoutContainer.h */,
+				153CC01223B09B0200ADE1DF /* MHHorizontalLayoutContainer.m */,
+				1546AF3C277CF4C10026476F /* MHInlineMathContainer.h */,
+				1546AF3D277CF4C10026476F /* MHInlineMathContainer.m */,
+				153CBFF823B09AFF00ADE1DF /* MHVerticalLayoutContainer.h */,
+				153CC00323B09B0000ADE1DF /* MHVerticalLayoutContainer.m */,
+			);
+			name = "Layout classes";
+			sourceTree = "<group>";
+		};
+		153CC05823B09F8400ADE1DF /* All other classes */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFF223B09AFF00ADE1DF /* MHTable.h */,
+				153CC00123B09B0000ADE1DF /* MHTable.m */,
+				15BCF37D2541FE280076C881 /* MHLink.h */,
+				15BCF37E2541FE280076C881 /* MHLink.m */,
+				1501EAC525505536001D6BB9 /* MHCheckboxExpression.h */,
+				1501EAC625505536001D6BB9 /* MHCheckboxExpression.m */,
+				154C8F922555E81000DDD68F /* MHLeftCenterRightExpressionsLine.h */,
+				154C8F932555E81000DDD68F /* MHLeftCenterRightExpressionsLine.m */,
+				15E23F952694DE040023D18A /* MHSlideFragment.h */,
+				15E23F962694DE040023D18A /* MHSlideFragment.m */,
+				1588FD7A26BBB55F00A7103E /* MHQuotedCodeExpression.h */,
+				1588FD7B26BBB55F00A7103E /* MHQuotedCodeExpression.m */,
+				159C056726CADA0200CC7600 /* MHTestExpression.h */,
+				159C056826CADA0200CC7600 /* MHTestExpression.m */,
+				15D4178C26CD6502008846A5 /* MHQuotedCodeParagraph.h */,
+				15D4178D26CD6502008846A5 /* MHQuotedCodeParagraph.m */,
+			);
+			name = "All other classes";
+			sourceTree = "<group>";
+		};
+		15563D3E24F3795F00A9A6E2 /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				1553D02324D273C700596D99 /* MHProfiler.h */,
+				1553D02424D273C700596D99 /* MHProfiler.m */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		15563D3F24F379F200A9A6E2 /* Paragraphs */ = {
+			isa = PBXGroup;
+			children = (
+				1556B3A424EC7EC000CD2FF0 /* MHParagraphEnumerator.h */,
+				1556B3A524EC7EC000CD2FF0 /* MHParagraphEnumerator.m */,
+				153CC02223B09B0300ADE1DF /* MHParagraph.h */,
+				153CBFEF23B09AFE00ADE1DF /* MHParagraph.m */,
+				153CC01923B09B0200ADE1DF /* MHTextParagraph.h */,
+				153CBFFA23B09B0000ADE1DF /* MHTextParagraph.m */,
+				15D092AF23E3E3A70020B7A1 /* MHMathParagraph.h */,
+				15D092B023E3E3A70020B7A1 /* MHMathParagraph.m */,
+			);
+			path = Paragraphs;
+			sourceTree = "<group>";
+		};
+		15563D4024F37A8700A9A6E2 /* Styling classes */ = {
+			isa = PBXGroup;
+			children = (
+				15AEEE9C24DC9B0A00377668 /* MHStyledTextWrapper.h */,
+				15AEEE9D24DC9B0A00377668 /* MHStyledTextWrapper.m */,
+				15743E4124E1CA21001583D1 /* MHStyledMathWrapper.h */,
+				15743E4224E1CA21001583D1 /* MHStyledMathWrapper.m */,
+				1512131226BD009D00D48D6D /* MHTextSubstitutionWrapper.h */,
+				1512131326BD009D00D48D6D /* MHTextSubstitutionWrapper.m */,
+			);
+			path = "Styling classes";
+			sourceTree = "<group>";
+		};
+		156109C0249C4564004B5623 /* xib files */ = {
+			isa = PBXGroup;
+			children = (
+				15907ED123AFD60900278DCD /* MHNotebook.xib */,
+				15907ED623AFD60A00278DCD /* MainMenu.xib */,
+				1587D8B823B175B200837721 /* MathFontEditor.xib */,
+				15B7BF5F24F9994C0056B926 /* MHNotebookConfigurationSheet.xib */,
+				157D1AE22539FC75001B6FC2 /* AssetLibrary.xib */,
+				15F0544B26B33522006814C4 /* IssueReporter.xib */,
+				15BF9A7227155AEA00D9EE2F /* ConfigurationWindow.xib */,
+				15E87DD3275E89B500163348 /* PreferencesWindow.xib */,
+			);
+			name = "xib files";
+			sourceTree = "<group>";
+		};
+		156109C2249C477E004B5623 /* Notebooks */ = {
+			isa = PBXGroup;
+			children = (
+				15907ECE23AFD60900278DCD /* MHNotebook.h */,
+				15907ECF23AFD60900278DCD /* MHNotebook.m */,
+				15B7BF6124F9A0D70056B926 /* MHNotebookConfigurationPanelController.h */,
+				15B7BF6224F9A0D70056B926 /* MHNotebookConfigurationPanelController.m */,
+				1569E3D12748E3AB007F4747 /* MHNotebookConfiguration.h */,
+				1569E3D22748E3AB007F4747 /* MHNotebookConfiguration.m */,
+				157D1ADC2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.h */,
+				157D1ADD2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.m */,
+				152FD53E2712539B00231138 /* MHNotebook+ExportingAndPrinting.h */,
+				152FD53F2712539B00231138 /* MHNotebook+ExportingAndPrinting.m */,
+				157D1AE4253A1AC1001B6FC2 /* MHAssetLibraryController.h */,
+				157D1AE5253A1AC1001B6FC2 /* MHAssetLibraryController.m */,
+				157AD9F72495D07300EAF5C8 /* MHNotebookPage.h */,
+				157AD9F82495D07300EAF5C8 /* MHNotebookPage.m */,
+				153CC00023B09B0000ADE1DF /* MHPageViewerView.h */,
+				153CC01323B09B0200ADE1DF /* MHPageViewerView.m */,
+				15700C6C23D1F7B8005FCFD2 /* MHSpriteKitScene.h */,
+				15700C6D23D1F7B8005FCFD2 /* MHSpriteKitScene.m */,
+				15F38BDA26C7A60600C91AEC /* Help notebooks */,
+				156439CC23DD64A4000CF9FC /* Source code editing view */,
+			);
+			name = Notebooks;
+			sourceTree = "<group>";
+		};
+		156439CC23DD64A4000CF9FC /* Source code editing view */ = {
+			isa = PBXGroup;
+			children = (
+				153CC00223B09B0000ADE1DF /* MHSourceCodeTextView.h */,
+				153CBFEA23B09AFE00ADE1DF /* MHSourceCodeTextView.m */,
+				159FB01823CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.h */,
+				159FB01923CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.m */,
+				158AE85C268DA5790022721C /* MHSourceCodeTextView+TouchBar.h */,
+				158AE85D268DA5790022721C /* MHSourceCodeTextView+TouchBar.m */,
+				15935F1923C3863B00675ECE /* MHSourceCodeGutterView.h */,
+				15935F1A23C3863B00675ECE /* MHSourceCodeGutterView.m */,
+				156439C923DD6497000CF9FC /* MHSourceCodeTextStorage.h */,
+				156439CA23DD6497000CF9FC /* MHSourceCodeTextStorage.m */,
+				1531AA4F26B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.h */,
+				1531AA5026B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.m */,
+				1531AA5226B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.h */,
+				1531AA5326B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.m */,
+				1579727926BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.h */,
+				1579727A26BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.m */,
+				15CB4BC2275E9B5900AD0A25 /* MHSourceCodeEditorTheme.h */,
+				15CB4BC3275E9B5900AD0A25 /* MHSourceCodeEditorTheme.m */,
+				15CB4BC5275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.h */,
+				15CB4BC6275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.m */,
+			);
+			name = "Source code editing view";
+			sourceTree = "<group>";
+		};
+		157D1AE9253A1E75001B6FC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				154ABEC5280F0C880068E053 /* madhat help.madhathelp */,
+				150EF6D6280E194F00099F65 /* madhat-eula.pdf */,
+				150EF6D4280E193500099F65 /* acknowledgements.pdf */,
+				151255372721F55400AF6D2D /* bundled-fonts */,
+				151255352721F54500AF6D2D /* math-kerning */,
+				151EE17427058FAF00A2C4B9 /* Credits.rtf */,
+				153CC01A23B09B0200ADE1DF /* standard.mhatpkg */,
+				1584AC3426AA98150014A06A /* defaultconfigurationcode.txt */,
+				150181F224A71A4900D63678 /* colors.plist */,
+				150173922685A388002A80D8 /* default-editor-themes.plist */,
+				157E1B6C269E0A6C004B0DC0 /* codetemplates.plist */,
+				1564794C2540D60A001BD858 /* missing-image.png */,
+				1564794D2540D60A001BD858 /* missing-imagex2.png */,
+				154700D727271C3F007793A5 /* madhat-logo-small.png */,
+				154700D827271C3F007793A5 /* madhat-logo-smallx2.png */,
+				157D5CC32717F7B500DE9FBE /* confstrings.rtf */,
+				152EFC162718B930000FB4A5 /* confintrotext.rtf */,
+				1537A0182793FE3E004CF8E8 /* themes.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1584AC3326A913FC0014A06A /* Context managers */ = {
+			isa = PBXGroup;
+			children = (
+				15DFC40524FD6E5E00568503 /* MHTypesettingContextManager */,
+				1527559C24AA200600E6419C /* MHReformattingContextManager.h */,
+				1527559D24AA200600E6419C /* MHReformattingContextManager.m */,
+				154C2DAA2773DC6400E0C8BB /* MHPDFRenderingContextManager.h */,
+				154C2DAB2773DC6400E0C8BB /* MHPDFRenderingContextManager.m */,
+			);
+			path = "Context managers";
+			sourceTree = "<group>";
+		};
+		158E6E1324C2447C0010CFD1 /* Style classes */ = {
+			isa = PBXGroup;
+			children = (
+				159822BB25001B1000026AA2 /* MHStyle.h */,
+				159822BC25001B1000026AA2 /* MHStyle.m */,
+				1536CC9B23E275A30060F9AE /* MHTypingStyle.h */,
+				1536CC9C23E275A30060F9AE /* MHTypingStyle.m */,
+				15B758B223FA2AD200142A89 /* MHParagraphStyle.h */,
+				15B758B323FA2AD200142A89 /* MHParagraphStyle.m */,
+				158E6E1424C251860010CFD1 /* MHGraphicsStyle.h */,
+				158E6E1524C251860010CFD1 /* MHGraphicsStyle.m */,
+				159822C125001B4100026AA2 /* MHListStyle.h */,
+				159822C225001B4100026AA2 /* MHListStyle.m */,
+				159822C425001B4A00026AA2 /* MHBoxStyle.h */,
+				159822C525001B4A00026AA2 /* MHBoxStyle.m */,
+			);
+			name = "Style classes";
+			sourceTree = "<group>";
+		};
+		15907EBF23AFD60900278DCD = {
+			isa = PBXGroup;
+			children = (
+				15907ECA23AFD60900278DCD /* MHat */,
+				15907EC923AFD60900278DCD /* Products */,
+				152FD53B271252CA00231138 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		15907EC923AFD60900278DCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				15907EC823AFD60900278DCD /* MadHat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		15907ECA23AFD60900278DCD /* MHat */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFFF23B09B0000ADE1DF /* MadHat.h */,
+				159066C4273B2B8F00E586EF /* MHUserDefaults.h */,
+				157D1ADF2539E677001B6FC2 /* MHTypographyConstants.h */,
+				156109C0249C4564004B5623 /* xib files */,
+				153CC04B23B09B1100ADE1DF /* Classes */,
+				153CC04E23B09BC200ADE1DF /* Housekeeping */,
+				157D1AE9253A1E75001B6FC2 /* Resources */,
+			);
+			path = MHat;
+			sourceTree = "<group>";
+		};
+		159F57C924B7A56D00967258 /* Atom classes */ = {
+			isa = PBXGroup;
+			children = (
+				159F57D024B7C84F00967258 /* MHTextAtom.h */,
+				159F57D124B7C84F00967258 /* MHTextAtom.m */,
+				153807BE24B8D03A00CD2EA9 /* MHGlyphAtom.h */,
+				153807BF24B8D03A00CD2EA9 /* MHGlyphAtom.m */,
+				153807B124B8B14A00CD2EA9 /* MHMathAtom.h */,
+				153807B224B8B14A00CD2EA9 /* MHMathAtom.m */,
+				1549BC4824B916680037A383 /* MHMathGlyphAtom.h */,
+				1549BC4924B916680037A383 /* MHMathGlyphAtom.m */,
+				1549BC4C24B98D110037A383 /* MHMultiformMathAtom.h */,
+				1549BC4D24B98D110037A383 /* MHMultiformMathAtom.m */,
+				15223D0024BD239B00602177 /* MHRichTextAtom.h */,
+				15223D0124BD239B00602177 /* MHRichTextAtom.m */,
+				158CB8DF2748244B00DA14BD /* MHExportedPageNumberExpression.h */,
+				158CB8E02748244B00DA14BD /* MHExportedPageNumberExpression.m */,
+			);
+			name = "Atom classes";
+			sourceTree = "<group>";
+		};
+		15AC4D7D24CC78F900297139 /* Graphics classes */ = {
+			isa = PBXGroup;
+			children = (
+				158E6E0C24C1F2870010CFD1 /* MHGraphicsCanvas.h */,
+				158E6E0D24C1F2870010CFD1 /* MHGraphicsCanvas.m */,
+				158E6E0F24C21C8D0010CFD1 /* MHGraphicsCommand.h */,
+				158E6E1024C21C8D0010CFD1 /* MHGraphicsCommand.m */,
+				15AC4D7A24CC78DC00297139 /* MHGraphicsPrimitive.h */,
+				15AC4D7B24CC78DC00297139 /* MHGraphicsPrimitive.m */,
+				154B36D324DCEC240085C7FC /* MHPenGraphicsCommand.h */,
+				154B36D424DCEC240085C7FC /* MHPenGraphicsCommand.m */,
+				154B36D024DCEADD0085C7FC /* MHPenGraphicsPrimitive.h */,
+				154B36D124DCEADD0085C7FC /* MHPenGraphicsPrimitive.m */,
+				15CB98BF26E11C52007686E1 /* MHGraphicsPlottingPrimitive.h */,
+				15CB98C026E11C52007686E1 /* MHGraphicsPlottingPrimitive.m */,
+				15050C6C24D4C83D00D7A8DF /* MHTransformedExpression.h */,
+				15050C6D24D4C83D00D7A8DF /* MHTransformedExpression.m */,
+				15D687D524D62D1C00FECDD1 /* MHCurveLayoutWrapper.h */,
+				15D687D624D62D1C00FECDD1 /* MHCurveLayoutWrapper.m */,
+				1528C436253D6D180013EE89 /* MHImage.h */,
+				1528C437253D6D180013EE89 /* MHImage.m */,
+				15CA18A126D8C644005E94CB /* MHVideo.h */,
+				15CA18A226D8C644005E94CB /* MHVideo.m */,
+			);
+			name = "Graphics classes";
+			sourceTree = "<group>";
+		};
+		15AFCCCA23C2D03800E3AB81 /* Old stuff */ = {
+			isa = PBXGroup;
+			children = (
+				158AE859268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.h */,
+				158AE85A268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.m */,
+				153CBFD523B09AFD00ADE1DF /* SKSimpleTextNode_Old.h */,
+				153CBFDC23B09AFD00ADE1DF /* SKSimpleTextNode_Old.m */,
+				153807B824B8C01B00CD2EA9 /* MHOldTextualElementNode.h */,
+				153807B924B8C01B00CD2EA9 /* MHOldTextualElementNode.m */,
+				159F57CD24B7C1F900967258 /* MHOldTextNode.h */,
+				159F57CE24B7C1F900967258 /* MHOldTextNode.m */,
+				153807BB24B8C2A400CD2EA9 /* MHOldGlyphNode.h */,
+				153807BC24B8C2A400CD2EA9 /* MHOldGlyphNode.m */,
+				153CBFE223B09AFD00ADE1DF /* MHNewline_Old.h */,
+				153CBFE423B09AFE00ADE1DF /* MHNewline_Old.m */,
+				153CC01723B09B0200ADE1DF /* MHSpace_Old.h */,
+				153CC00523B09B0000ADE1DF /* MHSpace_Old.m */,
+				151EC07023DB3C8700CEFAE8 /* MHFancySpace_Old.h */,
+				151EC07123DB3C8700CEFAE8 /* MHFancySpace_Old.m */,
+				153CC01623B09B0200ADE1DF /* MHTextAtom_Old.h */,
+				153CC00823B09B0100ADE1DF /* MHTextAtom_Old.m */,
+				156E78CC23C175EC00169865 /* MHMultiformMathAtom_Old.h */,
+				156E78CD23C175EC00169865 /* MHMultiformMathAtom_Old.m */,
+				152755A224AB3D9200E6419C /* MHAttributedStringTextAtom_Old.h */,
+				152755A324AB3D9200E6419C /* MHAttributedStringTextAtom_Old.m */,
+				15F7235E23C7D9BB0093AE14 /* MHMathAtom_Old.h */,
+				15F7235F23C7D9BB0093AE14 /* MHMathAtom_Old.m */,
+				153CC01F23B09B0300ADE1DF /* MHMathAtom+MHCommand_Old.h */,
+				153CC01823B09B0200ADE1DF /* MHMathAtom+MHCommand_Old.m */,
+				153CBFCE23B09A6500ADE1DF /* SKUtilities */,
+			);
+			name = "Old stuff";
+			sourceTree = "<group>";
+		};
+		15DC3C5E24ACFA1600059A54 /* Math formatting classes */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFE823B09AFE00ADE1DF /* MHDecoratedExpression.h */,
+				153CBFEB23B09AFE00ADE1DF /* MHDecoratedExpression.m */,
+				15F9B97423CA4D1900CF0E28 /* MHBracket.h */,
+				15F9B97523CA4D1900CF0E28 /* MHBracket.m */,
+				153CC00423B09B0000ADE1DF /* MHFraction.h */,
+				153CBFF023B09AFF00ADE1DF /* MHFraction.m */,
+				153CBFE623B09AFE00ADE1DF /* MHRadical.h */,
+				153CBFE023B09AFD00ADE1DF /* MHRadical.m */,
+				153CC02123B09B0300ADE1DF /* MHScriptedExpression.h */,
+				153CC00923B09B0100ADE1DF /* MHScriptedExpression.m */,
+				15E44865252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.h */,
+				15E44866252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.m */,
+				15C6329C26CB98850052922D /* MHMultiScriptedExpression.h */,
+				15C6329D26CB98850052922D /* MHMultiScriptedExpression.m */,
+			);
+			name = "Math formatting classes";
+			sourceTree = "<group>";
+		};
+		15DFC40524FD6E5E00568503 /* MHTypesettingContextManager */ = {
+			isa = PBXGroup;
+			children = (
+				153CBFDD23B09AFD00ADE1DF /* MHTypesettingContextManager.h */,
+				153CBFDA23B09AFD00ADE1DF /* MHTypesettingContextManager.m */,
+				15DFC3FB24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.h */,
+				15DFC3FC24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.m */,
+				15DFC3FE24FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.h */,
+				15DFC3FF24FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.m */,
+				15DFC40124FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.h */,
+				15DFC40224FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.m */,
+				159822C725004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.h */,
+				159822C825004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.m */,
+				15DFC40624FDB48B00568503 /* MHTypesettingState.h */,
+				15DFC40724FDB48B00568503 /* MHTypesettingState.m */,
+				157D1AE12539E709001B6FC2 /* MHStyleIncludes.h */,
+			);
+			name = MHTypesettingContextManager;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		15EC3BB826940F9C0020BA37 /* SpriteKit-Easing */ = {
+			isa = PBXGroup;
+			children = (
+				15EC3BBB26940FAB0020BA37 /* easing.c */,
+				15EC3BBC26940FAB0020BA37 /* easing.h */,
+				15EC3BBA26940FAB0020BA37 /* EasingDeclarations.h */,
+				15EC3BB926940FAB0020BA37 /* SKEase.h */,
+				15EC3BBD26940FAB0020BA37 /* SKEase.m */,
+			);
+			path = "SpriteKit-Easing";
+			sourceTree = "<group>";
+		};
+		15F38BDA26C7A60600C91AEC /* Help notebooks */ = {
+			isa = PBXGroup;
+			children = (
+				15F3949D26C0F6CC0074EAD0 /* MHHelpNotebook.h */,
+				15F3949E26C0F6CC0074EAD0 /* MHHelpNotebook.m */,
+				156CF00526C22B080057ADF7 /* MHHelpNotebookSearchField.h */,
+				156CF00626C22B080057ADF7 /* MHHelpNotebookSearchField.m */,
+			);
+			path = "Help notebooks";
+			sourceTree = "<group>";
+		};
+		15F38BDE26C7A66900C91AEC /* Issue reporter */ = {
+			isa = PBXGroup;
+			children = (
+				15F38BDB26C7A65C00C91AEC /* MHIssueReporterWindowController.h */,
+				15F38BDC26C7A65C00C91AEC /* MHIssueReporterWindowController.m */,
+				155E1B7A26C859B9007416BB /* MHResourceDroppingView.h */,
+				155E1B7B26C859B9007416BB /* MHResourceDroppingView.m */,
+			);
+			path = "Issue reporter";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		15907EC723AFD60900278DCD /* MadHat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15907EDF23AFD60A00278DCD /* Build configuration list for PBXNativeTarget "MadHat" */;
+			buildPhases = (
+				15907EC423AFD60900278DCD /* Sources */,
+				15907EC523AFD60900278DCD /* Frameworks */,
+				15907EC623AFD60900278DCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MadHat;
+			productName = MHat;
+			productReference = 15907EC823AFD60900278DCD /* MadHat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		15907EC023AFD60900278DCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Dan Romik";
+				TargetAttributes = {
+					15907EC723AFD60900278DCD = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 15907EC323AFD60900278DCD /* Build configuration list for PBXProject "MadHat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 15907EBF23AFD60900278DCD;
+			productRefGroup = 15907EC923AFD60900278DCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15907EC723AFD60900278DCD /* MadHat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		15907EC623AFD60900278DCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151255362721F54500AF6D2D /* math-kerning in Resources */,
+				151EE17527058FAF00A2C4B9 /* Credits.rtf in Resources */,
+				15B7BF6024F9994C0056B926 /* MHNotebookConfigurationSheet.xib in Resources */,
+				15907ED523AFD60A00278DCD /* Assets.xcassets in Resources */,
+				1587D8B923B175B200837721 /* MathFontEditor.xib in Resources */,
+				15BF9A7327155AEA00D9EE2F /* ConfigurationWindow.xib in Resources */,
+				157E1B6D269E0A6C004B0DC0 /* codetemplates.plist in Resources */,
+				1537A0192793FE3E004CF8E8 /* themes.png in Resources */,
+				153CBFD323B09A9000ADE1DF /* SKUtilities2.xcassets in Resources */,
+				1584AC3526AA98150014A06A /* defaultconfigurationcode.txt in Resources */,
+				15E87DD4275E89B500163348 /* PreferencesWindow.xib in Resources */,
+				154700DA27271C3F007793A5 /* madhat-logo-smallx2.png in Resources */,
+				1564794E2540D60A001BD858 /* missing-image.png in Resources */,
+				15F0544C26B33522006814C4 /* IssueReporter.xib in Resources */,
+				154700D927271C3F007793A5 /* madhat-logo-small.png in Resources */,
+				150EF6D7280E194F00099F65 /* madhat-eula.pdf in Resources */,
+				154ABEC6280F0C880068E053 /* madhat help.madhathelp in Resources */,
+				15907ED323AFD60900278DCD /* MHNotebook.xib in Resources */,
+				150181F324A71A4900D63678 /* colors.plist in Resources */,
+				1564794F2540D60A001BD858 /* missing-imagex2.png in Resources */,
+				150EF6D5280E193500099F65 /* acknowledgements.pdf in Resources */,
+				15907ED823AFD60A00278DCD /* MainMenu.xib in Resources */,
+				153CC04723B09B0300ADE1DF /* standard.mhatpkg in Resources */,
+				157D1AE32539FC75001B6FC2 /* AssetLibrary.xib in Resources */,
+				150173932685A388002A80D8 /* default-editor-themes.plist in Resources */,
+				151255382721F55400AF6D2D /* bundled-fonts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15907EC423AFD60900278DCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1531AA5426B48CC900F706D1 /* MHSourceCodeTextView+Autocomplete.m in Sources */,
+				159822BD25001B1000026AA2 /* MHStyle.m in Sources */,
+				153CC03823B09B0300ADE1DF /* MHTextParagraph.m in Sources */,
+				156411EE2520725200BA825B /* MHBoxCommand.m in Sources */,
+				15F8120726B99C7000AA2B72 /* MHGlyphNode.m in Sources */,
+				153CC02F23B09B0300ADE1DF /* MHDecoratedExpression.m in Sources */,
+				15C6329E26CB98850052922D /* MHMultiScriptedExpression.m in Sources */,
+				158E6E1124C21C8D0010CFD1 /* MHGraphicsCommand.m in Sources */,
+				153CC02823B09B0300ADE1DF /* SKSimpleTextNode_Old.m in Sources */,
+				15AFCCC023C2989700E3AB81 /* MHParser.m in Sources */,
+				15CB4BC4275E9B5900AD0A25 /* MHSourceCodeEditorTheme.m in Sources */,
+				15DFC40324FD4E7C00568503 /* MHTypesettingContextManager+GraphicsStyle.m in Sources */,
+				15907ED023AFD60900278DCD /* MHNotebook.m in Sources */,
+				150039C72716A845007B939F /* MHAppConfigurationWindowController.m in Sources */,
+				157AD9F92495D07300EAF5C8 /* MHNotebookPage.m in Sources */,
+				15B758B423FA2AD200142A89 /* MHParagraphStyle.m in Sources */,
+				15CA18A326D8C644005E94CB /* MHVideo.m in Sources */,
+				152FD5402712539B00231138 /* MHNotebook+ExportingAndPrinting.m in Sources */,
+				157FE04A26DFFA2A00052B05 /* SKVideoNodeWithBugWorkaround.m in Sources */,
+				153902D924BB3FCB001EEE6D /* MHMathFontSystem+ExtensibleSymbols.m in Sources */,
+				1579727B26BF0F0E00A3D3FD /* MHSourceCodeLayoutManager.m in Sources */,
+				15223D0224BD239B00602177 /* MHRichTextAtom.m in Sources */,
+				153CC03123B09B0300ADE1DF /* MHCommand.m in Sources */,
+				15743E4324E1CA21001583D1 /* MHStyledMathWrapper.m in Sources */,
+				15CB4BC7275E9B7000AD0A25 /* MHSourceCodeEditorThemeManager.m in Sources */,
+				15EC3BBF26940FAB0020BA37 /* SKEase.m in Sources */,
+				153807C024B8D03A00CD2EA9 /* MHGlyphAtom.m in Sources */,
+				15F7FC2624D4FDE300964A72 /* MHWrapper.m in Sources */,
+				1595DD7823C8036100A9B4CF /* NSString+MathConversion.m in Sources */,
+				15E23F972694DE040023D18A /* MHSlideFragment.m in Sources */,
+				15CB98BE26E09A0F007686E1 /* MHMathFormulaParser.m in Sources */,
+				15B6B58F26A37C6000A5870C /* MHSlideTransition.m in Sources */,
+				158D0CC626B3CA6C0057828B /* NSSubordinateWindow.m in Sources */,
+				15E44867252D43E5002C5DC8 /* MHAnnotatedHorizontalExtensibleSymbol.m in Sources */,
+				1531AA5126B46A1C00F706D1 /* MHSourceCodeAutocompleteSuggestionsView.m in Sources */,
+				153CC04023B09B0300ADE1DF /* MHScriptedExpression.m in Sources */,
+				15456D74254B997B006FDF20 /* MHConfigurationCommand.m in Sources */,
+				15F8120A26B9A06700AA2B72 /* MHTextualElementNode.m in Sources */,
+				158CB8E12748244B00DA14BD /* MHExportedPageNumberExpression.m in Sources */,
+				151092B224A1B2470046B32A /* BFPageControl.m in Sources */,
+				153CC03023B09B0300ADE1DF /* MHMathFontSystem.m in Sources */,
+				159F57D224B7C84F00967258 /* MHTextAtom.m in Sources */,
+				153CC03523B09B0300ADE1DF /* NSBezierPath+QuartzUtilities.m in Sources */,
+				159C056926CADA0200CC7600 /* MHTestExpression.m in Sources */,
+				153CC04523B09B0300ADE1DF /* MHPageViewerView.m in Sources */,
+				154BE42426C3BAD900195619 /* MHDocumentController.m in Sources */,
+				159822C925004E9F00026AA2 /* MHTypesettingContextManager+ListStyle.m in Sources */,
+				1534908D24F40E370044D35A /* MHWhitespace.m in Sources */,
+				153CC03223B09B0300ADE1DF /* MHParagraph.m in Sources */,
+				15EC3BBE26940FAB0020BA37 /* easing.c in Sources */,
+				15FFE83A23F1AB2600F0F9F6 /* SKNode+MHSomeConvenienceMethods.m in Sources */,
+				153CC02323B09B0300ADE1DF /* MHPackageManager.m in Sources */,
+				156439CB23DD6497000CF9FC /* MHSourceCodeTextStorage.m in Sources */,
+				1512131726BD08A800D48D6D /* NSString+TextSubstitution.m in Sources */,
+				1553D02524D273C700596D99 /* MHProfiler.m in Sources */,
+				15F9B97623CA4D1900CF0E28 /* MHBracket.m in Sources */,
+				1569E3D32748E3AB007F4747 /* MHNotebookConfiguration.m in Sources */,
+				15D65CB126FEF51C002C53D8 /* NSData+Compression.m in Sources */,
+				151AFA9626BB124800ED404B /* MHRenderedGlyphTexture.m in Sources */,
+				15D4178E26CD6502008846A5 /* MHQuotedCodeParagraph.m in Sources */,
+				1512131426BD009D00D48D6D /* MHTextSubstitutionWrapper.m in Sources */,
+				1549BC4E24B98D110037A383 /* MHMultiformMathAtom.m in Sources */,
+				153CC03623B09B0300ADE1DF /* MHExpression.m in Sources */,
+				158A17DB25097E7700D21F0B /* MHAttributesCommand.m in Sources */,
+				15F38BDD26C7A65C00C91AEC /* MHIssueReporterWindowController.m in Sources */,
+				15F09A0224D2ABE5000708E6 /* MHPlaceholderCommand.m in Sources */,
+				1556B3A624EC7EC000CD2FF0 /* MHParagraphEnumerator.m in Sources */,
+				15BCF37F2541FE280076C881 /* MHLink.m in Sources */,
+				15DCD0E426B31309009D1A81 /* NSTableViewWithDeleteShortcut.m in Sources */,
+				157D1ADE2539E5A6001B6FC2 /* MHNotebook+AssetLibrary.m in Sources */,
+				15D092B123E3E3A70020B7A1 /* MHMathParagraph.m in Sources */,
+				153CC03923B09B0300ADE1DF /* MHColorCommand.m in Sources */,
+				15907EDB23AFD60A00278DCD /* main.m in Sources */,
+				15DFC3FD24FD4E4B00568503 /* MHTypesettingContextManager+TypingStyle.m in Sources */,
+				153CC04923B09B0300ADE1DF /* MHFormattingCommand.m in Sources */,
+				158AE85B268D9E3D0022721C /* MHSourceCodeTextView+ColorSchemes_Old.m in Sources */,
+				1528C438253D6D180013EE89 /* MHImage.m in Sources */,
+				15AC4D7C24CC78DC00297139 /* MHGraphicsPrimitive.m in Sources */,
+				153807B324B8B14A00CD2EA9 /* MHMathAtom.m in Sources */,
+				1551DCFB2762B0490049B333 /* NSFileManager+DirectoryLocations.m in Sources */,
+				15D4178B26CD606D008846A5 /* NSAttributedString+QuickLineBreaking.m in Sources */,
+				15C80CC724D36D3800469675 /* MHLinearContainer.m in Sources */,
+				15ED57C8249B299900A8B247 /* MHSlideTransitionCommand.m in Sources */,
+				1501EAC725505536001D6BB9 /* MHCheckboxExpression.m in Sources */,
+				15050C6E24D4C83D00D7A8DF /* MHTransformedExpression.m in Sources */,
+				159822C625001B4A00026AA2 /* MHBoxStyle.m in Sources */,
+				1501EAC4254FEB91001D6BB9 /* MHCheckboxNode.m in Sources */,
+				158AE85E268DA5790022721C /* MHSourceCodeTextView+TouchBar.m in Sources */,
+				15521B0926B669C400723F64 /* MHTextNode.m in Sources */,
+				15D687DA24D7243900FECDD1 /* DRSmartBezierPath.m in Sources */,
+				15743E3D24DEE081001583D1 /* MHListCommand.m in Sources */,
+				159822C325001B4100026AA2 /* MHListStyle.m in Sources */,
+				159F57CF24B7C1F900967258 /* MHOldTextNode.m in Sources */,
+				154B36D224DCEADD0085C7FC /* MHPenGraphicsPrimitive.m in Sources */,
+				158E6E1624C251860010CFD1 /* MHGraphicsStyle.m in Sources */,
+				15F3949F26C0F6CC0074EAD0 /* MHHelpNotebook.m in Sources */,
+				1542E81D24ADC88700183BA5 /* MHMathFontEditorController.m in Sources */,
+				153CC04423B09B0300ADE1DF /* MHHorizontalLayoutContainer.m in Sources */,
+				1527559E24AA200600E6419C /* MHReformattingContextManager.m in Sources */,
+				15AFCCC623C2A42C00E3AB81 /* MHParser+TextMode.m in Sources */,
+				1528C43F253EB3CA0013EE89 /* NSImageViewWithOutboundDragging.m in Sources */,
+				153CC04823B09B0300ADE1DF /* MHMathFontsLibraryEditingManager.m in Sources */,
+				154C2DAC2773DC6400E0C8BB /* MHPDFRenderingContextManager.m in Sources */,
+				1536CC9D23E275A30060F9AE /* MHTypingStyle.m in Sources */,
+				1558C3F326B7BFAB00A0AD97 /* MHGlyphManager.m in Sources */,
+				15FAA4E024AF131E005B090B /* NSTableViewWitkKeyPressDelegation.m in Sources */,
+				15AEEE9E24DC9B0A00377668 /* MHStyledTextWrapper.m in Sources */,
+				15700C6E23D1F7B8005FCFD2 /* MHSpriteKitScene.m in Sources */,
+				154B36D524DCEC240085C7FC /* MHPenGraphicsCommand.m in Sources */,
+				156CF00726C22B080057ADF7 /* MHHelpNotebookSearchField.m in Sources */,
+				15D65CAE26FEF3CB002C53D8 /* NSURL+Compression.m in Sources */,
+				157D1AE6253A1AC1001B6FC2 /* MHAssetLibraryController.m in Sources */,
+				1546AF3E277CF4C10026476F /* MHInlineMathContainer.m in Sources */,
+				153807BA24B8C01B00CD2EA9 /* MHOldTextualElementNode.m in Sources */,
+				159FB01A23CE7717003908FF /* MHSourceCodeTextView+UserEditingHandler.m in Sources */,
+				15D687D724D62D1C00FECDD1 /* MHCurveLayoutWrapper.m in Sources */,
+				15DFC40824FDB48B00568503 /* MHTypesettingState.m in Sources */,
+				1549BC4A24B916680037A383 /* MHMathGlyphAtom.m in Sources */,
+				15AFCCC923C2A46F00E3AB81 /* MHParser+MathMode.m in Sources */,
+				154C8F942555E81000DDD68F /* MHLeftCenterRightExpressionsLine.m in Sources */,
+				151EC07223DB3C8700CEFAE8 /* MHFancySpace_Old.m in Sources */,
+				153CC04A23B09B0300ADE1DF /* MHMiscCommand.m in Sources */,
+				153CC04123B09B0300ADE1DF /* MHPackage.m in Sources */,
+				15A2EA1023BA62DD008C7606 /* SKUShapeNode.m in Sources */,
+				153CC03C23B09B0300ADE1DF /* MHVerticalLayoutContainer.m in Sources */,
+				15935F1B23C3863B00675ECE /* MHSourceCodeGutterView.m in Sources */,
+				153CC02A23B09B0300ADE1DF /* MHRadical.m in Sources */,
+				153807BD24B8C2A400CD2EA9 /* MHOldGlyphNode.m in Sources */,
+				15B7BF6324F9A0D70056B926 /* MHNotebookConfigurationPanelController.m in Sources */,
+				15368E8C24D0BEAF00393DE8 /* MHContainer.m in Sources */,
+				15CB98C126E11C52007686E1 /* MHGraphicsPlottingPrimitive.m in Sources */,
+				15E04D8226BFBE4B0089A243 /* NSScroller+KnobStyleExtension.m in Sources */,
+				155E1B7C26C859B9007416BB /* MHResourceDroppingView.m in Sources */,
+				153CC03323B09B0300ADE1DF /* MHFraction.m in Sources */,
+				15907ECD23AFD60900278DCD /* AppDelegate.m in Sources */,
+				153CC03B23B09B0300ADE1DF /* MHTable.m in Sources */,
+				153CC02E23B09B0300ADE1DF /* MHSourceCodeTextView.m in Sources */,
+				15DFC40024FD4E6400568503 /* MHTypesettingContextManager+ParagraphStyle.m in Sources */,
+				1598A0E524B5231300CEAE17 /* MHMathFontManager.m in Sources */,
+				153CC02623B09B0300ADE1DF /* MHTypesettingContextManager.m in Sources */,
+				158E6E0E24C1F2870010CFD1 /* MHGraphicsCanvas.m in Sources */,
+				1588FD7C26BBB55F00A7103E /* MHQuotedCodeExpression.m in Sources */,
+				15E87DD7275E8C9500163348 /* MHPreferencesWindowController.m in Sources */,
+				159F57CC24B7BDDD00967258 /* MHShapeNode.m in Sources */,
+				152755A424AB3D9200E6419C /* MHAttributedStringTextAtom_Old.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		15907ED123AFD60900278DCD /* MHNotebook.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15907ED223AFD60900278DCD /* Base */,
+			);
+			name = MHNotebook.xib;
+			sourceTree = "<group>";
+		};
+		15907ED623AFD60A00278DCD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15907ED723AFD60A00278DCD /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		15907EDD23AFD60A00278DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = MadHat;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		15907EDE23AFD60A00278DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = MadHat;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		15907EE023AFD60A00278DCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CODE_SIGN_ENTITLEMENTS = MHat/MHat.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9BCV945X8T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = MHat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = design.madhat.madhat;
+				PRODUCT_NAME = MadHat;
+				PROVISIONING_PROFILE_SPECIFIER = "MadHat Provisioning Profile";
+			};
+			name = Debug;
+		};
+		15907EE123AFD60A00278DCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				CODE_SIGN_ENTITLEMENTS = MHat/MHat.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9BCV945X8T;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
+				INFOPLIST_FILE = MHat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = design.madhat.madhat;
+				PRODUCT_NAME = MadHat;
+				PROVISIONING_PROFILE_SPECIFIER = "MadHat Provisioning Profile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		15907EC323AFD60900278DCD /* Build configuration list for PBXProject "MadHat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15907EDD23AFD60A00278DCD /* Debug */,
+				15907EDE23AFD60A00278DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15907EDF23AFD60A00278DCD /* Build configuration list for PBXNativeTarget "MadHat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15907EE023AFD60A00278DCD /* Debug */,
+				15907EE123AFD60A00278DCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 15907EC023AFD60900278DCD /* Project object */;
+}

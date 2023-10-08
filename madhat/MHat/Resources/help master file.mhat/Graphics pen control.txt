@@ -1,0 +1,62 @@
+⌘header⟪Graphics pen control commands⟫
+
+The ⌘madhat logo． graphics environment supports a "pen drawing" model, also known as ⌘hyperlink⟪https://en.wikipedia.org/wiki/Turtle_graphics；turtle graphics⟫. In this model, you give drawing commands to a virtual pen that has a position and a direction. You can tell the pen to move forward back, to rotate to the left or right, etc.
+
+Pen graphics commands are classified into pen ⌘italic⟪drawing⟫ commands, described on this page, and a separate class of ⌘intralink⟪Graphics pen control；pen control commands⟫ described on a separate help page.
+
+
+⌘begin list．
+
+* 【⌘pen up．】
+
+Lift the pen up (i.e., turn off drawing when the pen moves)
+
+* 【⌘pen down．】
+
+Lower the pen (i.e., turn on drawing when the pen moves)
+
+* 【⌘pen direction⟪⁓x；y⁓⟫】
+
+Set the pen direction to a specified vector
+
+* 【⌘pen angle⟪⁓angle⁓⟫】
+
+Set the pen direction to a specified angle relative to the positive M̂⟪x⟫ axis, in degrees. The initial angle is M̂⟪90⟫ degrees (that is, the pen is turned north).
+
+* 【⌘turn pen left⟪⁓angle⁓⟫】
+
+Rotate the pen direction to the left by a specified angle, in degrees
+
+* 【⌘turn pen right⟪⁓angle⁓⟫】
+
+Rotate the pen direction to the right by a specified angle, in degrees
+
+* 【⌘turn pen north．】
+【⌘turn pen south．】
+【⌘turn pen east．】
+【⌘turn pen west．】
+【⌘turn pen northeast．】
+【⌘turn pen northwest．】
+【⌘turn pen southeast．】
+【⌘turn pen southwest．】
+
+Turn the pen to the given compass direction
+
+
+
+⌘end list．
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Graphics canvasses⟫
+
+* ⌘intralink⟪Graphics drawing；Graphics drawing commands⟫
+
+* ⌘intralink⟪Graphics styling；Graphics styling commands⟫
+
+* ⌘intralink⟪Graphics pen drawing；Graphics pen drawing commands⟫
+
+⌘end list．

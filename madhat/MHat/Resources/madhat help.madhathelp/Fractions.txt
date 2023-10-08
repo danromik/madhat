@@ -1,0 +1,49 @@
+⌘header⟪Fractions⟫
+
+
+⌘begin list．
+
+* 〖⌘fraction⟪⁓numerator⁓；⁓denominator⁓⟫〗
+〖⌘frac⟪⁓numerator⁓；⁓denominator⁓⟫〗
+
+A fraction
+
+* A shorthand notation for entering fractions: 〖⁓numerator⁓//⁓⁓denominator⁓〗  ％ added a fake begin annotation character here to trick the parser into getting out of the quick expression state. (Technically this is a minor parser bug that should be fixed at some point.)
+
+⌘end list．
+
+⌘subheader⟪Example⟫
+
+〖tan x = ⌘frac⟪sin x；cos x⟫〗
+
+M̂: tan x = ⌘frac⟪sin x；cos x⟫
+
+
+
+⌘subheader⟪Related commands⟫
+
+⌘begin list．
+
+* 〖⌘quasifraction⟪⁓numerator⁓；⁓denominator⁓⟫〗
+
+Typeset exactly like a fraction, but the horizontal fraction line is not drawn.
+
+* 〖⌘binomial⟪⁓n⁓；⁓k⁓⟫〗
+〖⌘binom⟪⁓n⁓；⁓k⁓⟫〗
+
+A binomial coefficient M̂⟪⌘binomial⟪n；k⟫⟫
+
+* 〖⌘continued fraction⟪⁓n_1⁓；⁓n_2⁓；⁓...⁓；⁓n_k⁓⟫〗
+〖⌘contfrac⟪⁓n_1⁓；⁓n_2⁓；⁓...⁓；⁓n_k⁓⟫〗
+
+A continued fraction M̂⟪⌘continued fraction⟪n_1；n_2；...；n_k⟫⟫
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

@@ -1,0 +1,87 @@
+⌘header⟪Lists and outlining⟫
+
+⌘madhat logo． supports ordered and unordered lists, including nested lists. Lists also function as ⌘hyperlink⟪https://en.wikipedia.org/wiki/Outliner；outliner⟫ structures that can be dynamically collapsed and expanded.
+
+The syntax for lists and list items is as follows:
+
+⌘begin list．
+
+* 【⌘begin list．】
+
+Start a new list or sublist. This command should appear on its own paragraph with no additional content.
+
+* 【⌘end list．】
+
+Close the current list or sublist. This command should appear on its own paragraph with no additional content.
+
+* 【* 】
+
+Start a new unordered list item. The code 【* 】 (an asterisk followed by a space) must be at the beginning of a code paragraph in order to be interpreted as a list item command.
+
+* 【*. 】
+
+Start a new ordered list item. The code 【*. 】 (an asterisk followed by a period followed by a space) must be at the beginning of a code paragraph in order to be interpreted as a list item command.
+
+⌘end list．
+
+⌘subheader⟪Lists as outliners⟫
+
+When you click on the marker of a list item (e.g., a bullet, or the number marking an item in an ordered list), the content of the item will toggle between the collapsed and expanded state. The default behavior for collapsing is to hide all the content below the opening paragraph of the item, up to the beginning of the next list item or to the closing of the current list or sublist. This behavior can be modified by adding a 【⌘collapsehere.】 command somewhere in the opening paragraph of the item.
+
+⌘begin list．
+
+* 【⌘collapse here．】
+
+Marks the point in the content of a list item beyond which the item's content will collapse when the item is clicked.
+
+⌘end list．
+
+
+
+
+⌘subheader⟪Example⟫
+
+Here is an example of a hierarchical list. Try clicking on the item markers to experiment with the outliner feature.
+
+There are many types of birds in Australia, including:
+
+⌘begin list．
+
+*. nocturnal birds
+
+⌘begin list．
+
+*. frogmouths
+
+Frogmouths are named for their large flattened hooked bill and huge frog-like gape, which they use to capture insects. Their flight is weak. They rest horizontally on branches during the day, camouflaged by their cryptic plumage. Up to three white eggs are laid in the fork of a branch, and are incubated by the female at night and the male in the day. The three Podargus species are large frogmouths restricted to Australia and New Guinea, that have massive flat broad bills. 
+
+*. nightjars
+
+Nightjars are medium-sized nocturnal or crepuscular birds in the family Caprimulgidae /ˌkæprɪˈmʌldʒɪdiː/ and order Caprimulgiformes, characterised by long wings, short legs, and very short bills. They are sometimes called goatsuckers, due to the ancient folk tale that they sucked the milk from goats (the Latin for goatsucker is caprimulgus), or bugeaters,[1] their primary source of food being insects. Some New World species are called nighthawks. The English word "nightjar" originally referred to the European nightjar.
+
+Nightjars are found all around the world, with the exception of Antarctica and certain island groups such as Madagascar and the Seychelles. They can be found in a variety of habitats, most commonly the open country with some vegetation. They usually nest on the ground, with a habit of resting and roosting on roads.
+
+
+*. owls
+
+Owls are birds from the order Strigiformes (/ˈstrɪdʒ.ɪˌfɔːr.miz/), which includes over 200 species of mostly solitary and nocturnal birds of prey typified by an upright stance, a large, broad head, binocular vision, binaural hearing, sharp talons, and feathers adapted for silent flight. Exceptions include the diurnal northern hawk-owl and the gregarious burrowing owl.
+
+
+⌘end list．
+
+*. marsh birds
+
+⌘begin list．
+
+*. crakes
+
+*. grebes
+
+*. snipes
+
+⌘end list．
+
+
+⌘end list．
+
+

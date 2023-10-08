@@ -1,0 +1,77 @@
+⌘header⟪Colors⟫
+
+
+⌘subheader⟪Setting colors⟫
+
+⌘begin list．
+
+* 【⌘color⟪⁓color argument⁓⟫】
+【⌘colour⟪⁓color argument⁓⟫】
+
+Set the primary (text) color
+
+* 【⌘highlight color⟪⁓color argument⁓⟫】
+【⌘highlight colour⟪⁓color argument⁓⟫】
+
+Set the text highlight color
+
+* 【⌘box frame color⟪⁓color argument⁓⟫】
+【⌘box frame colour⟪⁓color argument⁓⟫】
+
+Set the frame color for boxes
+
+* 【⌘box background color⟪⁓color argument⁓⟫】
+【⌘box background colour⟪⁓color argument⁓⟫】
+
+Set the background color for boxes
+
+* 【⌘page background color⟪⁓color argument⁓⟫】
+【⌘page background colour⟪⁓color argument⁓⟫】
+
+Set the background color for the page
+
+* 【⌘fill color⟪⁓color argument⁓⟫】
+【⌘fill colour⟪⁓color argument⁓⟫】
+
+Set the fill color for filled graphics shape
+
+* 【⌘stroke color⟪⁓color argument⁓⟫】
+【⌘stroke colour⟪⁓color argument⁓⟫】
+
+Set the stroke color for stroked graphics shapes
+
+
+⌘end list．
+
+
+⌘subsubheader⟪Format for a color⟫ 
+
+Each of the commands above takes a color argument, whose format is specified as either:
+
+⌘begin list．
+
+* the name of a named color such as "【red】", "【gray】", "【orange】", "【teal】", etc.; 
+
+* a block of the form 【⟪⁓red⁓；⁓green⁓；⁓blue⁓⟫】 where each of the three delimited subblocks is a floating point value between 0 and 1, representing the red, green and blue components, respectively;
+
+* a block of the form 【⟪⁓red⁓；⁓green⁓；⁓blue⁓；⁓alpha⁓⟫】 where each of the four delimited subblocks is a floating point value between 0 and 1, representing the red, green, blue and alpha components, respectively.
+
+⌘end list．
+
+⌘subheader⟪Available named colors⟫
+
+＠⟪align←center⟫⌘named colors．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* Some text in blue: ⟪⌘color⟪blue⟫Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.⟫
+
+
+* Some text in orange: ⟪⌘color⟪orange⟫Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.⟫
+
+* Some text highlighted in pink: ⟪⌘highlight color⟪pink⟫⌘highlight⟪Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.⟫⟫
+
+
+⌘end list．

@@ -1,0 +1,29 @@
+⌘header⟪Greek letters⟫
+
+⌘begin list．
+
+* 〖alpha〗, 〖beta〗, 〖gamma〗, 〖delta〗, ..., 〖omega〗.
+
+Lower case Greek letters
+
+* 〖Alpha〗, 〖Beta〗, 〖Gamma〗, 〖Delta〗, ..., 〖Omega〗.
+
+Upper case Greek letters
+
+⌘end list．
+
+You can also type Greek letters by inserting them in the text editor as standard Unicode Greek characters.
+
+⌘subheader⟪Examples⟫
+
+M̂: alpha^2+beta^2 = gamma^2
+⌘newline．
+Gamma(xi)Gamma(1-xi)=⌘frac⟪pi；sin(pi xi)⟫
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

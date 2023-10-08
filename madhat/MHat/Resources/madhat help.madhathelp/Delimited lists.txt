@@ -1,0 +1,11 @@
+⌘header⟪Delimited lists and delimited tables⟫
+
+A delimited list is a ⌘intralink⟪Blocks；block⟫ that takes the form 
+
+【+⟪⁓1st delimited expression⁓；⁓2nd delimited expression⁓；⁓...⁓ ；⁓last delimited expression⁓⟫】
+
+This uses the "primary list delimiter" symbol 【；】. When such a block is passed as an argument to a command, the command can interpret each of the delimited expressions as a separate argument.
+
+In addition to primary list delimiters, an additional delimiter symbol is the "secondary list delimiter" 【＃】 which can be thought of as a "next line" character for specifying two-dimensional arrays. In this way you can succinctly specify tables and matrices for commands that are suitably designed as delimiter-aware. For example, entering 〖⌘matrix⟪1；2；3＃4；5；6⟫〗 in math mode will produce the output:
+
+M̂: ⌘matrix⟪1；2；3＃4；5；6⟫

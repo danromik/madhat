@@ -1,0 +1,177 @@
+⌘header⟪Graphics drawing commands⟫
+
+To draw graphics, you include a list of ⌘bold⟪graphics primitive⟫ commands inside a 【⌘graphics canvas⟪⁓...⁓⟫】 command block. You can also configure the behavior of a graphics primitive by including graphics styling commands before it to modify the graphics style used for drawing the primitive.
+
+Here is a list of the recognized graphics primitives.
+
+
+⌘begin list．
+
+* 【+⌘frame．】
+
+Draw a (stroked) frame around the canvas rectangle
+
+* 【+⌘filled frame．】
+
+Draw a filled frame
+
+* 【+⌘filled stroked frame．】
+
+Draw a filled and stroked frame
+
+* 【+⌘grid⟪⁓x spacing⁓；⁓y spacing⁓⟫】
+
+Draw a grid with the specified M̂⟪x⟫ and M̂⟪y⟫ spacing values
+
+* 【+⌘line⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓...⁓＃⁓point n x⁓；⁓point n y⁓⟫】
+
+Draw a line (aka polyline) connecting the specified sequence of points
+
+* 【+⌘polygon⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓...⁓＃⁓point n x⁓；⁓point n y⁓⟫】
+
+Draw a closed polygon connecting the specified sequence of points
+
+* 【+⌘filled polygon⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓...⁓＃⁓point n x⁓；⁓point n y⁓⟫】
+
+Draw a filled polygon connecting the specified sequence of points
+
+* 【+⌘filled stroked polygon⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓...⁓＃⁓point n x⁓；⁓point n y⁓⟫】
+
+Draw a filled and stroked polygon connecting the specified sequence of points
+
+
+* 【+⌘marker⟪⁓x coordinate⁓；⁓y coordinate⁓⟫】
+
+Draw a marker at the specified point. The marker type can be set using the 【⌘marker type⟪⁓...⁓⟫】 command.
+
+* 【+⌘circle⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓radius⁓⟫】
+
+Draw a circle centered at the specified point, with the given radius
+
+* 【+⌘disk⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓radius⁓⟫】
+
+Draw a disk (filled circle) centered at the specified point, with the given radius
+
+* 【+⌘circle disk⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓radius⁓⟫】
+
+Draw a filled, stroked circle centered at the specified point, with the given radius
+
+* 【+⌘arc⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓radius⁓＃⁓start angle⁓；⁓end angle⁓⟫】
+
+Draw a circular arc centered at the specified point, with the given radius, start angle and end angle
+
+
+* 【+⌘ellipse⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓x radius⁓＃⁓y radius⁓⟫】
+
+Draw an ellipse centered at the specified point, with the given M̂⟪x⟫ and M̂⟪y⟫ radii
+
+* 【+⌘filled ellipse⟪...⟫】
+
+Draw a filled ellipse centered at the specified point, with the given M̂⟪x⟫ and M̂⟪y⟫ radii
+
+* 【+⌘filled stroked ellipse⟪...⟫】
+
+Draw a filled, stroked ellipse centered at the specified point, with the given M̂⟪x⟫ and M̂⟪y⟫ radii
+
+* 【+⌘rectangle⟪⁓corner 1 x⁓；⁓corner 1 y⁓＃⁓corner 2 x⁓；⁓corner 2 y⁓⟫】
+
+Draw a rectangle whose opposing corners are the two specified points
+
+* 【+⌘filled rectangle⟪...⟫】
+
+Draw a filled rectangle whose opposing corners are the two specified points
+
+* 【+⌘filled stroked rectangle⟪...⟫】
+
+Draw a filled, stroked rectangle whose opposing corners are the two specified points
+
+* 【+⌘arrow⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓⟫】
+
+Draw an arrow from the specified 【⁓point 1⁓】 to 【⁓point 2⁓】
+
+
+* 【+⌘bezier⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓point 3 x⁓；⁓point 3 y⁓＃⁓point 4 x⁓；⁓point 4 y⁓⟫】
+【+⌘bézier⟪⁓point 1 x⁓；⁓point 1 y⁓＃⁓point 2 x⁓；⁓point 2 y⁓＃⁓point 3 x⁓；⁓point 3 y⁓＃⁓point 4 x⁓；⁓point 4 y⁓⟫】
+
+Draw a cubic Bézier curve from 【⁓point 1⁓】 to 【⁓point 4⁓⁓】, with 【⁓point 2⁓】 and 【⁓point 3⁓】 serving as control points
+
+* 【+⌘annotation⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓annotation⁓⟫】
+
+Place an annotation with arbitrary content (such as text or a mathematical expression) with its typesetting origin at the specified point
+
+* 【+⌘centered annotation⟪⁓x coordinate⁓；⁓y coordinate⁓＃⁓annotation⁓⟫】
+
+Place an annotation with arbitrary content (such as text or a mathematical expression) with its center the specified point
+
+⌘bold⟪Note.⟫ The 【⌘annotation⟪⁓...⁓⟫】 and 【⌘centered annotation⟪⁓...⁓⟫】 commands can also be used outside of a graphics canvas. In that case the annotation point is interpreted in document coordinates (relative to the current typesetting point) instead of canvas coordinates, but the effect is otherwise the same.
+
+* 【+⌘curved text layout⟪⁓curve specification⁓；⁓text⁓⟫】
+
+Lay out the provided text along the specified curve (entered using standard graphics drawing commands such as 【⌘line⟪⁓...⁓⟫】, 【⌘bezier⟪⁓...⁓⟫】, 【⌘circle⟪⁓...⁓⟫】).
+
+
+
+⌘end list．
+
+⌘subheader⟪Animatable properties⟫
+
+Graphics primitives can animate their shape during a slide transition by wrapping them in a 【⌘slide fragment⟪⁓...⁓⟫】 command and including the optional 【change on transition】 attribute inside an attributes block. Here is a list of the animatable properties for the different graphics primitives.
+
+⌘begin list．
+
+* Animatable properties for 【⌘line⟪⁓...⁓⟫】, 【⌘polygon⟪⁓...⁓⟫】, 【⌘filled polygon⟪⁓...⁓⟫】, and 【⌘filled stroked polygon⟪⁓...⁓⟫】 commands:
+【points】: this property should be specified as a flat list of the M̂⟪x⟫- and M̂⟪y⟫-coordinates of the points of the line or polygon, in the format 【+⁓pt 1 x⁓；⁓pt 1 y⁓；⁓pt 2 x⁓；⁓pt 2 y⁓； ⁓...⁓；⁓pt k x⁓；⁓pt k y⁓】
+
+
+
+* Animatable properties for 【⌘arrow⟪⁓...⁓⟫】 command:
+【start】
+【end】
+
+* Animatable properties for 【⌘rectangle⟪⁓...⁓⟫】 command:
+【corner 1】
+【corner 2】
+
+
+
+* Animatable properties for 【⌘circle⟪⁓...⁓⟫】, 【⌘disk⟪⁓...⁓⟫】】and 【⌘circle disk⟪⁓...⁓⟫】 commands:
+【center】
+【radius】
+
+* Animatable properties for 【⌘ellipse⟪⁓...⁓⟫】, 【⌘filled ellipse⟪⁓...⁓⟫】】and 【⌘filled stroked ellipse⟪⁓...⁓⟫】 commands:
+【center】
+【x radius】
+【y radius】
+
+* Animatable properties for 【⌘arc⟪⁓...⁓⟫】 command:
+【center】
+【radius】
+【start angle】
+【end angle】
+
+* Animatable properties for 【⌘bezier⟪⁓...⁓⟫】 command:
+【point 1】
+【point 2】
+【point 3】
+【point 4】
+
+
+⌘end list．
+
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Graphics canvasses⟫
+
+* ⌘intralink⟪Graphics styling；Graphics styling commands⟫
+
+* ⌘intralink⟪Graphics pen drawing；Graphics pen drawing commands⟫
+
+* ⌘intralink⟪Graphics pen control；Graphics pen control commands⟫
+
+* ⌘intralink⟪Slides；Creating a slide presentation⟫
+
+⌘end list．

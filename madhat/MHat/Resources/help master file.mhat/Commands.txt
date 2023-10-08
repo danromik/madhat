@@ -1,0 +1,63 @@
+⌘header⟪Commands and math keywords⟫
+
+Two main mechanisms for specifying content in ⌘madhat logo． are ⌘bold⟪commands⟫ and ⌘bold⟪math keywords⟫.
+
+⌘subheader⟪Commands⟫
+
+Commands are text strings that start with the command symbol 【⌘】. They can be used in either text mode or math mode (although, depending on their purpose, some commands will be used primarily in text mode and others primarily in math mode), and come in two flavors:
+
+⌘begin list．
+
+* Commands that require no argument follow the syntax: 【+⌘command name．】
+
+that is, the command symbol, followed by the name of the command, followed by the ⌘intralink⟪List of special symbols；"close command" symbol 【．】⟫.
+
+* Commands that take one or more arguments follow the syntax: 【+⌘command name⟪⁓argument block⁓⟫】
+
+⌘end list．
+
+that is, the command symbol, followed by the name of the command, followed by a ⌘intralink⟪Blocks；block⟫ with the argument or arguments. For commands that take more than argument, the arguments are still provided in one block, but are delimited using ⌘intralink⟪Delimited lists；list delimiters⟫.
+
+
+⌘subsubheader⟪Examples⟫
+
+⌘begin list．
+
+* 【⌘bold on．】 turns on bold typing. This command does not take an argument.
+
+* 【⌘bold⟪⁓text to be typed in bold⁓⟫】 will typeset the text provided as an argument in boldface.
+
+* 〖⌘fraction⟪⁓numerator⁓；⁓denominator⁓⟫〗 will typeset a fraction.
+
+⌘end list．
+
+The behavior of a command can in some cases be modified by the inclusion of additional optional arguments called ⌘intralink⟪Attributes；attributes⟫.
+
+
+⌘subheader⟪Math keywords⟫
+
+Math keywords are used in ⌘intralink⟪Typing mathematics；math mode⟫ to typeset mathematical symbols such as Greek letters, the infinity symbol, an integral sign, etc. They are meant to be easy to type, so they consist of just the keyword itself without a preceding command symbol or a trailing command closing symbol. In contrast to command names, keywords cannot contain a space character. 
+
+As an example, entering 〖sum_n a_n cos(2 pi n/3) = beta〗 produces the output
+
+M̂: sum_n a_n cos(2 pi n/3) = beta
+
+Here, the math keywords 〖sum〗, 〖cos〗, 〖pi〗 and 〖beta〗 are recognized.
+
+⌘subheader⟪Aliases⟫
+
+Both commands and math keywords can have an ⌘bold⟪alias⟫, which is an alternative name for the same command. Some examples of commands with aliases are:
+
+⌘begin list．
+
+* The command 【⌘color⟪⁓...⁓⟫】 has the alias 【⌘colour⟪⁓...⁓⟫】
+
+* The math keyword 〖integral〗 has the alias 〖int〗
+
+* The math keyword 〖product〗 has the alias 〖prod〗
+
+* The command 〖⌘binomial⟪⁓...⁓⟫〗 has the alias 〖⌘binom⟪⁓...⁓⟫〗
+
+* The command 【⌘bezier⟪⁓...⁓⟫】 has the alias 【⌘bézier⟪⁓...⁓⟫】
+
+⌘end list．

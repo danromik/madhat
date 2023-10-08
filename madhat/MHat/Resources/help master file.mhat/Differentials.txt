@@ -1,0 +1,43 @@
+⌘header⟪Differentials⟫
+
+⌘begin list．
+
+* 〖da〗, 〖db〗, 〖dc〗, ..., 〖dz〗
+
+Differentials of lower case roman letters
+
+* 〖dA〗, 〖dB〗, 〖dC〗, ..., 〖dZ〗
+
+Differentials of upper case roman letters
+
+* 〖dalpha〗, 〖dbeta〗, 〖dgamma〗, ..., 〖domega〗.
+
+Differentials of lower case Greek letters
+
+* 〖dAlpha〗, 〖dBeta〗, 〖dGamma〗, ..., 〖dOmega〗.
+
+Differentials of upper case Greek letters
+
+* 〖partial〗
+
+Partial derivative sign
+
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+M̂: 
+int_⟪-infty⟫^⟪infty⟫ e^⟪-x^2⟫dx = ⌘sqrt⟪pi⟫
+⌘newline．
+i hbar ⌘frac⟪partial Psi；partial t⟫ = - a⌘frac⟪hbar^2；2m⟫
+⌘frac⟪partial^2 ⌘space⟪0⟫ Psi；partial x^2⟫ + V(x,t)Psi
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

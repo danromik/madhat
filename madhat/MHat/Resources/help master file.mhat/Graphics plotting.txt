@@ -1,0 +1,98 @@
+⌘header⟪Plotting mathematical functions⟫
+
+Within a graphics canvas, you can plot the graph of a mathematical function, specified as an ordinary formula written in standard math mode syntax, using plotting commands.
+
+The sample code found on the ⌘hyperlink⟪https://madhat.design/documentation/；documentation page⟫ of the ⌘madhat logo． website shows various examples of how to use these features.
+
+Below is the syntax for the available plotting commands.
+⌘newline⟪10⟫
+
+
+⌘begin list．
+
+* Plotting a function
+
+⌘begin list．
+
+* 【⌘plot⟪M̂⟪⁓function in math mode⁓⟫⟫】
+
+Plots the graph of a function. The function is assumed to be a function of the variable name M̂⟪x⟫, and M̂⟪x⟫ ranges from 0 to 1.
+
+* 【⌘plot⟪M̂⟪⁓function in math mode⁓⟫；⁓var name⁓⟫】
+
+* 【⌘plot⟪M̂⟪⁓function in math mode⁓⟫；⁓a⁓ < ⁓var name⁓ < ⁓b⁓⟫】
+
+Plots the graph of a function (in the specified variable name, for example "M̂⟪x⟫", or "M̂⟪t⟫"). If a range is provided through the use of the notation 【⁓a⁓ < ⁓var name⁓ < ⁓b⁓⟫】, the plotting variable ranges between the specified values. Otherwise if only the variable name is specified, the variable ranges from 0 to 1.
+
+⌘end list．
+
+* Polar plots:
+【+⌘polar plot⟪M̂⟪⁓function in math mode⁓⟫；⁓a⁓ < ⁓angle var name⁓ < ⁓b⁓⟫】
+
+Inserts a polar plot of a function (in the specified angular variable name) as the angle ranges between the two specified values.
+
+* Parametric plots:【+⌘parametric plot⟪M̂⟪⁓x func. in math mode⁓⟫；M̂⟪⁓y func. in math mode⁓⟫；⁓a⁓ < ⁓var name⁓ < ⁓b⁓⟫】
+
+
+⌘end list．
+
+
+⌘subheader⟪Plots with parameters⟫
+
+When you plot a function, in the simplest example the function will depend only on a single variable, say M̂⟪x⟫, which will be the label of the plotting variable. You can also allow your function to depend on several variables, where one of the variables will be used as the plotting variable, and the other variables have the meaning of ⌘bold⟪parameters⟫. The value of the parameters needs to be specified by including an attributes block inside the plot command. (If the value of a parameter is not specified, it is assumed to be 0.)
+
+As an example, you can plot the function M̂⟪5sin(x)+t⟫ with respect to the variable M̂⟪x⟫, giving the parameter M̂⟪t⟫ the value M̂⟪3⟫, by writing the code【+⌘plot⟪M̂⟪5sin(x)+t⟫％
+＠⟪t←3⟫；％
+-10<x<10％
+＠⟪t←3⟫％
+⟫
+】
+
+One main use case for including parameters in your functions is when you want to create animations in which the value of a parameter is changed continuously; this is described below.
+
+⌘subheader⟪Animating the plot range⟫
+
+The plot range can be animated during a slide transition, by wrapping the plot command inside a 【⌘slide fragment⟪⁓...⁓⟫】 command and adding an attribute animation instruction modifying the 【plot range】 attribute. See the ⌘intralink⟪Slide fragments；slide fragments⟫ help page for details on animating attributes, and see the sample code available online for examples.
+
+⌘subheader⟪Animating plots by changing parameter values⟫
+
+When you include a parameter in the function you are plotting, say M̂⟪t⟫, the label of that parameter becomes an attribute whose value can be animated during a transition between slides on the page. See the ⌘intralink⟪Slide fragments；slide fragments⟫ help page for details on animating attributes, and see the sample code available online for examples showing the use of these animation options.
+
+
+⌘subheader⟪Notes on the formula parser and evaluator⟫
+
+Below are some technical notes on how the formula parser works and what are some of its abilities as well as limitations. Understanding these details may be useful to use the plotting features effectively.
+
+⌘begin list．
+
+* Calculations are done in the 64 bit "double" C data type. Functions are evaluated using the standard C library functions. This implies limitations on the precision and fidelity of plots.
+
+* The formula parser recognizes the 〖⌘frac⟪⁓...⁓；⁓...⁓⟫〗 and 〖⌘sqrt⟪⁓...⁓⟫〗 commands; superscripts (which are interpreted as exponents); the mathematical constants M̂⟪e⟫ and M̂⟪pi⟫ (where M̂⟪pi⟫ is typed in the usual way as 〖pi〗 in math mode, or can be entered directly as the symbol M̂⟪pi⟫ in the source editor); the brackets 〖(〗, 〖)〗, 〖[〗, 〖]〗, 〖{〗, 〖}〗, and absolute value signs 〖|〗. Brackets can also be entered using the 〖⌘left bracket⟪⁓...⁓⟫〗 and 〖⌘right bracket⟪⁓...⁓⟫〗, as described on the ⌘intralink⟪Brackets；brackets⟫ help page.
+
+* The following mathematical functions are recognized: M̂⟪exp⟫, M̂⟪log⟫, M̂⟪ln⟫, M̂⟪sin⟫, M̂⟪cos⟫, M̂⟪tan⟫, M̂⟪arcsin⟫, M̂⟪arccos⟫, M̂⟪arctan⟫.
+
+* Plotting variable and parameter names can be single-letter symbols or multi-letter symbols using Latin letters. They can also be the names of Greek letters. The symbols M̂⟪e⟫ and M̂⟪pi⟫ cannot be used for variable and parameter names since they represent the mathematical constants.
+
+* The formula parser supports implicit (or "implied") multiplication, for example interpreting "M̂⟪3x⟫" as "three times M̂⟪x⟫", and treats the binary operators M̂⟪+⟫ and M̂⟪-⟫ in the usual way as unary operators when they appear at the beginning of a formula or subformula (such as a bracketed expression, or inside a square root).
+
+* The parser respects the standard conventions on order of operations (also known as operator precedence). Implicit multiplication is assigned the same precedence as explicit multiplication and division, so that the expression M̂⟪1/2x⟫ is parsed from left to right and evaluates to "one half times M̂⟪x⟫".
+
+* The vertical bar symbol "M̂⟪|⟫", interpreted as an absolute value bracket, is used both as an opening (left) and closing (right) bracket. To resolve possible ambiguities that may arise as a result in parsing an expression involving such symbols, vertical bars are processed by the formula parser in the following way: if a vertical bar follows a binary operator or a left bracket of any type, or appears at the beginning of the formula (or subformla), it is interpreted as an opening bracket; otherwise, if the vertical bar can be interpreted as a closing bracket in a way that satisfies the matching rules for brackets (i.e., it can be paired in a consistent way with an already scanned vertical bar that was interpreted as an opening bracket), it is interpreted as a closing bracket; and finally, if such a matching does not apply, the vertical bar is interpreted as an opening bracket.
+
+* When entering vertical bars to denote absolute value operations, you can override the behavior described above by explicitly marking a vertical bar as a left bracket or a right bracket, using the 〖⌘left bracket⟪|⟫〗 and 〖⌘right bracket⟪|⟫〗 commands.
+
+* The rules described above make it possible to successfully parse some mathematical expressions which nonetheless may be ambiguous in how they are interpreted by humans. This ambiguity is related to two aspects of the structure of mathematical formulas on which there is no universal agreement regarding how they are to be interpreted:
+
+⌘begin list．
+
+* Expressions such as M̂⟪1/2*x⟫ and M̂⟪1/2x⟫ are understood as "M̂⟪1/(2x)⟫" by some people and M̂⟪(1/2)x⟫ by other people. Which interpretation is more "correct" has been the source of some ⌘hyperlink⟪https://people.math.harvard.edu/~knill/pedagogy/ambiguity/index.html；debate⟫. Technically, the issue is whether a multiplication operator (and even more so the implicit multiplication operator) should be considered as having a higher precedence than the division operator, or the same precedence.
+
+* An expression such as M̂⟪|x|y|z|⟫ lends itself to two possible interpretations, either as "[absolute value of M̂⟪x⟫] times M̂⟪y⟫ times [absolute value of M̂⟪x⟫]" or as "absolute value of [M̂⟪x⟫ times (the absolute value of M̂⟪y⟫) times M̂⟪z⟫". In ordinary mathematical writing, the ambiguity is sometimes resolved by using vertical bars of different heights when an expression involves nested absolute value operations, but the formula parser does not consider this type of information, instead applying the rules mentioned above.
+
+⌘end list．
+
+The recommendation for formulas within ⌘madhat logo． is to be aware of these sources of ambiguities and to avoid plotting expressions containing them (which can easily be done by adding parentheses) even if they define expressions that can be successfully plotted, to avoid confusion.
+
+
+
+⌘end list．

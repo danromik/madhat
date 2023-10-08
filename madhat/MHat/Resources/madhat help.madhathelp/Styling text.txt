@@ -1,0 +1,36 @@
+⌘header⟪Styling text⟫
+
+⌘madhat logo． offers two main mechanisms for styling your text.
+
+⌘begin list．
+
+* Using styling commands that directly affect the styling attributes of your text. These commands are described in the following help pages: 
+
+⌘begin list．
+
+* ⌘intralink⟪Bold text；Bold text formatting⟫
+
+* ⌘intralink⟪Italic text；Italic text formatting⟫ 
+
+* ⌘intralink⟪Text underlining；Underlining⟫
+
+* ⌘intralink⟪Text strikethrough；Strikethrough⟫
+
+* ⌘intralink⟪Text highlighting；Highlighting⟫
+
+* ⌘intralink⟪Text substitutions；Text substitutions⟫
+
+* ⌘intralink⟪Setting fonts⟫
+
+* ⌘intralink⟪Setting the font size⟫
+
+* ⌘intralink⟪Colors⟫
+
+⌘end list．
+
+* You can also define custom named styles in the ⌘intralink⟪Notebook configuration；notebook configuration code⟫ using the 【⌘⌘define style⟪⁓...⁓；⁓...⁓⟫】 configuration command. You can then apply the style to arbitrary blocks of text using the command
+
+【+⌘styled⟪⁓style name⁓；⁓content to style⁓⟫】
+
+
+⌘end list．

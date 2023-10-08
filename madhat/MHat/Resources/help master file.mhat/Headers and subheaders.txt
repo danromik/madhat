@@ -1,0 +1,55 @@
+⌘header⟪Headers and subheaders⟫
+
+Headers can be used to give your document a hierarchical structure with several levels. The default level is called "header"; below it are "subheader", "subsubheader", and "paragraph header". Above the default level is one level called "superheader", which can be used in very long documents (e.g., as chapter headings in a book) but is otherwise unnecessary.
+
+Headers at the header, subheader and subsubheader levels can be clicked to collapse and expand the contents of the section they demarcate.
+
+The commands for headers are:
+
+⌘begin list．
+
+* 【⌘header⟪⁓...header text...⁓⟫】
+
+A header
+
+* 【⌘subheader⟪⁓...subheader text...⁓⟫】
+
+A subheader
+
+* 【⌘subsubheader⟪⁓...subsubheader text...⁓⟫】
+
+A subsubheader
+
+* 【⌘paragraph header⟪⁓...paragraph header text...⁓⟫】
+【⌘paraheader⟪⁓...paragraph header text...⁓⟫】
+
+A paragraph header
+
+* 【⌘superheader⟪⁓...superheader text...⁓⟫】
+
+A superheader
+
+
+
+⌘end list．
+
+The commands for all header types except for paragraph headers should appear on their own paragraph with no additional content.
+
+⌘subheader⟪Customizing header styles⟫
+
+The help page on ⌘intralink⟪Notebook configuration；notebook configuration⟫ explains how to customize the appearance of headers.
+
+
+
+⌘subheader⟪Examples⟫
+
+⌘superheader⟪A superheader⟫
+
+⌘header⟪A header⟫
+
+⌘subheader⟪A subheader⟫
+
+⌘subsubheader⟪A subsubheader⟫
+
+⌘paraheader⟪A paragraph header.⟫ Some text in a paragraph with a header.
+

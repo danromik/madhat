@@ -1,0 +1,183 @@
+⌘header⟪Paragraphs⟫
+
+The word "paragraph" traditionally refers to a logically connected block of content in a document. Here, we wish to make a distinction between ⌘bold⟪code paragraphs⟫, which are contiguous blocks of ⌘madhat logo． code in the editor window that are processed by the app in a particular way; and ⌘bold⟪semantic paragraphs⟫, which are logical blocks of content in the formatted notebook page, and correspond more closely to the traditional notion of a paragraph. 
+
+For notebook content consisting only of text, code paragraphs are in a one-to-one correspondence with semantic paragraphs, so the distinction between the two is not very important. However, for reasons that will be explained below, when your notebook content contains math display, the association between code paragraphs and semantic paragraphs will in general be many-to-one, so it is important to discuss both notions of a paragraph and how one gets mapped into the other.
+
+⌘subheader⟪Code paragraphs⟫
+
+When you enter your code in the editor window, ⌘madhat logo． divides it as you type into ⌘bold⟪code paragraphs⟫, with each code paragraph being marked with a small marker to the left of the code. A code paragraph is terminated with two or more newline characters, and the next paragraph starts at the first non-newline character following those newline characters. The successive newline characters separating code paragraphs are not considered as belonging to any paragraphs.
+
+(By contrast, a single newline character inside a code paragraph will not terminate it but will be considered as part of the content of that paragraph.)
+
+⌘subsubheader⟪The logic behind code paragraphs⟫
+
+The division of code into paragraphs forms a crucial part of ⌘madhat logo．'s parsing and typesetting algorithms, in the following way: each paragraph of code is sent to the ⌘madhat logo． parser for processing that results in a block of content being typeset in the notebook page viewer. This is done for all paragraphs in a page when you open an existing notebook, or incrementally as you type or edit code: for each code editing operation, only the paragraph in which the edit is made gets re-processed, saving the computational work of re-processing the entire page's code. 
+
+(To be even more precise: some edits will affect more than one code paragraph, for example causing two existing paragraphs to coalesce, or splitting a single paragraph into two, or changing the text typing style in a way that propagates to the next paragraphs on your page; ⌘madhat logo．'s algorithm handles that appropriately by processing the minimal number of paragraphs to ensure the correct formatting of your page content.)
+
+
+
+⌘subsubheader⟪Text paragraphs and math paragraphs⟫ 
+
+Code paragraphs are classified as belonging to one of two types: ⌘bold⟪text paragraphs⟫, and ⌘bold⟪math paragraphs⟫. Each of the types is parsed according to different rules and typeset using a different algorithm.
+
+Code paragraphs are parsed as text paragraphs by default. Paragraphs beginning with the paragraph math mode shift prefix 【M̂: 】 (see also: ⌘intralink⟪List of special symbols；special symbols⟫) are parsed as math paragraphs, and are formatted as ⌘bold⟪math displays⟫ (see also: ⌘intralink⟪Typing mathematics；typing mathematics⟫).
+
+⌘subsubheader⟪Attributes of code paragraphs⟫
+
+A code paragraph is considered by the ⌘madhat logo． parser as a type of ⌘intralink⟪Blocks；block⟫, even though it is not surrounded by an open block/close block symbol pair. In particular, you can include in a code paragraph an ⌘intralink⟪Attributes；attributes block⟫ to modify its behavior in the same way that an attributes block can modify the behavior of a command argument block. 
+
+Currently there is only one supported attribute, for specifying the paragraph text alignment type:
+
+⌘begin list．
+
+* 【align←⁓alignment type⁓】
+
+Specifies the paragraph alignment type: 【left】 (the default for text paragraphs), 【right】, or 【center】 (the default for math paragraphs).
+
+⌘end list．
+
+
+
+
+
+⌘subheader⟪Semantic paragraphs⟫
+
+What we call a semantic paragraph corresponds to the traditional notion of a paragraph in a written document: that is, a block of content that occupies its own vertical space on the page and is visually separated from the surrounding content (using paragraph indentation and/or paragraph spacing).
+
+For a page containing only text, each code paragraph will get formatted as a single semantic paragraph. However, when mathematical content is included, the association between code paragraphs and semantic paragraphs becomes more complicated. The reason is that according to the rules of mathematical writing, mathematical displays --- which are the formatted result of a math (code) paragraph --- are considered a part of the semantic paragraph of the text that precedes them, and sometimes (but not always) of the text that follows them. For example, the following content constitutes a single semantic paragraph:
+
+
+⌘begin list．
+
+    A power series is a function of a complex variable M̂⟪z⟫ that is defined by 
+
+M̂: f(z) = sum_⟪n=0⟫^⟪infty⟫ a_n z^n,
+
+where M̂⟪(a_n)_⟪n=0⟫^⟪infty⟫⟫ is a sequence of complex numbers, or more generally by
+
+M̂: g(z) = f(z-z_0) = sum_⟪n=0⟫^⟪infty⟫ a_n (z-z_0)^n,
+
+where M̂⟪(a_n)_⟪n=0⟫^⟪infty⟫⟫ is again a sequence and M̂⟪z_0⟫ is some fixed complex number. These functions are defined whenever the respective series converges.
+
+⌘end list．
+
+The code that produces this semantic paragraph is made up of five code paragraphs:
+
+【+A power series is a function of a complex variable M̂⟪z⟫ that is defined by
+ 】〖+M̂: f(z) = sum_⟪n=0⟫^⟪infty⟫ a_n z^n,
+ 〗【+where M̂⟪(a_n)_⟪n=0⟫^⟪infty⟫⟫ is a sequence of complex numbers, or more generally by
+ 】〖+M̂: g(z) = f(z-z_0) = sum_⟪n=0⟫^⟪infty⟫ a_n (z-z_0)^n,
+ 〗【+where M̂⟪(a_n)_⟪n=0⟫^⟪infty⟫⟫ is again a sequence and M̂⟪z_0⟫ is some fixed complex number. These functions are defined whenever the respective series converges.
+】
+
+This example raises the question of how to control where semantic paragraphs begin and end --- an issue that will affect where vertical spacing between paragraphs is inserted, and other subtle factors that affect the look and readability of your content. We address this question next.
+
+⌘subsubheader⟪Controlling the boundaries of a semantic paragraph⟫
+
+⌘madhat logo． tries to guess where you wish for a semantic paragraph to end, by following common sense rules that apply in the majority of cases, so that most of the time you do not need to do anything special other than writing out your content. The rules are as follows:
+
+⌘begin list．
+
+* any math paragraph is considered by default to be a part of the same semantic paragraph as the code paragraph preceding it (if there is one);
+
+* any text paragraph is by default marked as starting a new semantic paragraph if it follows a text paragraph (or if it is the first paragraph on the page), but marked as belonging to the same semantic paragraph as the preceding code paragraph if that preceding code paragraph is a math paragraph.
+
+⌘end list．
+
+One common situation in which the above default assumptions do not hold is when a math display comes at the ⌘italic⟪end⟫ of a semantic paragraph. In that case, the text paragraph that follows it should start a new semantic paragraph. To indicate to ⌘madhat logo． that that is what you are intending, add the command 【+⌘new paragraph．】 
+
+at the beginning of the text paragraph that follows the math display.
+
+
+⌘subheader⟪Paragraph indentation⟫
+
+⌘madhat logo． has the ability to add an automatic indentation at the beginning of a new semantic paragraph. The indentation width is set to 0 by default, but can be customized in the ⌘intralink⟪Notebook configuration；notebook configuration code⟫; see the help page on ⌘intralink⟪Notebook line and paragraph spacing；customizing line and paragraph spacings and paragraph indents⟫
+
+When automatic paragraph indentation is enabled, you can suppress the paragraph indentation in any individual text paragraph by including the command 【+⌘suppress paragraph indent．】, 
+
+or its alias 【+⌘no indent．】
+
+at the beginning of the paragraph.
+
+⌘subheader⟪Multi-justified lines⟫
+
+It is sometimes useful to have a paragraph consisting of a single line split into two parts, the first of which is justified to the left, and the second of which is justified to the right; or to have a paragraph with a single line with ⌘italic⟪three⟫ parts, justified to the left, center and right, respectively. We call such paragarph-like constructs ⌘bold⟪multi-justified lines⟫. They can be entered using the following commands:
+
+⌘begin list．
+
+* 【⌘left right line⟪⁓left side text；right side text⁓⟫】
+
+A line of text with two parts, the first being left-justified and the second being right-justified.
+
+* 【⌘left center right line⟪⁓left side text；center text；right side text⁓⟫】
+
+A line of text with three parts, the first being left-justified, the second being centered, and the third being right-justified.
+
+The commands 【⌘left right line⟪⁓...⁓⟫】 and 【⌘left center right line⟪⁓...⁓⟫】 both accept the boolean attributes 【overline】 and 【underline】. 
+
+
+⌘end list．
+
+％⌘subheader⟪Examples:⟫
+％
+％
+％⌘begin list．
+％
+％
+％* A left-aligned paragraph:
+％
+％Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+％
+％* A right-aligned paragraph:
+％
+％⌘end list．
+％
+％＠⟪align←right⟫Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+％
+％⌘begin list．
+％
+％* A center-aligned paragraph:
+％
+％⌘end list．
+％
+％＠⟪align←center⟫Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+％
+％⌘begin list．
+％
+％* Multi-justified lines:⌘newline⟪4⟫
+％
+％
+％⌘end list．
+％
+％
+％⌘left right line⟪This text is on the left；This text is on the right⟫
+％
+％⌘left center right line⟪This text is on the left；This text is in the center；This text is on the right⟫
+％
+％
+％⌘left center right line⟪An underlined；multi-justified；line＠⟪underline⟫⟫⌘newline⟪10⟫
+％
+％⌘begin list．
+％
+％
+％* A math paragraph:
+％
+％M̂: 
+％int_⟪-infty⟫^⟪infty⟫ e^⟪-x^2⟫dx
+％= (int_⟪-infty⟫^⟪infty⟫ e^⟪-x^2⟫dx ** int_⟪-infty⟫^⟪infty⟫ e^⟪-x^2⟫dx)^⟪1/2⟫
+％⌘newline．
+％= (int_⟪-infty⟫^⟪infty⟫ int_⟪-infty⟫^⟪infty⟫ e^⟪-x^2⟫ e^⟪-y^2⟫ dx dy)^⟪1/2⟫
+％⌘newline．
+％= (int_⟪-infty⟫^⟪infty⟫ int_⟪-infty⟫^⟪infty⟫ e^⟪-(x^2+y^2)⟫ dx dy)^⟪1/2⟫
+％⌘newline．
+％= (int_0^⟪2 pi⟫ int_0^⟪infty⟫ e^⟪-r^2⟫ r dr dtheta )^⟪1/2⟫ ⌘space⟪20⟫T̂⟪(switching to polar coordinates)⟫
+％⌘newline．
+％= (2 pi int_0^⟪infty⟫ e^⟪-r^2⟫ r dr )^⟪1/2⟫
+％= ⌘sqrt⟪1//2 * 2 pi⟫
+％= ⌘sqrt⟪pi⟫
+％
+％
+％⌘end list．
+％

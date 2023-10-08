@@ -1,0 +1,43 @@
+⌘header⟪Graphics pen drawing commands⟫
+
+In addition to graphics primitives, the ⌘madhat logo． graphics environment supports a "pen drawing" model, also known as ⌘hyperlink⟪https://en.wikipedia.org/wiki/Turtle_graphics；turtle graphics⟫. In this model, you give drawing commands to a virtual pen that has a position and a direction. You can tell the pen to move forward back, to rotate to the left or right, etc.
+
+Pen graphics commands are classified into pen ⌘italic⟪drawing⟫ commands, described on this page, and a separate class of ⌘intralink⟪Graphics pen control；pen control commands⟫ described on a separate help page.
+
+⌘begin list．
+
+* 【⌘move to⟪⁓x⁓；⁓y⁓⟫】
+
+Move the pen to an absolute position M̂⟪(x,y)⟫ on the canvas. The initial position is the center of the canvas rectangle. When the pen is moved, the pen direction is set to the vector pointing from the current position to the new position.
+
+* 【⌘line to⟪⁓x⁓；⁓y⁓⟫】
+
+Stroke a line from the current pen position to an absolute position M̂⟪(x,y)⟫. The pen direction is updated to the vector pointing from the current position to the new position.
+
+* 【⌘curve to⟪⁓x1⁓；⁓y1⁓＃⁓x2⁓；⁓y2⁓＃⁓x3⁓；⁓y3⁓⟫】
+
+Stroke a cubic Bézier curve from the current pen position to the point M̂⟪(x3,y3)⟫ using the specified control points M̂⟪(x1,y1), (x2,y2)⟫. The pen direction is updated to the tangent vector of the Bézier curve at its endpoint.
+
+* 【⌘pen forward⟪⁓distance⁓⟫】
+
+Move the pen forward by a specified distance
+
+* 【⌘pen backward⟪⁓distance⁓⟫】
+
+Move the pen backward by a specified distance
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Graphics canvasses⟫
+
+* ⌘intralink⟪Graphics drawing；Graphics drawing commands⟫
+
+* ⌘intralink⟪Graphics styling；Graphics styling commands⟫
+
+* ⌘intralink⟪Graphics pen control；Graphics pen control commands⟫
+
+⌘end list．

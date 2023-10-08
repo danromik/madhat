@@ -1,0 +1,11 @@
+cat.png
+madhat-logo-1000.png
+graphics-screenshot.jpg
+app-windows.jpg
+configuration-code.jpg
+media-library.jpg
+editor-window.jpg
+file-menu.jpg
+light-mode.jpg
+dark-mode.jpg
+themes-editor.jpg

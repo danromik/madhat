@@ -1,0 +1,78 @@
+⌘header⟪List of special symbols⟫
+
+The ⌘madhat logo． language reserves certain Unicode characters as having a special meaning in entering code. Here is the list of special characters and their meanings, with links to the help pages explaining how they are used.
+⌘newline⟪10⟫
+
+⌘begin list．
+
+* Characters that are used in ⌘madhat logo． code
+
+⌘begin list．
+
+* ⌘intralink⟪Commands；Command symbol⟫ 【⌘】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=2318；U+2318⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪\⟫⟫ (backslash key)
+
+* ⌘intralink⟪Blocks；Open block symbol⟫ 【⟪】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=27EA；U+27EA⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪[⟫⟫ (left square brace key)
+
+
+* ⌘intralink⟪Blocks；Close block symbol⟫ 【⟫】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=27EB；U+27EB⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪]⟫⟫ (right square brace key)
+
+* ⌘intralink⟪Commands；Close command symbol⟫ 【．】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=FF0E；U+FF0E⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪.⟫⟫ (period key ––– this substitution applies only at the end of a command)
+
+
+* ⌘intralink⟪Typing mathematics；Math shift⟫ 【M̂】 (Unicode: the letter "M" followed by ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=0302；U+0302⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪$⟫⟫ key (dollar sign key)
+
+
+* ⌘intralink⟪Typing mathematics；Text shift⟫ 〖T̂〗 (Unicode: the letter "T" followed by ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=0302；U+0302⟫)
+
+* ⌘intralink⟪Attributes；Attributes symbol⟫ 【＠】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=FF20；U+FF20⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪@⟫⟫ key
+
+
+* ⌘intralink⟪Attributes；Attribute declaration operator⟫ 【←】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=2190；U+2190⟫)
+
+* ⌘intralink⟪Delimited lists；Primary list delimiter⟫ 【；】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=FF1B；U+FF1B⟫)
+⌘intralink⟪List of key substitutions；Keyboard shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪;⟫⟫ key (semicolon key)
+
+
+* ⌘intralink⟪Delimited lists；Secondary list delimiter⟫ 【＃】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=FF03；U+FF03⟫)
+⌘intralink⟪List of key substitutions；Key shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪#⟫⟫ (sharp sign key)
+
+* ⌘intralink⟪Comments；Comment symbol⟫ 【％】 (Unicode: ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=FF05；U+FF05⟫)
+⌘intralink⟪List of key substitutions；Key shortcut⟫: ⟪⌘highlight color⟪light gray⟫⌘highlight⟪%⟫⟫ (percent key)
+
+
+⌘end list．
+
+* Forbidden characters
+
+⌘begin list．
+
+* The Unicode characters ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=3010；U+3010⟫, ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=3011；U+3011⟫, ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=3016；U+3016⟫, ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=3017；U+3017⟫, ⌘hyperlink⟪https://util.unicode.org/UnicodeJsps/character.jsp?a=2053；U+2053⟫ are reserved and should not be used.
+
+⌘end list．
+
+⌘end list．
+
+
+⌘subheader⟪Typing special symbols⟫
+
+You can type special symbols by clicking the appropriate symbol in the special symbols bar in the editor window toolbar: 
+
+⌘graphics canvas⟪％
+＠⟪％
+width←450；height←460；％
+min x←0；max x←450；min y←-20；max y←440％；frame％
+⟫％
+⌘annotation⟪22；0＃⌘image⟪editor-window.jpg；0.25⟫⟫％
+⌘stroke color⟪red⟫⌘line thickness⟪2⟫⌘rectangle⟪40；318＃253；342⟫
+⌘stroke color⟪dark gray⟫⌘line thickness⟪1⟫⌘arrow⟪180；395＃150；360⟫
+⌘centered annotation⟪180；410＃special symbols bar⟫
+⟫
+
+
+You can also use the various keyboard shortcuts described in the help page on ⌘intralink⟪List of key substitutions；key substitutions⟫.

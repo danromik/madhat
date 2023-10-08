@@ -1,0 +1,28 @@
+⌘header⟪Attributes⟫
+
+Attributes modify the behavior of a command. They are included by inserting an attributes block of the form
+
+【+＠⟪⁓attribute name⁓←⁓value⁓；⁓attribute name⁓←⁓value⁓；⁓...⁓；⁓attribute name⁓←⁓value⁓⟫】
+
+somewhere (it does not matter where) inside the argument block of the command.
+
+⌘subheader⟪Boolean attributes⟫
+
+Boolean attributes take either of the values "yes" or "no". You can specify them in the straightforward way as 【＠⟪⁓boolean att. name⁓←yes⟫】 or 【＠⟪⁓boolean att. name⁓←no⟫】, or using a shorthand notation that omits the 【←】 assignment operator:
+
+【＠⟪⁓boolean att. name⁓⟫】 is equivalent to 【＠⟪⁓boolean att. name⁓←yes⟫】
+
+【＠⟪no ⁓boolean att. name⁓⟫】 is equivalent to 【＠⟪⁓boolean att. name⁓←no⟫】
+
+For example, a 【＠⟪no crop⟫】 attribute in a ⌘intralink⟪Graphics canvasses；【⌘graphics canvas⟪⁓...⁓⟫】⟫ specifies that cropping should be turned off.
+
+Some attributes accept as argument a ⌘italic⟪list⟫ of Boolean values. For example, in a 【⌘table⟪⁓...⁓⟫】 command, the 【hlines】 attribute specifies which horizontal lines should be drawn. This list of values is provided in the form
+
+＠⟪align←center⟫【⁓att. name⁓←⁓xxxx...x⁓】
+
+where each of the 【⁓x⁓】 symbols is either 【y】 (for "yes") or 【n】 (for "n").
+
+
+⌘subheader⟪Examples⟫
+
+See the documentation for ⌘intralink⟪Paragraphs；paragraphs⟫, the ⌘intralink⟪Graphics canvasses；【⌘graphics canvas⟪⁓...⁓⟫】 command⟫ and the ⌘intralink⟪Tables；【⌘table⟪⁓...⁓⟫】 command⟫ for examples of the uses of attributes.

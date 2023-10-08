@@ -1,0 +1,21 @@
+⌘header⟪Setting the font size⟫
+
+
+⌘begin list．
+
+* 【⌘font size⟪⁓font size in points⁓⟫】
+
+Set the base font size for both text and mathematical expressions
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+
+【+⌘font size⟪12⟫The quick brown fox jumps over a lazy dog】
+
+⟪⌘font size⟪12⟫The quick brown fox jumps over a lazy dog⟫
+
+【+⌘font size⟪20⟫The quick brown fox jumps over a lazy dog】
+
+⟪⌘font size⟪20⟫The quick brown fox jumps over a lazy dog⟫

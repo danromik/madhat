@@ -1,0 +1,60 @@
+⌘header⟪Introduction to ⌘madhat logo．⟫
+
+⌘subheader⟪Overview⟫
+
+⌘madhat logo． is a system for writing and reading documents. It consists of a language for coding up the text and other content of your document — called the MadHat language — and an app to edit and view MadHat documents.
+
+⌘madhat logo． is suitable for use by anyone who wants to write anything, either for personal use or for sharing with others. It is especially optimized for writing content that contains mathematical formulas.
+
+⌘madhat logo． documents are called ⌘bold⟪notebooks⟫. A notebook consists of one or more ⌘bold⟪pages⟫. Each page is a scrollable body of content of potentially unlimited length.
+
+The types of content that a ⌘madhat logo． notebook can contain are:
+
+⌘begin list．
+
+* Text
+
+* Mathematical formulas
+
+* Slide presentations
+
+* Images and graphical diagrams
+
+* Videos
+
+⌘end list．
+
+
+⌘subheader⟪The notebook windows⟫
+
+⌘madhat logo． notebooks are viewed and edited in two main windows, the ⌘bold⟪editor window⟫ and the ⌘bold⟪viewer window⟫, shown in the screenshot below. The editor window (shown on the left) is where you enter the code that specifies the content of the notebook. The viewer window, shown on the right, is where the formatted content appears.
+⌘newline⟪5⟫
+
+
+
+＠⟪align←center⟫⌘image⟪app-windows.jpg；0.25⟫
+
+
+
+⌘subheader⟪Important things to know⟫
+
+Here are some of the main things to know about ⌘madhat logo． notebooks:
+
+⌘begin list．
+
+* A page in a notebook can (but does not have to) consist of multiple ⌘intralink⟪Slides；slides⟫, which are intermediate states in which only some of the page content is shown. 
+
+* ⌘madhat logo． notebooks can be ⌘intralink⟪Printing and PDF exporting；exported to PDF format⟫. However, viewing a notebook in the native viewer inside the app rather than as an exported PDF document makes it possible to interact with the notebook in ways that are not possible to do with a PDF document.
+
+* The content in a page can be further partitioned into sections, subsections, etc. Pages can also contain hierarchical content organized in itemized (numbered, or unnumbered) lists. Sections as well as list items can be easily closed ("collapsed") and opened ("expanded") by the reader. 
+
+* ⌘madhat logo． offers features for easy navigation between pages and slides; internal linking across pages (intralinks); external linking (hyperlinks) to web pages; and many more features that make it useful as a means for sharing information and ideas.
+
+* ⌘madhat logo． adopts the ⌘hyperlink⟪https://unicode.org；Unicode⟫ text encoding standard as its technical foundation for representing textual content. This makes the full range of international character sets available for use. Currently only left-to-right writing is supported.
+
+* ⌘madhat logo． notebooks can be ⌘intralink⟪Exporting to LaTeX；exported to LaTeX⟫.
+
+⌘end list．
+
+⌘newline⟪3⟫
+

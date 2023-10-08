@@ -1,0 +1,208 @@
+⌘header⟪Tables⟫
+
+To format a table, use one of the commands below. Tabular content is entered using primary and secondary ⌘intralink⟪Delimited lists；list delimiter notation⟫ to indicate column and row boundaries. An optional ⌘intralink⟪Attributes；attributes⟫ block can be provided to modify the appearance of the table.
+
+⌘begin list．
+
+* 【⌘table⟪⁓table cells⁓⟫】
+
+A table of left-justified (by default; this is modifiable) text cells
+
+* 〖⌘math table⟪⁓table cells⁓⟫〗
+
+A table of centered (by default; this is modifiable) cells that is vertically centered with respect to the math axis.
+
+⌘end list．
+
+⌘paragraph header⟪See also:⟫ ⌘intralink⟪Matrices⟫
+
+⌘subheader⟪Attributes to modify the appearance of a table⟫
+
+⌘begin list．
+
+* 【hlines←⁓lines specification⁓】
+
+A specification of horizontal cell border lines. 
+
+In a table with M̂⟪k⟫ rows, the specification should be a list of M̂⟪k+1⟫ ⌘intralink⟪Attributes；Boolean attribute specifiers⟫ (【y】 or 【n】) to specify which horizontal lines are drawn, from top to bottom.
+
+For example, in a table with 4 rows, providing the specification 【hlines←yynny】 would format as follows:
+
+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←yynny；alignments←llcr⟫％
+First name；Last name；Student ID；GPA＃％
+Mickey；Mouse；1；3.5＃％
+Donald；Duck；2；3＃％
+Minnie；Mouse；3；3.8％
+⟫
+
+
+
+* 【vlines←⁓lines specification⁓】
+
+A specification of vertical cell border lines.
+
+The specification follows the same format as the specification for horizontal lines, except that there should be M̂⟪n+1⟫ ⌘intralink⟪Attributes；Boolean attribute specifiers⟫, where M̂⟪n⟫ is the number of columns in the table
+
+* 【alignments←⁓cell alignments specification⁓】
+
+A specification of the horizontal cell alignments.
+
+The specification should be a list 【⁓xxxx...x⁓】 of M̂⟪n⟫ characters, each specifying the alignment for one of the table columns. The allowed values are `l' (for "left"), `r' (for "right"), and `c' (for "center").
+
+* 【header rows←⁓header rows specification⁓】
+
+A specification of the header rows: a list of M̂⟪k⟫ ⌘intralink⟪Attributes；Boolean attribute specifiers⟫, where M̂⟪k⟫ is the number of rows in the table, specifying which of the rows are header rows
+
+* 【header columns←⁓header columns specification⁓】
+
+A specification of the header columns: a list of M̂⟪n⟫ ⌘intralink⟪Attributes；Boolean attribute specifiers⟫, where M̂⟪n⟫ is the number of columns in the table, specifying which of the columns are header columns
+
+
+
+* 【frame】, 【no frame】
+
+A Boolean specifying whether a frame is drawn around the table. Defaults to 【no】.
+
+* ⌘bold⟪Specifying color fills for table cells⟫
+
+⌘begin list．
+
+* 【fill】, 【no fill】
+
+A boolean value specifying whether uniform fill (a colored background for all table cells) is enabled. Defaults to 【no】.
+
+* 【alternating fill】, 【no alternating fill】
+
+A boolean value specifying whether alternating row fill (a colored background for all table cells in alternating rows) is enabled. Defaults to 【no】
+
+
+
+* 【fill color←⁓color argument⁓】
+
+The fill color for uniform fills
+
+* 【alt fill color←⁓color argument⁓】
+
+The alternating fill color, to be used for the alternating row fill style
+
+* 【header fill color←⁓color argument⁓】
+
+The fill color to use for header rows and columns
+
+* 【header alt fill color←⁓color argument⁓】
+
+The alternating fill color to use for header rows and columns when alternating row fills are specified
+
+⌘end list．
+
+See the ⌘intralink⟪Colors；colors⟫ help page for an explanation of how to specify colors.
+
+
+⌘end list．
+
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* The code 【+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←yynny；alignments←llcr⟫％
+First name；Last name；Student ID；GPA＃％
+Mickey；Mouse；1；3.5＃％
+Donald；Duck；2；3＃％
+Minnie；Mouse；3；3.8％
+⟫】
+
+typesets as 
+
+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←yynny；alignments←llcr⟫％
+First name；Last name；Student ID；GPA＃％
+Mickey；Mouse；1；3.5＃％
+Donald；Duck；2；3＃％
+Minnie；Mouse；3；3.8％
+⟫
+
+* A mode complicated table is described by the code
+
+【+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←nynnnny；vlines←nyny；alignments←rcccl；frame⟫％
+⌘bold⟪Child⟫；⌘bold⟪Birthday month⟫；⌘bold⟪Favorite fruit⟫；⌘color⟪0.4；0；0⟫⌘bold⟪Nut allergy⟫＃％
+Kim；April；Banana；yes＃％
+Bobby；September；Orange；yes＃％
+Michael；January；Apple；no＃％
+Samantha；January；⌘bold⟪Kiwi⟫；yes＃％
+Ray；March；Banana；⌘highlight⟪not sure⟫＃％
+Dina；December；Banana；no＃％
+Andy；February；Grapefruit；no＃％
+Lily；March；Melon；no＃％
+William；July；Banana；yes％
+⟫】
+
+This typesets as
+
+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←nynnnny；vlines←nyny；alignments←rcccl；frame⟫％
+⌘bold⟪Child⟫；⌘bold⟪Birthday month⟫；⌘bold⟪Favorite fruit⟫；⌘color⟪0.4；0；0⟫⌘bold⟪Nut allergy⟫＃％
+Kim；April；Banana；yes＃％
+Bobby；September；Orange；yes＃％
+Michael；January；Apple；no＃％
+Samantha；January；⌘bold⟪Kiwi⟫；yes＃％
+Ray；March；Banana；⌘highlight⟪not sure⟫＃％
+Dina；December；Banana；no＃％
+Andy；February；Grapefruit；no＃％
+Lily；March；Melon；no＃％
+William；July；Banana；yes％
+⟫
+
+
+* Here is code for the same table, with some colors added:
+
+
+【+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←nynnnny；vlines←nyny；alignments←rcccl；frame；alternating fill；alt fill color←⟪.5；0.1；0.3；0.15⟫；fill color←⟪0.85；0.8；0.9；0.3⟫；％
+header alt fill color←⟪0.85；0.85；0.85；1⟫；％
+header fill color←⟪0.92；0.92；0.92；1⟫；％
+header columns←ynny；header rows←ynnnnnn；header color←⟪0.8；0.8；0.8⟫⟫％
+⌘bold⟪Child⟫；⌘bold⟪Birthday month⟫；⌘bold⟪Favorite fruit⟫；⌘color⟪0.4；0；0⟫⌘bold⟪Nut allergy⟫＃％
+Kim；April；Banana；yes＃％
+Bobby；September；Orange；yes＃％
+Michael；January；Apple；no＃％
+Samantha；January；⌘bold⟪Kiwi⟫；yes＃％
+Ray；March；Banana；⌘highlight⟪not sure⟫＃％
+Dina；December；Banana；no＃％
+Andy；February；Grapefruit；no＃％
+Lily；March；Melon；no＃％
+William；July；Banana；yes％
+⟫  
+】
+
+
+This typesets as:
+
+＠⟪align←center⟫％
+⌘table⟪％
+＠⟪hlines←nynnnny；vlines←nyny；alignments←rcccl；frame；alternating fill；alt fill color←⟪.5；0.1；0.3；0.15⟫；fill color←⟪0.85；0.8；0.9；0.3⟫；％
+header alt fill color←⟪0.85；0.85；0.85；1⟫；％
+header fill color←⟪0.92；0.92；0.92；1⟫；％
+header columns←ynny；header rows←ynnnnnn；header color←⟪0.8；0.8；0.8⟫⟫％
+⌘bold⟪Child⟫；⌘bold⟪Birthday month⟫；⌘bold⟪Favorite fruit⟫；⌘color⟪0.4；0；0⟫⌘bold⟪Nut allergy⟫＃％
+Kim；April；Banana；yes＃％
+Bobby；September；Orange；yes＃％
+Michael；January；Apple；no＃％
+Samantha；January；⌘bold⟪Kiwi⟫；yes＃％
+Ray；March；Banana；⌘highlight⟪not sure⟫＃％
+Dina；December；Banana；no＃％
+Andy；February；Grapefruit；no＃％
+Lily；March；Melon；no＃％
+William；July；Banana；yes％
+⟫  
+
+⌘end list．

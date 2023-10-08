@@ -1,0 +1,45 @@
+⌘header⟪Graphics styling commands⟫
+
+Graphics styling commands control the style attributes of graphics primitives that you include in your diagram. Here are the different styling commands.
+⌘newline⟪10⟫
+
+
+⌘begin list．
+
+* 【⌘line thickness⟪⁓thickness⁓⟫】
+
+Set the line thickness to the specified thickness, in points
+
+* 【⌘marker scale⟪⁓scale⁓⟫】
+
+Scale markers up or down from their default size, by the specified factor
+
+* 【⌘marker type⟪⁓type⁓⟫】
+
+Set the marker type. Allowed values are 【disk】, 【square】, 【diamond】, 【star】, and 【triangle】. The default is 【disk】.
+
+* 【⌘stroke color⟪⁓color argument⁓⟫】
+【⌘stroke colour⟪⁓color argument⁓⟫】
+
+Set the stroke color for stroked graphics shapes
+
+* 【⌘fill color⟪⁓color argument⁓⟫】
+【⌘fill colour⟪⁓color argument⁓⟫】
+
+Set the fill color for filled graphics shapes
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Graphics canvasses⟫
+
+* ⌘intralink⟪Graphics drawing；Graphics drawing commands⟫
+
+* ⌘intralink⟪Graphics pen drawing；Graphics pen drawing commands⟫
+
+* ⌘intralink⟪Graphics pen control；Graphics pen control commands⟫
+
+⌘end list．

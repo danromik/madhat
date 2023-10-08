@@ -1,0 +1,99 @@
+⌘header⟪Mathematical font variants⟫
+
+⌘begin list．
+
+* 〖⌘bold math⟪⁓...text...⁓⟫〗
+〖⌘bmath⟪⁓...text...⁓⟫〗
+
+Styles math content in the bold math font variant
+
+* 〖⌘italic math⟪⁓...text...⁓⟫〗
+〖⌘itmath⟪⁓...text...⁓⟫〗
+
+Styles math content in the italic math font variant
+
+* 〖⌘blackboard math⟪⁓...text...⁓⟫〗
+〖⌘bbmath⟪⁓...text...⁓⟫〗
+
+Styles math content in the blackboard math font variant
+
+* 〖⌘calligraphy math⟪⁓...text...⁓⟫〗
+〖⌘calmath⟪⁓...text...⁓⟫〗
+
+Styles math content in the calligraphy math font variant
+
+* 〖⌘fraktur math⟪⁓...text...⁓⟫〗
+〖⌘frakmath⟪⁓...text...⁓⟫〗
+
+Styles math content in the fraktur math font variant
+
+* 〖⌘roman math⟪⁓...text...⁓⟫〗
+
+Styles math content in the roman math font variant
+
+* 〖⌘mono math⟪⁓...text...⁓⟫〗
+
+Styles math content in the monospace math font variant
+
+* 〖⌘sans math⟪⁓...text...⁓⟫〗
+
+Styles math content in the sans serif font variant
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+M̂: ⌘bmath⟪A x=b⟫
+⌘newline．
+⌘italic math⟪function(x) = Q(x)⟫
+⌘newline．
+⌘roman math⟪function(x) = Q(x)⟫
+
+M̂: 
+⌘bbmath⟪Q⟫T̂⟪ is the field of rationals⟫
+⌘newline．
+⌘frakmath⟪S⟫_nT̂⟪ denotes the symmetric group of order ⟫n
+⌘newline．(Omega, ⌘calmath⟪F⟫, P)T̂⟪ is a common notation for a probability space⟫
+⌘newline．
+⌘mono math⟪Monospaced ⌘space⟪10⟫ math ⌘space⟪10⟫ font⟫
+
+M̂: ⌘bmath⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘bmath⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘itmath⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘itmath⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘bbmath⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘bbmath⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+％⌘calmath⟪abcdefghijklmnopqrstuvwxyz⟫
+％⌘newline．
+⌘calmath⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘frakmath⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘frakmath⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘roman math⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘roman math⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘mono math⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘mono math⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+⌘sans math⟪abcdefghijklmnopqrstuvwxyz⟫
+⌘newline．
+⌘sans math⟪ABCDEFGHIJKLMNOPQRSTUVWXYZ⟫
+⌘newline．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

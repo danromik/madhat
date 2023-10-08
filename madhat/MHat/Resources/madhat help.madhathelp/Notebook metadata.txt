@@ -1,0 +1,35 @@
+⌘header⟪Customizing the notebook metadata⟫
+
+The notebook metadata is information about the notebook that is not a part of the notebook contents. Currently this refers to the notebook title and author. You can set these fields using the following ⌘intralink⟪Notebook configuration；notebook configuration⟫ commands:
+
+⌘begin list．
+
+* 【⌘⌘notebook title⟪⁓notebook title⁓⟫】
+
+Set the notebook title
+
+* 【⌘⌘notebook author⟪⁓notebook author⁓⟫】
+
+Set the notebook author
+
+⌘end list．
+
+When you export a notebook as a PDF, the title and author fields are used to populate the corresponding fields in the PDF document metadata. The notebook title is also displayed at the top of the viewer window.
+
+
+⌘subheader⟪See also:⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Notebook configuration；Notebook configuration⟫
+
+* ⌘intralink⟪Notebook page geometry；Customizing the page geometry⟫
+
+* ⌘intralink⟪Notebook styles；Customizing the notebook styles⟫
+
+* ⌘intralink⟪Notebook line and paragraph spacing；Customizing the notebook line and paragraph spacing⟫
+
+* ⌘intralink⟪Notebook PDF export settings；Customizing the PDF export settings⟫
+
+⌘end list．
+

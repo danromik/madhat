@@ -1,0 +1,79 @@
+⌘header⟪Binary relations⟫
+
+⌘begin list．
+
+* Arrows:
+
+⌘begin list．
+
+* 〖leftarrow〗,  〖from〗      M̂⟪leftarrow⟫
+
+* 〖rightarrow〗,  〖to〗     M̂⟪rightarrow⟫
+
+* 〖uparrow〗    M̂⟪uparrow⟫
+
+* 〖downarrow〗    M̂⟪downarrow⟫
+
+* 〖leftrightarrow〗, 〖fromto〗    M̂⟪leftrightarrow⟫
+
+* 〖doublerightarrow〗    M̂⟪doublerightarrow⟫
+
+* 〖doubleleftarrow〗    M̂⟪doubleleftarrow⟫
+
+* 〖doubleleftrightarrow〗,   〖iff〗    M̂⟪iff⟫
+
+* 〖mapsto〗    M̂⟪mapsto⟫
+
+⌘end list．
+
+* Ordinary relations:
+
+⌘begin list．
+
+* 〖approx〗   M̂⟪approx⟫
+
+* 〖cong〗    M̂⟪cong⟫
+
+* 〖sim〗    M̂⟪sim⟫
+
+* 〖/=〗     M̂⟪/=⟫
+
+* 〖<=〗    M̂⟪<=⟫
+
+* 〖>=〗    M̂⟪>=⟫
+
+⌘end list．
+
+* Set-theoretic relations:
+
+⌘begin list．
+
+* 〖elementof〗,   〖in〗    M̂⟪elementof⟫
+
+* 〖subset〗    M̂⟪subset⟫
+
+* 〖subseteq〗    M̂⟪subseteq⟫
+
+* 〖superset〗    M̂⟪superset⟫
+
+* 〖superseteq〗    M̂⟪superseteq⟫
+
+⌘end list．
+
+
+
+
+
+⌘end list．
+
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Extensible arrows and relations⟫
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

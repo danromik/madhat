@@ -1,0 +1,45 @@
+⌘header⟪Highlighting text⟫
+
+The following commands are used to highlight text:
+
+
+⌘begin list．
+
+* 【⌘highlight on．】
+
+Turns on highlighted text styling.
+
+* 【⌘highlight off．】
+
+Turns off highlighted text styling.
+
+* 【⌘highlight⟪⁓...text...⁓⟫】
+
+A wrapper for text that should be highlighted.
+
+⌘end list．
+
+You can highlight text in different colors using the 【⌘highlight color⟪⁓...⁓⟫】 command. See the help page on ⌘intralink⟪Colors；colors⟫.
+
+⌘subheader⟪Examples⟫
+
+The code 【+＠⟪align←center⟫⌘highlight⟪This text is highlighted.⟫】
+
+will typeset as 
+
+＠⟪align←center⟫⌘highlight⟪This text is highlighted.⟫
+
+The code 【+＠⟪align←center⟫⟪⌘highlight color⟪pink⟫⌘highlight⟪This text is highlighted in a different color.⟫⟫】
+
+will typeset as 
+
+＠⟪align←center⟫⟪⌘highlight color⟪pink⟫⌘highlight⟪This text is highlighted in a different color.⟫⟫
+
+
+⌘subheader⟪See also⟫ 
+
+⌘begin list．
+
+* ⌘intralink⟪Colors；Colors⟫
+
+⌘end list．

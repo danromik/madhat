@@ -1,0 +1,69 @@
+Cover page.txt
+About MadHat.txt
+About this guide.txt
+MadHat Help.txt
+Introduction.txt
+List of special symbols.txt
+Typing text.txt
+Spaces and newlines.txt
+Typing mathematics.txt
+Blocks.txt
+Comments.txt
+Commands.txt
+Attributes.txt
+Delimited lists.txt
+Notebook configuration.txt
+Notebook metadata.txt
+Notebook page geometry.txt
+Notebook styles.txt
+Notebook line and paragraph spacing.txt
+Notebook PDF export settings.txt
+Paragraphs.txt
+Styling text.txt
+Bold text.txt
+Italic text.txt
+Text underlining.txt
+Text strikethrough.txt
+Text highlighting.txt
+Text substitutions.txt
+Setting fonts.txt
+Setting the font size.txt
+Colors.txt
+Headers and subheaders.txt
+Lists and outlining.txt
+Tables.txt
+Boxes.txt
+Links.txt
+Slides.txt
+Slide transitions.txt
+Slide fragments.txt
+Subscripts and superscripts.txt
+Mathematical font variants.txt
+Fractions.txt
+Square roots.txt
+Operators.txt
+Greek letters.txt
+Differentials.txt
+Brackets.txt
+Horizontal brackets.txt
+Extensible arrows and relations.txt
+Special mathematical symbols.txt
+Binary relations.txt
+Binary operators.txt
+Matrices.txt
+Mathematical decorations.txt
+Images.txt
+Videos.txt
+The media library.txt
+Graphics canvasses.txt
+Graphics drawing.txt
+Graphics styling.txt
+Graphics pen drawing.txt
+Graphics pen control.txt
+Graphics plotting.txt
+Printing and PDF exporting.txt
+Exporting to LaTeX.txt
+Themes and the themes editor.txt
+List of key substitutions.txt
+Changelog.txt
+Command and keyword index.txt

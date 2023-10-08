@@ -1,0 +1,131 @@
+⌘header⟪Typing mathematics⟫
+
+⌘subheader⟪Math mode⟫
+
+⌘madhat logo． makes it easy to typeset mathematical expressions by entering ⌘bold⟪math mode⟫. This is done using the em-hat, or ⌘bold⟪math shift⟫, symbol 【M̂】. If your expression is part of an ordinary text paragraph (in which case we refer to it as ⌘bold⟪inline math⟫), the syntax for inserting such an expression in your text is 【+⁓some text content... ⁓M̂⟪⁓your mathematical content⁓⟫ ⁓...more text content⁓】
+
+Alternatively, the mathematical content can be shown in its own space separated vertically from the surrounding text, known as a ⌘bold⟪math display⟫. The syntax for this is 〖+⁓your mathematical content⁓〗
+
+See also the help page on ⌘intralink⟪Paragraphs；paragraphs⟫.
+
+A keyboard shortcut to enter math mode is to type the dollar sign `$'. See the help page on ⌘intralink⟪List of key substitutions；key substitutions⟫.
+
+⌘subheader⟪Syntax for mathematical content⟫
+
+To understand how to typeset the main elements of a mathematical expression, refer to these help pages:
+
+⌘begin list．
+
+* ⌘intralink⟪Fractions⟫
+
+* ⌘intralink⟪Subscripts and superscripts⟫
+
+* ⌘intralink⟪Greek letters⟫
+
+* ⌘intralink⟪Commands；Commands and math keywords⟫
+
+⌘end list．
+
+
+
+⌘madhat logo． supports many additional constructs in the vocabulary of mathematical formulas. Here is a complete list of the supported mathematical typesetting features:
+
+⌘begin list．
+
+* ⌘intralink⟪Fractions⟫
+
+* ⌘intralink⟪Subscripts and superscripts⟫
+
+* ⌘intralink⟪Greek letters⟫
+
+* ⌘intralink⟪Commands；Commands and math keywords⟫
+
+* ⌘intralink⟪Square roots；Square roots⟫
+
+* ⌘intralink⟪Mathematical font variants；Mathematical font variants⟫
+
+* ⌘intralink⟪Differentials⟫
+
+* ⌘intralink⟪Operators；Standard mathematical operators⟫
+
+* ⌘intralink⟪Brackets⟫
+
+* ⌘intralink⟪Horizontal brackets；Horizontal brackets⟫
+
+* ⌘intralink⟪Extensible arrows and relations；Extensible symbols⟫
+
+* ⌘intralink⟪Special mathematical symbols；Special mathematical symbols⟫
+
+* ⌘intralink⟪Binary relations；Binary relations⟫
+
+* ⌘intralink⟪Binary operators；Binary operators⟫
+
+* ⌘intralink⟪Matrices；Matrices⟫
+
+* ⌘intralink⟪Mathematical decorations；Mathematical symbol decorations⟫
+
+⌘end list．
+
+⌘subheader⟪Automatic substitutions⟫
+
+Just like in ⌘intralink⟪Typing text；text mode⟫, the math mode parser performs some automatic substitutions to simplify entering common symbols. Here is the list of implemented substitutions:
+
+⌘begin list．
+
+* 〖-〗  (a hyphen) is replaced by the symbol "M̂⟪-⟫", the proper Unicode symbol for a minus sign
+
+* 〖*〗  (a single asterisk) is replaced by the "times" symbol "M̂⟪*⟫"
+
+* 〖**〗  (two successive asterisks) are replaced by by "M̂⟪**⟫", the dot symbol
+
+* 〖***〗  (three successive asterisks) are replaced by by "M̂⟪***⟫", the star or convolution operator
+
+* 〖<=〗   is replaced with the "less than or equal" symbol "M̂⟪<=⟫"
+
+* 〖>=〗   is replaced with the "greater than or equal" symbol "M̂⟪>=⟫"
+
+* 〖/=〗   is replaced with the "not equal" symbol "M̂⟪/=⟫"
+
+* 〖+-〗   is replaced with the "plus or minus" symbol "M̂⟪+-⟫"
+
+* 〖-+〗   is replaced with the "minus or plus" symbol "M̂⟪-+⟫"
+
+* 〖...〗   (three successive dots) is replaced by the ellipsis symbol "M̂⟪...⟫"
+
+* 〖||〗   (two successive vertical bars) are replaced by the double vertical bar symbol "M̂⟪||⟫" (which, like the single vertical bar symbol, is interpreted by ⌘madhat logo． as a type of ⌘intralink⟪Brackets；bracket⟫)
+
+* 〖'〗   (an apostrophe) is replaced with the prime symbol "M̂⟪'⟫", the correct Unicode symbol for prime or derivative notation
+
+
+⌘end list．
+
+⌘paragraph header⟪See also:⟫ ⌘intralink⟪Binary relations；binary relations⟫; ⌘intralink⟪Binary operators；binary operators⟫; ⌘intralink⟪Brackets；brackets⟫
+
+
+⌘subheader⟪Including text inside a mathematical expression⟫
+
+To include ordinary text from inside math mode, you need to  leave math mode temporarily and re-enter text mode. With an inline math expression, you can simply close out the math mode block, which returns you to text mode typing. Within a math display, this is done using the ⌘bold⟪text shift⟫ symbol 〖T̂〗. The syntax for this is 〖+⁓some math content... ⁓T̂⟪⁓your text⁓⟫ ⁓…more math content⁓〗
+
+⌘subheader⟪Examples⟫
+
+The code paragraph〖+
+tau = beta (t-vx/c^2), ⌘newline．
+xi = beta (x-vt), ⌘newline．
+eta = y, ⌘newline．
+zeta = z〗
+
+typesets as
+
+M̂: 
+tau = beta (t-vx/c^2), ⌘newline．
+xi = beta (x-vt), ⌘newline．
+eta = y, ⌘newline．
+zeta = z
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing text；Typing text with MadHat⟫
+
+⌘end list．

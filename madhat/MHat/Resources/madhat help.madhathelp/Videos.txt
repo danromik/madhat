@@ -1,0 +1,25 @@
+⌘header⟪Adding videos to a page⟫
+
+⌘begin list．
+
+* 【⌘video⟪⁓video file name⁓⟫】
+
+* 【⌘video⟪⁓video file name⁓；⁓scaling factor⁓⟫】
+
+Insert a video from the notebook's ⌘intralink⟪The media library；media library⟫. 
+
+
+If the scaling factor is provided, the video is scaled proportionally by that factor.
+
+
+⌘end list．
+
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Images⟫
+
+⌘end list．

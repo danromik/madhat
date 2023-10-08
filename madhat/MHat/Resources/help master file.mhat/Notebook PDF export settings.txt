@@ -1,0 +1,43 @@
+⌘header⟪Customizing the notebook PDF export settings⟫
+
+Using the commands listed below, you can customize the way in which the notebook is formatted when it is exported to PDF.
+⌘newline⟪10⟫
+
+⌘begin list．
+
+* 【⌘⌘exported page header⟪⁓page header⁓⟫】
+
+Set the page header for the version of the notebook exported as a PDF
+
+* 【⌘⌘exported page footer⟪⁓page footer⁓⟫】
+
+Set the page footer for the version of the notebook exported as a PDF
+
+* 【⌘⌘exported page number．】
+
+When inserted inside the argument block for either the 【⌘⌘exported page footer⟪⁓...⁓⟫】 command or the 【⌘⌘exported page header⟪⁓...⁓⟫】 command, this will display as the page number on each page in the PDF-exported notebook.
+
+* The headers and footers specified in the 【⌘⌘exported page header⟪⁓...⁓⟫】 and 【⌘⌘exported page footer⟪⁓...⁓⟫】 commands are by default added to all the pages in the exported PDF document. To add the header and footer only for a specified range of notebook pages, use the command 【+⌘⌘exported header and footer range⟪⁓start index⁓；⁓end index⁓⟫】
+
+where 【⁓start index⁓】 and 【⁓end index⁓】 are the indices of the first and last notebook pages, respectively, to which the header and footer should be added. If 【⁓end index⁓】 is left unspecified (that is, the argument block for it is an empty string), it is taken as the index of the last page in the notebook. 
+
+⌘end list．
+
+
+
+⌘subheader⟪See also:⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Notebook configuration；Notebook configuration⟫
+
+* ⌘intralink⟪Notebook metadata；Customizing the notebook metadata⟫
+
+* ⌘intralink⟪Notebook page geometry；Customizing the page geometry⟫
+
+* ⌘intralink⟪Notebook styles；Customizing the notebook styles⟫
+
+* ⌘intralink⟪Notebook line and paragraph spacing；Customizing the notebook line and paragraph spacing⟫
+
+⌘end list．
+

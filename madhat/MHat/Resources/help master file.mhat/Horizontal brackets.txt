@@ -1,0 +1,88 @@
+⌘header⟪Horizontal brackets⟫
+
+⌘begin list．
+
+* 〖⌘overbrace⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A top-side annotation with a horizontal curly brace
+
+* 〖⌘underbrace⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A bottom-side annotation with a horizontal curly brace
+
+* 〖⌘overbracket⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A top-side annotation with a horizontal square bracket
+
+* 〖⌘underbracket⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A bottom-side annotation with a square bracket
+
+* 〖⌘overparenthesis⟪⁓expression⁓；⁓annotation⁓⟫〗
+〖⌘overparen⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A top-side annotation with a horizontal parenthesis
+
+* 〖⌘underparenthesis⟪⁓expression⁓；⁓annotation⁓⟫〗
+〖⌘underparen⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A bottom-side annotation with a horizontal parenthesis
+
+* 〖⌘overtortoise⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A top-side annotation with a horizontal tortoise shell bracket
+
+* 〖⌘undertortoise⟪⁓expression⁓；⁓annotation⁓⟫〗
+
+A bottom-side annotation with a horizontal tortoise shell bracket
+
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* 〖k ** x =⌘overbrace⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘overbrace⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘underbrace⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘underbrace⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘overbracket⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘overbracket⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘underbracket⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘underbracket⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘overparen⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘overparen⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘underparen⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘underparen⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘overtortoise⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘overtortoise⟪x+...+x；k T̂⟪ times⟫⟫
+
+* 〖k ** x =⌘undertortoise⟪x+...+x；k T̂⟪ times⟫⟫〗
+
+M̂: k ** x =⌘undertortoise⟪x+...+x；k T̂⟪ times⟫⟫
+
+
+⌘end list．
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

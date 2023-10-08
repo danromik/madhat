@@ -1,0 +1,236 @@
+⌘header⟪Brackets⟫
+
+Brackets are the parentheses and other forms of bracketing delimiters used to surround expressions in a mathematical formula. MadHat supports smart brackets that automatically adjust their size to fit the height of the content they surround, or whose size can be specified manually.
+
+The simplest way to enter brackets is by using the appropriate bracket symbol in your formula. For example, 〖(⌘frac⟪x+y；2⟫)^2 >= x y〗 will typeset as 
+
+M̂: (⌘frac⟪x+y；2⟫)^2 >= x y
+
+The bracket symbols that are available for use in this way are parentheses (〖(〗 and 〖)〗 symbols); square brackets (〖[〗 and 〖]〗 symbols); curly braces (〖{〗 and 〖}〗 symbols); the vertical bar symbol 〖|〗; and two successive vertical bar symbols 〖||〗, which are typeset as the double vertical bar mathematical symbol M̂⟪||⟫.
+
+For other bracket types, or for a more precise specification of the bracket behavior, use the bracket commands listed below.
+
+⌘subheader⟪Bracket commands⟫
+
+
+⌘begin list．
+
+* 〖⌘left bracket⟪⁓bracket specification⁓⟫〗
+〖⌘left⟪⁓bracket specification⁓⟫〗
+
+A left (opening) bracket
+
+* 〖⌘right bracket⟪⁓bracket specification⁓⟫〗
+〖⌘right⟪⁓bracket specification⁓⟫〗
+
+A right (closing) bracket
+
+* 〖⌘middle bracket⟪⁓bracket specification⁓⟫〗
+〖⌘middle⟪⁓bracket specification⁓⟫〗
+
+A middle bracket
+
+* 〖⌘close bracket．〗
+
+A closing bracket of matching type and size to the opening bracket it is associated with
+
+
+⌘end list．
+
+⌘subheader⟪Format for bracket specification⟫
+
+A bracket specification consists of a bracket symbol or keyword, followed by an optional size parameter. The available symbols and keywords are:
+
+⌘begin list．
+
+* 〖(〗 and 〖)〗 (parentheses)
+
+* 〖[〗 and 〖]〗 (square brackets)
+
+* 〖{〗 and 〖}〗 (curly braces)
+
+* 〖<〗 and 〖>〗 (angle brackets)
+
+* 〖|〗 (vertical bar)
+
+* 〖||〗 (double vertical bar)
+
+* 〖floor〗 (floor notation)
+
+* 〖ceiling〗 or 〖ceil〗 (ceiling notation)
+
+* 〖same〗 (a closing bracket type that will match the opening bracket it is associated with)
+
+⌘end list．
+
+The optional size parameter is a number between 1 and 8, where 1 is the smallest available bracket size, and 8 is the largest available (fixed) bracket size. For example, 〖⌘left⟪(3⟫〗 and 〖⌘left⟪(7⟫〗 typeset as "M̂⟪⌘left⟪(1⟫⟫" and "M̂⟪⌘left⟪(8⟫⟫", respectively.
+
+⌘subheader⟪Additional notes⟫
+
+⌘begin list．
+
+* If the size is not specified for a matching pair of opening and closing brackets, the brackets will size themselves automatically to fit the vertical dimensions of the bracketed expression. Matching opening and closing brackets need to be in the same top-level code ⌘intralink⟪Blocks；block⟫ in order for MadHat to match them with each other and determine their size correctly.
+
+* If the size is left unspecified for just the closing bracket, it will size itself to match the opening bracket it is associated with.
+
+* The 〖⌘middle bracket⟪⁓...⁓⟫〗 command only works with the vertical bar (〖|〗) or double vertical bar (〖||〗) bracket types.
+
+* Closing brackets can be omitted. In that case, if the size of the opening bracket is unspecified, it will size itself to match the height of the entire expression that follows it within the same code ⌘intralink⟪Blocks；block⟫.
+
+* A closing bracket without a matching opening bracket will be sized at the specified size, or at the smallest available size if the size is not specified.
+
+* Closing and opening brackets do not need to be of the same type in order to be associated with each other. For example, M̂⟪(1//x,1//y]⟫ will typeset as M̂⟪(1//x,1//y]⟫.
+
+* Closing and opening brackets do not need to be on the same line of a multiline math display in order to be associated with each other.
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+This code illustrates the different bracket types and sizes:
+
+〖+
+⌘left⟪(1⟫ x ⌘right⟪)⟫
+⌘left⟪(2⟫ x ⌘right⟪)⟫
+⌘left⟪(3⟫ x ⌘right⟪)⟫
+⌘left⟪(4⟫ x ⌘right⟪)⟫
+⌘left⟪(5⟫ x ⌘right⟪)⟫
+⌘left⟪(6⟫ x ⌘right⟪)⟫
+⌘left⟪(7⟫ x ⌘right⟪)⟫
+⌘left⟪(8⟫ x ⌘right⟪)⟫
+％
+⌘newline． 
+％ This illustrates the use of the "same" bracket type to match the left bracket
+⌘left⟪[1⟫ x ⌘right⟪]⟫
+⌘left⟪[2⟫ x ⌘right⟪]⟫
+⌘left⟪[3⟫ x ⌘right⟪same⟫
+⌘left⟪[4⟫ x ⌘right⟪same⟫
+⌘left⟪[5⟫ x ⌘right⟪same⟫
+⌘left⟪[6⟫ x ⌘right⟪same⟫
+⌘left⟪[7⟫ x ⌘right⟪same⟫
+⌘left⟪[8⟫ x ⌘right⟪same⟫
+％
+⌘newline．
+％ 
+⌘left⟪{1⟫ x ⌘right⟪}⟫
+⌘left⟪{2⟫ x ⌘right⟪}⟫
+⌘left⟪{3⟫ x ⌘right⟪}⟫
+⌘left⟪{4⟫ x ⌘right⟪}⟫
+⌘left⟪{5⟫ x ⌘right⟪}⟫
+⌘left⟪{6⟫ x ⌘right⟪}⟫
+⌘left⟪{7⟫ x ⌘right⟪}⟫
+⌘left⟪{8⟫ x ⌘right⟪}⟫
+⌘newline．
+⌘left⟪<1⟫ x ⌘right⟪>⟫
+⌘left⟪<2⟫ x ⌘right⟪>⟫
+⌘left⟪<3⟫ x ⌘right⟪>⟫
+⌘left⟪<4⟫ x ⌘right⟪>⟫
+⌘left⟪<5⟫ x ⌘right⟪>⟫
+⌘left⟪<6⟫ x ⌘right⟪>⟫
+⌘left⟪<7⟫ x ⌘right⟪>⟫
+⌘left⟪<8⟫ x ⌘right⟪>⟫
+⌘newline．
+⌘left⟪floor1⟫ x ⌘right⟪floor⟫
+⌘left⟪floor2⟫ x ⌘right⟪floor⟫
+⌘left⟪floor3⟫ x ⌘right⟪floor⟫
+⌘left⟪floor4⟫ x ⌘right⟪floor⟫
+⌘left⟪floor5⟫ x ⌘right⟪floor⟫
+⌘left⟪floor6⟫ x ⌘right⟪floor⟫
+⌘left⟪floor7⟫ x ⌘right⟪floor⟫
+⌘left⟪floor8⟫ x ⌘right⟪floor⟫
+⌘newline．
+⌘left⟪ceiling1⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling2⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling3⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling4⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling5⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling6⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling7⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling8⟫ x ⌘right⟪ceiling⟫
+〗
+
+This typesets as:
+
+M̂:
+⌘left⟪(1⟫ x ⌘right⟪)⟫
+⌘left⟪(2⟫ x ⌘right⟪)⟫
+⌘left⟪(3⟫ x ⌘right⟪)⟫
+⌘left⟪(4⟫ x ⌘right⟪)⟫
+⌘left⟪(5⟫ x ⌘right⟪)⟫
+⌘left⟪(6⟫ x ⌘right⟪)⟫
+⌘left⟪(7⟫ x ⌘right⟪)⟫
+⌘left⟪(8⟫ x ⌘right⟪)⟫
+％
+⌘newline． 
+％ This illustrates the use of the "same" bracket type to match the left bracket
+⌘left⟪[1⟫ x ⌘right⟪]⟫
+⌘left⟪[2⟫ x ⌘right⟪]⟫
+⌘left⟪[3⟫ x ⌘right⟪same⟫
+⌘left⟪[4⟫ x ⌘right⟪same⟫
+⌘left⟪[5⟫ x ⌘right⟪same⟫
+⌘left⟪[6⟫ x ⌘right⟪same⟫
+⌘left⟪[7⟫ x ⌘right⟪same⟫
+⌘left⟪[8⟫ x ⌘right⟪same⟫
+％
+⌘newline．
+％ 
+⌘left⟪{1⟫ x ⌘right⟪}⟫
+⌘left⟪{2⟫ x ⌘right⟪}⟫
+⌘left⟪{3⟫ x ⌘right⟪}⟫
+⌘left⟪{4⟫ x ⌘right⟪}⟫
+⌘left⟪{5⟫ x ⌘right⟪}⟫
+⌘left⟪{6⟫ x ⌘right⟪}⟫
+⌘left⟪{7⟫ x ⌘right⟪}⟫
+⌘left⟪{8⟫ x ⌘right⟪}⟫
+⌘newline．
+⌘left⟪<1⟫ x ⌘right⟪>⟫
+⌘left⟪<2⟫ x ⌘right⟪>⟫
+⌘left⟪<3⟫ x ⌘right⟪>⟫
+⌘left⟪<4⟫ x ⌘right⟪>⟫
+⌘left⟪<5⟫ x ⌘right⟪>⟫
+⌘left⟪<6⟫ x ⌘right⟪>⟫
+⌘left⟪<7⟫ x ⌘right⟪>⟫
+⌘left⟪<8⟫ x ⌘right⟪>⟫
+⌘newline．
+⌘left⟪floor1⟫ x ⌘right⟪floor⟫
+⌘left⟪floor2⟫ x ⌘right⟪floor⟫
+⌘left⟪floor3⟫ x ⌘right⟪floor⟫
+⌘left⟪floor4⟫ x ⌘right⟪floor⟫
+⌘left⟪floor5⟫ x ⌘right⟪floor⟫
+⌘left⟪floor6⟫ x ⌘right⟪floor⟫
+⌘left⟪floor7⟫ x ⌘right⟪floor⟫
+⌘left⟪floor8⟫ x ⌘right⟪floor⟫
+⌘newline．
+⌘left⟪ceiling1⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling2⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling3⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling4⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling5⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling6⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling7⟫ x ⌘right⟪ceiling⟫
+⌘left⟪ceiling8⟫ x ⌘right⟪ceiling⟫
+
+The code
+
+〖+SU(3)={ A=⌘matrix⟪a_⟪1 1⟫；a_⟪1 2⟫；a_⟪1 3⟫＃a_⟪2 1⟫；a_⟪2 2⟫；a_⟪2 3⟫＃a_⟪3 1⟫；a_⟪3 2⟫；a_⟪3 3⟫⟫ ⌘space⟪10⟫⌘middle⟪|⟫⌘space⟪10⟫  a_⟪j k⟫ in complexnumbers, ⌘space⟪10⟫
+A A^⟪***⟫ = I, ⌘space⟪10⟫ det A = 1}
+⌘newline．
+||f|| = ( int_0^⟪infty⟫ |f(x)|^2dx  ⌘right⟪same⟫^⟪1/2⟫
+
+
+typesets as
+
+M̂: SU(3)={ A=⌘matrix⟪a_⟪1 1⟫；a_⟪1 2⟫；a_⟪1 3⟫＃a_⟪2 1⟫；a_⟪2 2⟫；a_⟪2 3⟫＃a_⟪3 1⟫；a_⟪3 2⟫；a_⟪3 3⟫⟫ ⌘space⟪10⟫⌘middle⟪|⟫⌘space⟪10⟫  a_⟪j k⟫ in complexnumbers, ⌘space⟪10⟫
+A A^⟪***⟫ = I, ⌘space⟪10⟫ det A = 1}
+⌘newline．
+||f|| = ( int_0^⟪infty⟫ |f(x)|^2dx  ⌘right⟪same⟫^⟪1/2⟫
+
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

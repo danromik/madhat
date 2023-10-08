@@ -1,0 +1,136 @@
+⌘header⟪Boxes⟫
+
+The content of one or more paragraphs can be framed inside a ⌘bold⟪box⟫, optionally filled with a background of a specified color.
+
+Boxes can also have divider lines separating different paragraphs. The background color can be changed partway through the box paragraphs.
+
+
+⌘begin list．
+
+* 【⌘begin box．】
+
+Start a new box. This command should appear on its own paragraph with no additional content.
+
+* 【⌘end box．】
+
+Close the current box. This command should appear on its own paragraph with no additional content.
+
+* 【⌘box divider．】
+
+Insert a box divider line. This command should appear on its own paragraph with no additional content.
+
+* 【⌘box frame thickness⟪⁓thickness⁓⟫】
+
+Set the frame thickness for boxes
+
+* 【⌘box frame color⟪⁓color argument⁓⟫】
+【⌘box frame colour⟪⁓color argument⁓⟫】
+
+Set the frame color for boxes (see the ⌘intralink⟪Colors；colors⟫ help page)
+
+* 【⌘box background color⟪⁓color argument⁓⟫】
+【⌘box background colour⟪⁓color argument⁓⟫】
+
+Set the background color boxes (see the ⌘intralink⟪Colors；colors⟫ help page)
+
+
+⌘end list．
+
+
+
+⌘subheader⟪Examples⟫
+
+The code
+
+【+⌘box frame color⟪black⟫％
+⌘begin box．】％
+【+A simple box】％
+【+There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. “Very uncomfortable for the Dormouse,” thought Alice; “only, as it’s asleep, I suppose it doesn’t mind.”】％
+【+The table was a large one, but the three were all crowded together at one corner of it: “No room! No room!” they cried out when they saw Alice coming. “There’s plenty of room!” said Alice indignantly, and she sat down in a large arm-chair at one end of the table.】％
+【+⌘end box．】
+
+produces
+
+⌘box frame color⟪black⟫⌘begin box．
+
+A simple box
+
+There was a table set out under a tree in front of the house, and the March Hare and the Hatter were having tea at it: a Dormouse was sitting between them, fast asleep, and the other two were using it as a cushion, resting their elbows on it, and talking over its head. “Very uncomfortable for the Dormouse,” thought Alice; “only, as it’s asleep, I suppose it doesn’t mind.”
+
+The table was a large one, but the three were all crowded together at one corner of it: “No room! No room!” they cried out when they saw Alice coming. “There’s plenty of room!” said Alice indignantly, and she sat down in a large arm-chair at one end of the table.
+
+
+⌘end box．
+
+The code
+
+
+【+⌘box frame color⟪black⟫⌘box background color⟪0.89；0.95；0.8⟫】％
+【+⌘begin box．】％
+【+A box with several sections】％
+【+Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”】％
+【+⌘box divider．】％
+【+So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.】％
+【+⌘box divider．】％
+【+⌘box background color⟪light gray⟫％
+There was nothing so very remarkable in that; nor did Alice think it so very much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually took a watch out of its waistcoat-pocket, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.】％
+【+⌘end box．】
+
+
+
+typesets as
+
+⌘box frame color⟪black⟫⌘box background color⟪0.89；0.95；0.8⟫
+
+⌘begin box．
+
+A box with several sections
+
+Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+
+⌘box divider．
+
+So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her.
+
+⌘box divider．
+
+⌘box background color⟪light gray⟫％
+There was nothing so very remarkable in that; nor did Alice think it so very much out of the way to hear the Rabbit say to itself, “Oh dear! Oh dear! I shall be late!” (when she thought it over afterwards, it occurred to her that she ought to have wondered at this, but at the time it all seemed quite natural); but when the Rabbit actually took a watch out of its waistcoat-pocket, and looked at it, and then hurried on, Alice started to her feet, for it flashed across her mind that she had never before seen a rabbit with either a waistcoat-pocket, or a watch to take out of it, and burning with curiosity, she ran across the field after it, and fortunately was just in time to see it pop down a large rabbit-hole under the hedge.
+
+
+⌘end box．
+
+The code
+
+
+
+【+⌘begin box．】％
+【+⌘box background color⟪0.95；0.9；0.9⟫％
+⌘paraheader⟪Theorem (Euclid).⟫ There are infinitely many prime numbers.】％
+【+⌘box background color⟪white⟫％
+⌘paraheader⟪Proof.⟫ Let M̂⟪n>=1⟫, and let M̂⟪p_1, p_2, ..., p_k⟫ be the prime numbers in M̂⟪[1,n]⟫. Let M̂⟪N= n!+1⟫, and note that M̂⟪N⟫ is relatively prime to M̂⟪2,...,n⟫. Thus if M̂⟪p⟫ is a prime factor of M̂⟪N⟫ then, since M̂⟪N⟫ is relatively prime to M̂⟪2⟫, M̂⟪p⟫ cannot be M̂⟪2⟫; since M̂⟪p⟫ is relatively prime to M̂⟪3⟫, M̂⟪p⟫ cannot be M̂⟪3⟫, etc. In general, M̂⟪p⟫ cannot be any of the numbers M̂⟪p_1,...,p_k⟫. Therefore we have M̂⟪p>n⟫. We have shown that for any M̂⟪n>=1⟫ there is a prime M̂⟪p⟫ bigger than M̂⟪n⟫. Thus, there are infinitely many prime numbers.】％
+【+⌘end box．】
+
+
+typesets as
+
+⌘begin box．
+
+⌘box background color⟪0.95；0.9；0.9⟫％
+⌘paraheader⟪Theorem (Euclid).⟫ There are infinitely many prime numbers.
+
+
+⌘box divider．
+
+⌘box background color⟪white⟫％
+⌘paraheader⟪Proof.⟫ Let M̂⟪n>=1⟫, and let M̂⟪p_1, p_2, ..., p_k⟫ be the prime numbers in M̂⟪[1,n]⟫. Let M̂⟪N= n!+1⟫, and note that M̂⟪N⟫ is relatively prime to M̂⟪2,...,n⟫. Thus if M̂⟪p⟫ is a prime factor of M̂⟪N⟫ then, since M̂⟪N⟫ is relatively prime to M̂⟪2⟫, M̂⟪p⟫ cannot be M̂⟪2⟫; since M̂⟪p⟫ is relatively prime to M̂⟪3⟫, M̂⟪p⟫ cannot be M̂⟪3⟫, etc. In general, M̂⟪p⟫ cannot be any of the numbers M̂⟪p_1,...,p_k⟫. Therefore we have M̂⟪p>n⟫. We have shown that for any M̂⟪n>=1⟫ there is a prime M̂⟪p⟫ bigger than M̂⟪n⟫. Thus, there are infinitely many prime numbers.
+
+⌘end box．
+
+⌘subheader⟪See also⟫ 
+
+⌘begin list．
+
+* ⌘intralink⟪Colors；Colors⟫
+
+⌘end list．

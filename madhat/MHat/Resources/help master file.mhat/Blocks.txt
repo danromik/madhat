@@ -1,0 +1,27 @@
+⌘header⟪Blocks⟫
+
+A body of MadHat code of the form 【⟪⁓some code⁓⟫】 is called a ⌘bold⟪block⟫. The symbols enclosing the block are the ⌘bold⟪open block⟫ symbol 【⟪】 and the ⌘bold⟪close block⟫ symbol 【⟫】. See the ⌘intralink⟪List of special symbols；special symbols⟫ help page.
+
+A block cannot span across different ⌘intralink⟪Paragraphs；paragraphs⟫ of code, that is, the matching open block and close block characters must lie in the same code paragraph.
+
+You can use the keyboard shortcuts `[' and `]' (left square brace and right square brace) to type the open and close block symbols. See the help page on ⌘intralink⟪List of key substitutions；key substitutions⟫.
+
+Blocks allow you to change the typing style locally without affecting all the content that follows. Any change in the style only applies to the block in which it is applied, or globally if it is applied outside of any block.
+
+For example, the code 【+A quick brown fox ⟪⌘color⟪blue⟫jumps ⌘bold on．over the lazy⟫ dog】
+
+will typeset as 
+
+A quick brown fox ⟪⌘color⟪blue⟫jumps ⌘bold on．over the lazy⟫ dog
+
+Blocks can be nested inside each other. Thus, the code 【+A quick brown fox ⟪⌘color⟪blue⟫jumps ⟪⌘bold on．over⟫ the lazy⟫ dog】
+
+will typeset as
+
+A quick brown fox ⟪⌘color⟪blue⟫jumps ⟪⌘bold on．over⟫ the lazy⟫ dog
+
+The syntax for blocks is also used for the argument of a command. For example, the code 【+⌘bold⟪Very few castaways can claim to have survived so long at sea as Mr. Patel⟫】
+
+will produce the result:
+
+⌘bold⟪Very few castaways can claim to have survived so long at sea as Mr. Patel⟫

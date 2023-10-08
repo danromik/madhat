@@ -1,0 +1,10 @@
+＠⟪align←center⟫⌘header⟪About ⌘madhat logo．⟫
+
+⌘madhat logo． is a system for writing documents. It consists of a language for coding up the text and other content of your document, and an app to edit and view ⌘madhat logo． documents.
+
+⌘paragraph header⟪System requirements.⟫ ⌘madhat logo． is a macOS app. It will run on Mac computers running version 10.13 or higher of macOS.
+
+⌘newline⟪200⟫
+
+
+Copyright © 2022 Dan Romik

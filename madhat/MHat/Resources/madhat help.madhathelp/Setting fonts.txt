@@ -1,0 +1,113 @@
+⌘header⟪Setting fonts⟫
+
+⌘madhat logo． typesets text and mathematical expressions using two different fonts: the ⌘bold⟪text font⟫ and ⌘bold⟪math font⟫. You can configure each of those fonts separately, or, for certain pre-configured pairs of matching fonts, set both of them together in a single command. The syntax for font-setting commands is as follows.％
+⌘newline⟪10⟫
+
+
+⌘begin list．
+
+* 【⌘font⟪⁓font name⁓⟫】
+
+Set the text font. The default is Latin Modern Roman. 
+
+* 【⌘math font⟪⁓font name⁓⟫】
+
+Set the math font. This should be a font that supports the ⌘hyperlink⟪https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode；Unicode mathematical symbols⟫ that you wish to use in your mathematical expressions. ⌘madhat logo． comes prepackaged with five mathematical fonts: 
+
+⌘begin list．
+
+* Latin Modern Math (the default)
+
+* TeX Gyre Termes Math
+
+* TeX Gyre Bonum Math
+
+* TeX Gyre Schola Math
+
+* TeX Gyre Pagella Math. 
+
+⌘end list．
+
+These are free and open source fonts developed by the ⌘hyperlink⟪http://www.gust.org.pl/projects/e-foundry；GUST e-foundry⟫. Each of the five math fonts is also accompanied by a family of matching ordinary text fonts (for example, Latin Modern Math is accompanied by Latin Modern Roman, Latin Modern Sans, Latin Modern Sans, and several other fonts in the Latin Modern family). 
+
+％* 【⌘edit font⟪⁓font name⁓⟫】
+％
+％Set the font for edit mode ***not currently functional — commenting out
+
+* 【⌘font cluster⟪⁓font family name⁓⟫】.
+
+Set the text and math fonts simultaneously to matching fonts belonging to one of the five font families bundled with the app.
+
+⌘begin list．
+
+* 【⌘font cluster⟪latin modern⟫】
+
+Use the Latin Modern Roman and Latin Modern Math fonts
+
+* 【⌘font cluster⟪termes⟫】
+
+Use the TeX Gyre Termes and TeX Gyre Termes Math fonts
+
+* 【⌘font cluster⟪bonum⟫】
+
+Use the TeX Gyre Bonum and TeX Gyre Bonum Math fonts
+
+* 【⌘font cluster⟪schola⟫】
+
+Use the TeX Gyre Schola and TeX Gyre Schola Math fonts
+
+* 【⌘font cluster⟪pagella⟫】
+
+Use the TeX Gyre Pagella and TeX Gyre Pagella Math fonts
+
+⌘end list．
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* 【⌘font⟪Helvetica⟫Some text in Helvetica】
+
+⟪⌘font⟪Helvetica⟫Some text in Helvetica⟫. 
+
+* 【⌘font⟪Courier⟫Some text in Courier】
+
+⟪⌘font⟪Courier⟫Some text in Courier⟫
+
+* 【⌘font⟪Georgia⟫Some text in Georgia】
+
+⟪⌘font⟪Georgia⟫Some text in Georgia⟫
+
+* 【⌘font cluster⟪latinmodern⟫Some text and some math:】
+【M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, 】
+【set in the Latin Modern font cluster】
+
+⟪⌘font cluster⟪latin modern⟫Some text and some math: M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, set in the Latin Modern font cluster⟫
+
+* 【⌘font cluster⟪termes⟫Some text and some math:】
+【M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, 】
+【set in the Termes font cluster】
+
+⟪⌘font cluster⟪termes⟫Some text and some math: M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, set in the Termes font cluster⟫
+
+* 【⌘font cluster⟪bonum⟫Some text and some math:】
+【M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, 】
+【set in the Bonum font cluster】
+
+⟪⌘font cluster⟪bonum⟫Some text and some math: M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, set in the Bonum font cluster⟫
+
+* 【⌘font cluster⟪schola⟫Some text and some math:】
+【M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, 】
+【set in the Schola font cluster】
+
+⟪⌘font cluster⟪schola⟫Some text and some math: M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, set in the Schola font cluster⟫
+
+* 【⌘font cluster⟪pagella⟫Some text and some math:】
+【M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, 】
+【set in the Pagella font cluster】
+
+⟪⌘font cluster⟪pagella⟫Some text and some math: M̂⟪sum_⟪n=1⟫^⟪infty⟫ ⌘frac⟪1；n^2⟫ = ⌘frac⟪pi^2；6⟫⟫, set in the Pagella font cluster⟫
+
+⌘end list．

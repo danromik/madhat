@@ -1,0 +1,60 @@
+⌘header⟪Text substitutions⟫
+
+Text substitutions are operations that transform the text you enter by examining each character of the specified text and potentially replacing it with a different character. The following substitutions are available:
+
+
+⌘begin list．
+
+* 【⌘lowercase⟪⁓text⁓⟫】
+
+A wrapper for text that should be converted to lowercase
+
+* 【⌘uppercase⟪⁓text⁓⟫】
+
+A wrapper for text that should be converted to uppercase
+
+* 【⌘redact⟪⁓text⁓⟫】
+
+A wrapper for text that should be presented in redacted form
+
+* 【⌘obfuscate⟪⁓text⁓⟫】
+
+A wrapper for text that should be presented in (mildly) obfuscated form
+
+
+⌘end list．
+
+Text substitutions are only applied to content entered in text mode. Mathematical symbols are unchanged.
+
+⌘newline⟪8⟫
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* Original text:
+
+Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+
+* Applying a 【⌘lowercase⟪⁓...⁓⟫】 substitution:
+
+⌘lowercase⟪Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”⟫
+
+
+* Applying a 【⌘uppercase⟪⁓...⁓⟫】 substitution:
+
+⌘uppercase⟪Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+⟫
+
+* Applying a 【⌘redact⟪⁓...⁓⟫】 substitution:
+
+⌘redact⟪Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+⟫
+
+
+* Applying a 【⌘obfuscate⟪⁓...⁓⟫】 substitution:
+
+⌘obfuscate⟪Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?”
+⟫
+
+⌘end list．

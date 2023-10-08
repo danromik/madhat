@@ -1,0 +1,55 @@
+⌘header⟪Matrices⟫
+
+⌘begin list．
+
+* 〖⌘matrix⟪⁓matrix cells⁓⟫〗
+
+A matrix. The syntax for specifying the matrix cells is the same as for ⌘intralink⟪Tables；tables⟫.
+
+⌘end list．
+
+％⌘subheader⟪Attributes to modify the behavior of a matrix⟫
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* The code 〖⌘matrix⟪1；2；3＃4；5；6⟫〗 typesets as M̂⟪⌘matrix⟪1；2；3＃4；5；6⟫⟫.
+
+* The code 〖+p_A(x) =det(x I-A) =⌘matrix⟪
+x-a_⟪11⟫；-a_⟪12⟫；-a_⟪13⟫；centerdots；-a_⟪1n⟫
+＃
+-a_⟪21⟫；x-a_⟪22⟫；-a_⟪23⟫；centerdots；-a_⟪2n⟫
+＃
+-a_⟪31⟫；-a_⟪32⟫；x-a_⟪32⟫；centerdots；-a_⟪3n⟫
+＃
+verticaldots；verticaldots；verticaldots；sedots；verticaldots
+＃
+-a_⟪n1⟫；-a_⟪n2⟫；-a_⟪n3⟫；centerdots；x-a_⟪n n⟫
+⟫〗
+
+typesets as
+
+M̂: p_A(x) =det(x I-A) =⌘matrix⟪
+x-a_⟪11⟫；-a_⟪12⟫；-a_⟪13⟫；centerdots；-a_⟪1n⟫
+＃
+-a_⟪21⟫；x-a_⟪22⟫；-a_⟪23⟫；centerdots；-a_⟪2n⟫
+＃
+-a_⟪31⟫；-a_⟪32⟫；x-a_⟪32⟫；centerdots；-a_⟪3n⟫
+＃
+verticaldots；verticaldots；verticaldots；sedots；verticaldots
+＃
+-a_⟪n1⟫；-a_⟪n2⟫；-a_⟪n3⟫；centerdots；x-a_⟪n n⟫
+⟫
+
+⌘end list．
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Tables；Tables⟫
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

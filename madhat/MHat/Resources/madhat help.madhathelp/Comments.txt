@@ -1,0 +1,11 @@
+⌘header⟪Comments⟫
+
+You can insert comments in your code by using the comment symbol 【％】. Any text that appears in a line of code following the comment symbol is not processed by ⌘madhat logo．. 
+
+Inserting a comment also suppresses the effect of the newline character at the end of the line containing the comment. So, the paragraph of code 【+Hello, ％ a comment
+world】
+
+will typeset as:
+
+Hello, ％ a comment
+world

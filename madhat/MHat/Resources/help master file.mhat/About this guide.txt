@@ -1,0 +1,24 @@
+⌘header⟪About this help guide⟫
+
+This guide documents the main features of ⌘madhat logo．. ％
+％
+％ the next line should be uncommented for the in-app help, commented for the PDF version
+A PDF version can be found online at ⌘hyperlink⟪https://madhat.design/documentation/⟫
+％
+％ the next line should be uncommented for the PDF version, commented for the in-app help
+％An interactive version of the guide is included as the Help feature within the ⌘madhat logo． app. To access it, click Help → MadHat Help in the app main menu.
+
+⌘paragraph header⟪A note about code snippets.⟫ Throughout the guide, you will find many examples of code in the MadHat language. These code snippets are displayed in the default ⌘intralink⟪Themes and the themes editor；syntax highlighting theme⟫ of the MadHat code editor. For example, the code snippet 【+ "In ⌘italic⟪that⟫ direction," the Cat said, waving its right paw round, "lives a Hatter: and in ⌘italic⟪that⟫ direction," waving the other paw, "lives a March Hare. Visit either you like: they’re both mad."】
+
+displays a ⌘intralink⟪Paragraphs；paragraph⟫ of code parsed in the default mode for entering code, known as ⌘intralink⟪Typing text；text mode⟫, as it would appear when entered in the code editor. Similarly, the snippet〖+a = m^2-n^2 ⌘newline．
+b = 2mn ⌘newline．
+c = m^2 + n^2〗
+
+shows a paragraph parsed in ⌘intralink⟪Typing mathematics；math mode⟫.
+
+Clicking on a code snippet ％
+％
+％in the interactive help window ％
+％
+copies the code shown in the snippet into the clipboard. You can then paste it into your own notebook and experiment with it.
+

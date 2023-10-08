@@ -1,0 +1,153 @@
+％ Notebook configuration code
+％ ---------------------------
+
+％ Setting the page size
+％⌘⌘page size⟪a4 landscape⟫
+
+％ Setting the notebook title
+％⌘⌘notebook title⟪My Notebook⟫
+
+％ Setting the notebook author
+％⌘⌘notebook author⟪My Name⟫
+
+％ Setting the page header and footer for PDF exports
+％⌘⌘exported page header⟪⌘left right line⟪text on the left；text on the right＠⟪underline⟫⟫⟫
+％
+％⌘⌘exported page footer⟪⌘left right line⟪text on the left；text on the right⟫⟫
+
+
+％
+％ Notebook style definitions
+％
+
+％ Start by defining a base style all other styles will inherit from
+⌘⌘define style⟪base；％
+⌘font size⟪14⟫％
+⌘font cluster⟪Latin Modern⟫％
+⟫
+
+％ Now define the default style for normal text
+⌘⌘define style⟪default；％
+＠⟪inherits from←base⟫％
+％ add styling commands here if you want the default style to differ from the base style
+⟫
+
+％ Style definitions for links
+⌘⌘define style⟪％
+＠⟪inherits from←base⟫％
+link；⌘bold on．％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←link⟫％
+hyperlink；⌘color⟪0.1；0；0.65⟫％
+⟫
+⌘⌘define style⟪％
+＠⟪inherits from←hyperlink⟫％
+text hyperlink；％
+⟫
+⌘⌘define style⟪％
+＠⟪inherits from←hyperlink⟫％
+url hyperlink；⌘font⟪Latin Modern Sans⟫％
+⟫
+⌘⌘define style⟪％
+＠⟪inherits from←link⟫％
+intralink；⌘color⟪0.6；0.05；0⟫％
+⟫
+
+％ Style definitions for headers
+⌘⌘define style⟪％
+＠⟪inherits from←base⟫％
+headers base；⌘bold on．％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+superheader；⌘font size⟪32⟫⌘color⟪0.7；0；0⟫％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+header；⌘font size⟪24⟫％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+subheader；⌘font size⟪18⟫％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+subsubheader；⌘font size⟪14⟫％
+⟫
+
+⌘⌘define style⟪％
+＠⟪inherits from←headers base⟫％
+paraheader；⌘font size⟪14⟫％
+⟫
+
+
+
+％
+％ Notebook line and paragraph spacing and
+％ paragraph indent definitions
+％
+
+⌘⌘paragraph indent⟪0⟫
+
+⌘⌘line spacing⟪1⟫
+⌘⌘base paragraph spacing⟪1⟫
+
+％ Set the paragraph spacings matrix
+％ -------------------------------------
+％ The paragraph spacings matrix is a 9x9 table of
+％ numbers that specify how much vertical space to insert
+％ between paragraphs of different types. The entry in
+％ row i, column j of the table is the space (in multiples of
+％ the base paragraph spacing) inserted between a paragraph
+％ of type i and a paragraph of type j. The different
+％ paragraph types are described in the following list:
+％
+％ 1: normal text paragraph
+％ 2: header
+％ 3: subheader
+％ 4: subsubheader
+％ 5: paragraph header
+％ 6: superheader
+％ 7: list item paragraph
+％ 8: beginning of a box or box section
+％ 9: end of a box or box section
+％
+⌘⌘paragraph spacings matrix⟪％
+0.60；3.50；1.50；1.00；1.00；4.50；0.75；1.50；1.25＃％
+2.30；4.80；2.80；2.30；2.30；5.80；2.05；0.00；0.00＃％
+2.00；4.50；2.50；2.00；2.00；5.50；1.75；0.00；0.00＃％
+1.50；4.00；2.00；1.50；1.50；5.00；1.25；0.00；0.00＃％
+1.00；3.50；1.50；1.00；1.00；4.50；0.75；1.25；0.75＃％
+3.00；5.50；3.50；3.00；3.00；6.50；2.75；1.25；0.75＃％
+1.05；3.55；1.55；1.05；1.05；4.55；0.80；0.00；0.00＃％
+0.75；0.75；0.75；0.75；0.75；0.75；0.75；0.00；0.00＃％
+1.75；1.75；1.75；1.75；1.75；1.75；1.75；1.75；0.00％
+⟫
+
+
+％ Set the before and after paragraph spacings
+％ -------------------------------------------
+％ This is a table of numbers with two rows that specify
+％ how much vertical space to insert (measured in multiples
+％ of the base paragraph spacing) before and after a
+％ paragraph of each type
+％⌘⌘paragraph before and after spacings⟪％
+％0；0；0；0；0；0；0；0；0＃％
+％0；0；0；0；0；0；0；0；0％
+％⟫
+
+
+％ Set the top of page preparagraph spacings
+％ -----------------------------------------
+％ This is a list of numbers that specify how much vertical
+％ space to insert (measured in multiples of the base
+％ paragraph spacing) at the top of page before the first the
+％ first paragraph, depending on what type of paragraph
+％ it is.
+⌘⌘top of page preparagraph spacings⟪0；0；0；0；0；4；0；0；0⟫

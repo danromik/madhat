@@ -1,0 +1,37 @@
+⌘header⟪Exporting to LaTeX⟫
+
+⌘madhat logo． enables exporting the content of a notebook to the ⌘hyperlink⟪https://www.latex-project.org；LaTeX⟫ file format. 
+
+To export a notebook to a LaTeX file, select the Export to LaTeX option from the File menu.
+
+
+＠⟪align←center⟫⌘graphics canvas⟪％
+＠⟪％
+width←325；height←320；％
+min x←0；max x←380；min y←0；max y←380％
+⟫％
+⌘annotation⟪9；15＃⌘image⟪file-menu；0.85⟫⟫％
+⌘line thickness⟪3⟫⌘stroke color⟪red⟫％
+⌘rectangle⟪120；126＃325；154⟫％
+⟫
+
+
+
+
+⌘subheader⟪Caveats⟫
+
+The design of the ⌘madhat logo． language differs sufficiently from that of LaTeX that perfect conversion from one language to another seems impractical. When you export a notebook into LaTeX, you should keep in mind the following caveats:
+
+⌘begin list．
+
+* The conversion from ⌘madhat logo． to LaTeX code is not completely faithful; certain formatting instructions are not converted, as well as graphics commands, slide commands, attributes blocks, and other ⌘madhat logo． language constructs that do not map in a simple way to LaTeX commands. Text, mathematical symbols and other ``normal'' content will be converted correctly, but it is a good idea to inspect your exported LaTeX code after exporting and make appropriate manual adjustments as needed to get the LaTeX document looking the way you intended.
+
+* Math displays in the ⌘madhat logo． notebook code are exported to a LaTeX.
+
+⟪⌘space⟪30⟫⌘highlight color⟪light gray⟫⌘highlight on．⌘font⟪Courier⟫\begin{align*} ... \end{align*}⟫
+
+block. However, ⌘madhat logo．'s typesetting algorithm differs from the LaTeX ⟪⌘highlight color⟪light gray⟫⌘highlight on．⌘font⟪Courier⟫align*⟫ environment in that the content is automatically broken up into multiple lines and each line is aligned based on the position of equal signs and other binary relations. The LaTeX conversion algorithm does not attempt to reproduce these features, so you may need to insert LaTeX alignment and linebreaking symbols manually in the exported file.
+
+* LaTeX does not support the Unicode standard. ⌘madhat logo．'s conversion algorithm will replace Greek letters and standard mathematical symbols in your notebook code with the correct LaTeX commands (e.g., M̂⟪alpha⟫ will be converted to ⟪⌘highlight color⟪light gray⟫⌘highlight on．⌘font⟪Courier⟫\alpha⟫), but any other unsupported Unicode symbols in your code will be output verbatim into the exported LaTeX file and then lead to a compilation error when you try to compile the file with the LaTeX typesetting engine. Manual adjustment will be necessary to fix the problem.
+
+⌘end list．

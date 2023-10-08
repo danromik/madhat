@@ -1,0 +1,52 @@
+⌘header⟪Notebook configuration⟫
+
+The readability of a document depends not only on its content but also on how the content is presented. ⌘madhat logo． makes available a collection of customization options that allow you to modify the appearance of an entire notebook and make it as engaging and aesthetically appealing as possible. This collection is referred to as the ⌘bold⟪notebook configuration⟫.
+
+The notebook configuration is specified using code in the ⌘madhat logo． language, called the ⌘bold⟪notebook configuration code⟫. This code is entered not in the usual code editing area, but through a separate editing interface, the ⌘bold⟪notebook configuration panel⟫.
+
+To access the notebook configuration panel, click the configuration icon in the bottom-left corner of the notebook editor window:
+
+⌘space⟪15⟫⌘graphics canvas⟪％
+＠⟪％
+width←450；height←410；％
+min x←0；max x←450；min y←-50；max y←360％；frame％
+⟫％
+⌘annotation⟪22；0＃⌘image⟪editor-window.jpg；0.25⟫⟫％
+⌘stroke color⟪red⟫⌘line thickness⟪2⟫⌘circle⟪93；29＃10⟫
+⌘stroke color⟪dark gray⟫⌘line thickness⟪1⟫⌘arrow⟪150；-20＃104；20⟫
+⌘annotation⟪155；-25＃notebook configuration icon⟫
+⟫
+
+
+The notebook configuration panel will appear and allow you to edit the configuration code, as shown in this screenshot:
+
+
+＠⟪align←center⟫⌘image⟪configuration-code.jpg；0.25⟫
+
+
+In the configuration code, you specify the global behavior of the notebook using ⌘bold⟪notebook configuration commands⟫; these are commands that start with a double command symbol (【⌘⌘】). They can only be used as part of the notebook configuration code.
+
+The help pages linked below list the different aspects of the notebook behavior you can customize using configuration commands, with explanations about the relevant configuration commands and how to use them:
+
+
+⌘begin list．
+
+* ⌘intralink⟪Notebook metadata；Customizing the notebook metadata⟫
+
+* ⌘intralink⟪Notebook page geometry；Customizing the page geometry⟫
+
+* ⌘intralink⟪Notebook styles；Customizing the notebook styles⟫
+
+* ⌘intralink⟪Notebook line and paragraph spacing；Customizing the notebook line and paragraph spacing⟫
+
+* ⌘intralink⟪Notebook PDF export settings；Customizing the PDF export settings⟫
+
+
+
+
+⌘end list．
+
+You can include text, code comments, or any other type of ⌘madhat logo． content in your configuration code in addition to configuration commands. These have no effect on the notebook configuration.
+
+When you create a new notebook, it will come equipped with a default template for the configuration code. This makes it easy to start editing the configuration settings.
+

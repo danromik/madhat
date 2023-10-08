@@ -1,0 +1,5 @@
+⌘header⟪Index of commands and keywords⟫
+
+This page shows an automatically generated index of all ⌘madhat logo． commands and math keywords. Click on a command name to go to its help page.⌘newline⟪10⟫
+
+⌘package commands．

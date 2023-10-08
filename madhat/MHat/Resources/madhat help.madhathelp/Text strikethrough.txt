@@ -1,0 +1,29 @@
+⌘header⟪Striking through text⟫
+
+The following commands are used to strike through text:
+
+
+⌘begin list．
+
+* 【⌘strikethrough on．】
+
+Turns on text strikethrough.
+
+* 【⌘strikethrough off．】
+
+Turns off text strikethrough.
+
+* 【⌘strikethrough⟪⁓...text...⁓⟫】
+
+A wrapper for text that should be struck through.
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+The code 【+＠⟪align←center⟫⌘strikethrough⟪This text is struck through.⟫】
+
+will typeset as 
+
+
+＠⟪align←center⟫⌘strikethrough⟪This text is struck through.⟫

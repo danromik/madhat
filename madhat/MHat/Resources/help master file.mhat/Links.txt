@@ -1,0 +1,58 @@
+⌘header⟪Links⟫
+
+With link commands, you can include hyperlinks to an external URL (for example a web page), and intralinks, which link to other pages in the notebook.
+
+⌘begin list．
+
+* 【⌘hyperlink⟪⁓URL⁓⟫】
+
+A hyperlink with the link URL string serving also as the link text
+
+* 【⌘hyperlink⟪⁓URL⁓；⁓link text⁓⟫】
+
+A hyperlink with a standard link text that links to a URL
+
+* 【⌘intralink⟪⁓page name⁓⟫】
+
+An intralink to another notebook page, with the page name serving as the link text
+
+* 【⌘intralink⟪⁓page name⁓；⁓link text⁓⟫】
+
+An intralink to another notebook page, with arbitrary link text
+
+
+Including the ⌘intralink⟪Attributes；attribute⟫ 【slide←⁓slide number⁓】 in an 【⌘intralink⟪⁓...⁓⟫】 command will direct the link to the specified ⌘intralink⟪Slides；slide⟫ number on the destination page.
+
+⌘end list．
+
+
+
+⌘subheader⟪Customizing link styles⟫
+
+The help page on ⌘intralink⟪Notebook configuration；notebook configuration⟫ explains how to customize the appearance of links.
+
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* The code 【+Some common household pets are ⌘hyperlink⟪https://en.wikipedia.org/wiki/Cat；cats⟫, ⌘hyperlink⟪https://en.wikipedia.org/wiki/Dog；dogs⟫, and ⌘hyperlink⟪https://en.wikipedia.org/wiki/Green_iguana；green iguanas⟫.
+】
+
+typesets as:
+
+Some common household pets are ⌘hyperlink⟪https://en.wikipedia.org/wiki/Cat；cats⟫, ⌘hyperlink⟪https://en.wikipedia.org/wiki/Dog；dogs⟫, and ⌘hyperlink⟪https://en.wikipedia.org/wiki/Green_iguana；green iguanas⟫.
+
+* The code 【+You can read about green iguanas at ⌘hyperlink⟪https://en.wikipedia.org/wiki/Green_iguana⟫】
+
+You can read about green iguanas at ⌘hyperlink⟪https://en.wikipedia.org/wiki/Green_iguana⟫
+
+typesets as
+
+* Entering the code 【+Go to the ⌘intralink⟪MadHat Help⟫ page, or ⌘intralink⟪Matrices；click here for a different page⟫ about matrices.】
+
+will typeset as
+
+Go to the ⌘intralink⟪MadHat Help⟫ page, or ⌘intralink⟪Matrices；click here for a different page⟫ about matrices.
+
+⌘end list．

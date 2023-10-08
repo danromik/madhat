@@ -1,0 +1,96 @@
+⌘header⟪Typing text⟫
+
+⌘subheader⟪The basics⟫
+
+Typing text in ⌘madhat logo． is as easy as... typing it. For example, in the editor window, you can type:
+
+【+ "In that direction," the Cat said, waving its right paw round, "lives a Hatter: and in that direction," waving the other paw, "lives a March Hare. Visit either you like: they’re both mad."】
+
+This typesets in the page viewer window as:
+
+"In that direction," the Cat said, waving its right paw round, "lives a Hatter: and in that direction," waving the other paw, "lives a March Hare. Visit either you like: they’re both mad."
+
+We can now start adding some formatting to our text by using ⌘intralink⟪Commands；commands⟫. Typing the code
+
+【+ "In ⌘italic⟪that⟫ direction," the Cat said, waving its right paw round, "lives a Hatter: and in ⌘italic⟪that⟫ direction," waving the other paw, "lives a March Hare. Visit either you like: they’re both mad."】
+
+will typeset as:
+
+"In ⌘italic⟪that⟫ direction," the Cat said, waving its right paw round, "lives a Hatter: and in ⌘italic⟪that⟫ direction," waving the other paw, "lives a March Hare. Visit either you like: they’re both mad."
+
+Note that the above code uses the symbols 【⌘】, 【⟪】 and 【⟫】, which are some of the ⌘intralink⟪List of special symbols；MadHat special symbols⟫. These symbols are indispensable for formatting any content with richer formatting than basic, unstyled text.
+
+
+Two additional help topics that are relevant to typing basic text content are ⌘intralink⟪Spaces and newlines；spaces and newlines⟫ and ⌘intralink⟪Paragraphs；code paragraphs⟫.
+
+If you mastered the above topics, you are now ready to start typing text. You can learn about more options for formatting and styling your text in the following help pages:
+
+⌘begin list．
+
+* ⌘intralink⟪Styling text；Styling text⟫
+
+* ⌘intralink⟪Bold text；Bold text formatting⟫
+
+* ⌘intralink⟪Italic text；Italic text formatting⟫ 
+
+* ⌘intralink⟪Text underlining；Underlining⟫
+
+* ⌘intralink⟪Text strikethrough；Strikethrough⟫
+
+* ⌘intralink⟪Text highlighting；Highlighting⟫
+
+* ⌘intralink⟪Text substitutions；Text substitutions⟫
+
+* ⌘intralink⟪Setting fonts⟫
+
+* ⌘intralink⟪Setting the font size⟫
+
+* ⌘intralink⟪Colors⟫
+
+⌘end list．
+
+
+For even more advanced text formatting options, refer to these help pages:
+
+⌘begin list．
+
+* ⌘intralink⟪Headers and subheaders⟫
+
+* ⌘intralink⟪Lists and outlining；Lists and their use for outlining⟫
+
+* ⌘intralink⟪Tables；Formatting tables⟫
+
+* ⌘intralink⟪Boxes；Formatting boxes⟫
+
+* ⌘intralink⟪Links；Hyperlinks and intralinks⟫
+
+⌘end list．
+
+
+
+
+⌘subheader⟪Automatic substitutions⟫
+
+⌘madhat logo． implements the following automatic substitutions that make it easier to type certain characters not supported by most standard keyboard layouts.
+
+⌘begin list．
+
+* A unidirectional apostrophe 【'】 gets transformed by the ⌘madhat logo． parser into a right quotation mark character: '
+
+* Unidirectional double quote characters 【"】 are matched with each other, transforming them into the appropriate left or right double quotation marks. For example: 【"Hello," she said】 will typeset as
+
+"Hello," she said.
+
+* An ordinary hyphen character 【-】 will typeset as an ordinary hyphen `-'. Two repeated hyphens 【--】 are typeset as an en dash `--'. Three repeated hyphens 【---】 are typeset as an em dash `---'. 
+
+⌘end list．
+
+The substitution feature is designed as a convenience, but you also have the option of inserting the "fancy" substituted characters (directional single and double quotes, en dashes, em dashes) directly into your code, by typing them if your keyboard layout supports it, or by using the standard macOS interface for special symbols, accessible by selecting Edit → Emoji & Symbols in the app main menu.
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas with MadHat⟫
+
+⌘end list．

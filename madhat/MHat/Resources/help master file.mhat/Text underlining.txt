@@ -1,0 +1,41 @@
+⌘header⟪Underlining text⟫
+
+The following commands are used to underline text:
+
+
+
+⌘begin list．
+
+* 【⌘underline on．】
+
+Turns on text underlining.
+
+* 【⌘underline off．】
+
+Turns off text underlining.
+
+* 【⌘underline⟪⁓...text...⁓⟫】
+
+A wrapper for text that should be underlined.
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+The code 【+＠⟪align←center⟫⌘underline⟪This text is underlined.⟫】
+
+will typeset as 
+
+
+＠⟪align←center⟫⌘underline⟪This text is underlined.⟫
+
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Mathematical decorations；Mathematical symbol decorations⟫
+
+
+⌘end list．
+

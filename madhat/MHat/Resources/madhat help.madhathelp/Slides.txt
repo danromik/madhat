@@ -1,0 +1,20 @@
+⌘header⟪Slides⟫
+
+⌘madhat logo． supports a way to format a notebook (or parts of a notebook) as a slide presentation, with pages that reveal their content gradually and contain dynamic effects such as animations, content appearing and disappearing at different stages, etc.
+
+The basic unit of a slide presentation is a ⌘bold⟪slide⟫, which is the look of a notebook page at a particular stage of the presentation. A page can have many slides. A typical slide presentation is a succession of pages, each partitioned into slides. It is easy to navigate from one slide to the next (or the preceding one), or to different slides or pages, using the Navigate submenu of the app main menu; navigation actions are also accessible via keyboard shortcuts.
+
+％ ***this feature currently disabled:***
+％By default, transitions between slides require user action to happen. An ⌘bold⟪auto-present⟫ feature makes it possible to specify automatic transition between one slide and the next one after a specified time delay.
+
+There are two main mechanisms to specify the behavior of your slides, each described on a separate help page: 
+
+⌘begin list．
+
+* ⌘intralink⟪Slide transitions⟫
+
+* ⌘intralink⟪Slide fragments⟫
+
+⌘end list．
+
+The ⌘hyperlink⟪https://madhat.design/documentation/；documentation page⟫ of the ⌘madhat logo． website has code samples you can download with  many examples of slides and how they can be used to present content with interesting, dynamic effects.

@@ -1,0 +1,69 @@
+⌘header⟪⌘madhat logo． version history and changelog⟫
+
+⌘begin list．
+
+* Version 1.1.1 (April 20, 2022) additions:
+
+⌘begin list．
+
+* Miscellaneous bug fixes
+
+* Added notebook configuration commands to customize the page geometry
+
+⌘end list．
+
+* Version 1.1 (January 17, 2022) additions:
+
+⌘begin list．
+
+* Miscellaneous bug fixes
+
+* Added a Preferences window with a new editor for syntax highlighting themes
+
+* Added an Export To LaTeX feature
+
+* Added notebook configuration options to allow customization of paragraph spacings, line spacing, and paragraph indent.
+
+* Improved formatting of boxes (content enclosed between 【⌘begin box．】 and 【⌘end box．】 commands)
+
+* Improved pagination algorithm for exporting notebooks to PDF; pagination can now occur between successive lines of a paragraph
+
+* Expanded and improved in-app help pages
+
+
+⌘end list．
+
+* Version 1.0.2 (Dec. 4, 2021) additions:
+
+⌘begin list．
+
+* Miscellaneous bug fixes
+
+* Improvements to in-app help pages
+
+* Added customization options for exported PDFs: page headers, page footers, page numbers and more
+
+* Added customization options for header and link styles and an option to define additional custom styles
+
+* Improved support for macOS's Dark Mode
+
+
+⌘end list．
+
+* Version 1.0.1 (Nov. 13, 2021) additions:
+
+⌘begin list．
+
+* Bug fixes and improvements to app performance
+
+* Improvements to in-app help pages: help pages improved; clicking on code snippets copies code to the clipboard
+
+* Improvements to code templates
+
+* Improvements to PDF export feature: notebook intralinks are now exported correctly; exported PDF now includes a table of contents
+
+⌘end list．
+
+* Version 1.0 (Nov. 3, 2021): initial release
+
+⌘end list．

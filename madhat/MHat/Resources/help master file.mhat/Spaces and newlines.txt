@@ -1,0 +1,78 @@
+⌘header⟪Spaces and newlines⟫
+
+⌘madhat logo． interprets space and newline characters in your code in a particular way that tries to balance functionality, convenience, and code readability. In addition to the use of those characters, the commands 【⌘space⟪⁓...⁓⟫】 and 【⌘newline⟪⁓...⁓⟫】 are available for inserting horizontal and vertical spaces of arbitrary dimensions in your document. Those commands also have the advantage of being clearly visible to anyone reading the code.
+
+⌘subheader⟪Spaces and newlines in text mode⟫
+
+⌘subsubheader⟪Horizontal spaces⟫
+
+Space characters inserted in your code map to a horizontal space in your formatted notebook page, according to the following rule:
+
+⌘begin list．
+
+* One space 【 】
+
+This typesets as an ordinary space, whose width is specified in the font you are using.
+
+* Two consecutive spaces 【  】
+
+This typesets as a wide space that is slightly wider than an ordinary space.
+
+
+* Three consecutive spaces 【  】
+
+This typesets as a double space, that is, a space of exactly twice the width of an ordinary space.
+
+
+* Four or more consecutive spaces 【  】
+
+This typesets as a quadruple space, that is, a space of exactly four times the width of an ordinary space.
+
+
+* 【⌘space⟪⁓space width in points⁓⟫】 command
+
+Inserts a horizontal space of the specified width.
+
+⌘end list．
+
+Some ⌘madhat logo． users may find the wide space a convenient type of space to insert at the end of a sentence. Modern English typographical conventions seem to favor the use of ordinary spaces at the end of a sentence. See ⌘hyperlink⟪https://en.wikipedia.org/wiki/Sentence_spacing；this Wikipedia article⟫ for further discussion. 
+
+
+⌘subsubheader⟪Newlines and vertical spaces⟫
+
+Within a paragraph of ⌘madhat logo． code, a newline character gets interpreted as a line break. This effect can be suppressed by inserting a ⌘intralink⟪Comments；comment symbol⟫ just before the newline character.
+
+You can insert a line break without a newline character by writing the command 【⌘newline．】 and continuing the code in the same line.
+
+To insert a vertical space of arbitrary height, use the 【⌘newline⟪⁓...⁓⟫】 command, with the syntax:
+
+    【⌘newline⟪⁓space height in points⁓⟫】
+
+
+⌘subheader⟪Spaces and newlines in math mode⟫
+
+Space and newline characters get processed differently in math mode than in text mode. The main rules to keep in mind are:
+
+⌘begin list．
+
+* Spaces in math mode have no effect on the typesetting of your formula, other than to serve as logical separators between different symbols. For example, ⌘madhat logo． will interpret "〖xy〗" as "the two-letter symbol `M̂⟪xy⟫'", but will interpret 〖x y〗 (and also 〖x   y〗, 〖x      y〗, etc, regardless of the number of spaces you insert) as "the one-letter symbol `M̂⟪x⟫' followed by the one-letter symbol `M̂⟪y⟫'. Based on this interpretation, the ⌘madhat logo． typesetting engine uses a custom algorithm to insert an appropriate spacing between symbols, in keeping with the conventions and accepted aesthetics rules for mathematical typesetting.
+
+* Newline characters in math mode are similarly interpreted as logical separators and otherwise do not affect the amount of space inserted by the typesetting engine.
+
+* In a ⌘intralink⟪Paragraphs；math display⟫, you can use the 〖⌘newline．〗 command to insert a logical line break, specifying the beginning of a new equation or chain of equations/inequalities. This is useful when typesetting multi-equation displays, such as
+
+〖+
+tau = beta (t-vx/c^2), ⌘newline．
+xi = beta (x-vt), ⌘newline．
+eta = y, ⌘newline．
+zeta = z.〗
+
+which will typeset as
+
+M̂: 
+tau = beta (t-vx/c^2), ⌘newline．
+xi = beta (x-vt), ⌘newline．
+eta = y, ⌘newline．
+zeta = z.
+
+⌘end list．

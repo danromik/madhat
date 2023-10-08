@@ -1,0 +1,24 @@
+⌘header⟪Square roots⟫
+
+⌘begin list．
+
+* 〖⌘square root⟪⁓expression⁓⟫〗
+〖⌘sqrt⟪⁓expression⁓⟫〗
+
+A square root.
+
+⌘end list．
+
+⌘subheader⟪Example⟫
+
+〖⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2⟫⟫⟫⟫⟫⟫〗
+
+M̂: ⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2+⌘sqrt⟪2⟫⟫⟫⟫⟫⟫
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Typing mathematics；Typing mathematical formulas in Madhat⟫
+
+⌘end list．

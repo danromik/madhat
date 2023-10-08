@@ -1,0 +1,49 @@
+⌘header⟪Graphic images⟫
+
+⌘begin list．
+
+* 【⌘image⟪⁓image name⁓⟫】
+
+Insert an image from the image library
+
+⌘end list．
+
+⌘subheader⟪Attributes⟫
+
+⌘begin list．
+
+* 【scale width←⁓scaling factor⁓】
+
+* 【scale height←⁓scaling factor⁓】
+
+* 【scale←⁓scaling factor⁓】
+
+* 【width←⁓width⁓】
+
+* 【height←⁓height⁓】
+
+* 【raise←⁓points⁓】
+
+* 【lower←⁓points⁓】
+
+
+
+⌘end list．
+
+⌘subheader⟪Examples⟫
+
+⌘begin list．
+
+* Some text, and a scaled picture inserted: ⌘image⟪⌘@⟪scale←0.2⟫cat.png⟫, then more text after the picture.
+
+* The same picture, stretched horizontally: ⌘image⟪⌘@⟪scale width←0.33；scale height←0.2⟫cat.png⟫.
+
+* The same picture, stretched vertically: ⌘image⟪⌘@⟪scale width←0.2；scale height←0.33⟫cat.png⟫.
+
+* The same picture, width 150 points: ⌘image⟪⌘@⟪width←150⟫cat.png⟫.
+
+* The same picture, width 150 points and raised: ⌘image⟪⌘@⟪width←150；raise←20⟫cat.png⟫. Then more text.
+
+* The same picture, width 150 points and lowered: ⌘image⟪⌘@⟪width←150；lower←50⟫cat.png⟫. Then more text.
+
+⌘end list．

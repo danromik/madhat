@@ -1,0 +1,39 @@
+⌘header⟪Styling text in boldface⟫
+
+The following commands are used to style text in boldface:
+
+
+⌘begin list．
+
+* 【⌘bold on．】
+
+Turns on bold styling.
+
+* 【⌘bold off．】
+
+Turns off bold styling.
+
+* 【⌘bold text⟪⁓...text...⁓⟫】
+【⌘bold⟪⁓...text...⁓⟫】
+
+A wrapper for text that should be styled in boldface.
+
+⌘end list．
+
+These commands do not affect the styling of mathematical symbols. See the help page on ⌘intralink⟪Mathematical font variants；mathematical font variants⟫.
+
+⌘subheader⟪Examples⟫
+
+The code 【+＠⟪align←center⟫⌘bold⟪This text is styled in bold.⟫】
+
+will typeset as 
+
+＠⟪align←center⟫⌘bold⟪This text is styled in boldface.⟫
+
+⌘subheader⟪See also⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Mathematical font variants⟫
+
+⌘end list．

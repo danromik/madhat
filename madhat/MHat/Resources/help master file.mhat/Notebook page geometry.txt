@@ -1,0 +1,147 @@
+⌘header⟪Customizing the notebook page geometry⟫
+
+⌘bold⟪Page geometry⟫ refers to the page dimensions (height and width) as well as the parameters affecting the positioning of the page content, and, in the version of the notebook exported to PDF, the page header and footer. All of these parameters can be customized through the use of appropriate ⌘intralink⟪Notebook configuration；notebook configuration⟫ commands, discussed below.
+
+The basic page geometry parameters are shown in the diagram below:⌘newline⟪10⟫
+
+＠⟪align←center⟫⌘graphics canvas⟪％
+＠⟪％
+width←450；height←600；％
+min x←-75；max x←450；min y←-40；max y←600；no crop％
+⟫％
+⌘rectangle⟪0；0＃450；600⟫％
+⌘rectangle⟪72；72＃378；528⟫％
+⌘rectangle⟪72；550＃378；570⟫％
+⌘rectangle⟪72；30＃378；50⟫％％
+⌘centered annotation⟪225；304＃[⌘italic⟪page body⟫]⟫％
+⌘centered annotation⟪225；564＃[⌘italic⟪page header⟫]⟫％
+⌘centered annotation⟪225；44＃[⌘italic⟪page footer⟫]⟫％
+⌘arrow⟪36；300＃72；300⟫％
+⌘arrow⟪36；300＃0；300⟫％
+⌘arrow⟪414；300＃450；300⟫％
+⌘arrow⟪414；300＃378；300⟫％
+⌘annotation⟪6；312＃⌘font size⟪11⟫left margin⟫％
+⌘annotation⟪379；312＃⌘font size⟪11⟫right margin⟫％
+⌘arrow⟪125；15＃125；30⟫％
+⌘arrow⟪125；15＃125；0⟫％
+⌘arrow⟪125；585＃125；550⟫％
+⌘arrow⟪125；585＃125；600⟫％
+⌘annotation⟪51；12＃⌘font size⟪11⟫footer offset⟫％
+⌘annotation⟪50；580＃⌘font size⟪11⟫header offset⟫％
+⌘arrow⟪325；585＃325；600⟫％
+⌘arrow⟪325；585＃325；528⟫％
+⌘annotation⟪330；580＃⌘font size⟪11⟫top margin⟫％
+⌘arrow⟪325；36＃325；0⟫％
+⌘arrow⟪325；36＃325；72⟫％
+⌘annotation⟪330；15＃⌘font size⟪11⟫bottom margin⟫％
+⌘arrow⟪225；-15＃450；-15⟫％
+⌘arrow⟪225；-15＃0；-15⟫％
+⌘annotation⟪225；-30＃⌘font size⟪11⟫page width⟫％
+⌘arrow⟪-15；300＃-15；0⟫％
+⌘arrow⟪-15；300＃-15；600⟫％
+⌘annotation⟪-80；380＃⌘font size⟪10⟫page height⟫％
+⟫
+
+A point to note is that page headers and footers are only added when the notebook is exported to PDF. Thus, the header offset and footer offset parameter only apply to the PDF-exported version of the notebook. Furthermore, when specifying the vertical (top and bottom) margins, you can specify separate values for the vertical margins as viewed in the viewer window, and for the margins to be used for PDF exporting. This duplication facilitates making adjustments to account for the presence of page headers and footers in the PDF-exported version.
+
+By contrast, for left and right margin widths, the same value is used for page layout in the viewer window and for the PDF-exported version of the notebook.
+
+
+⌘subheader⟪Setting the page size⟫
+
+The page dimensions --- a width and height measured in points --- are the default dimensions for the page viewer window (which can be resized to an arbitrary size). They are also used to specify the page dimensions when the notebook is exported as a PDF. You can set them using the following commands:
+
+⌘begin list．
+
+％* 【⌘⌘page width⟪⁓page width⁓⟫】
+％
+％Set the notebook page width, measured in points
+％
+％* 【⌘⌘page height⟪⁓page height⁓⟫】
+％
+％Set the notebook page height, measured in points
+
+* 【⌘⌘page size⟪⁓page width⁓；⁓page height⁓⟫】
+
+Set the page size (width and height), measured in points
+
+* 【⌘⌘page size⟪⁓page size keyword⁓⟫】
+
+Set the page size to one of the standard sizes given by the following key words:
+
+⌘begin list．
+
+* 【default】
+
+* 【letter portrait】 (alias: 【letter】)
+
+* 【letter landscape】
+
+* 【a4 portrait】 (alias: 【a4】)
+
+* 【a4 landscape】
+
+* 【large】
+
+⌘end list．
+
+⌘end list．
+
+⌘subheader⟪Setting additional page geometry parameters⟫
+
+The page geometry parameters other than the page dimensions can be customized using the following commands:
+
+⌘begin list．
+
+* 【⌘⌘left margin⟪⁓left margin width⁓⟫】
+
+Set the page left margin width, measured in points.
+
+* 【⌘⌘right margin⟪⁓right margin width⁓⟫】
+
+Set the page right margin width, measured in points.
+
+* 【⌘⌘top margin⟪⁓top margin height⁓⟫】
+
+Set the top margin height, measured in points.
+
+* 【⌘⌘bottom margin⟪⁓bottom margin height⁓⟫】
+
+Set the bottom margin height, measured in points.
+
+* 【⌘⌘exported top margin⟪⁓top margin height⁓⟫】
+
+Set the top margin height in the version of the notebook exported to PDF, measured in points.
+
+* 【⌘⌘exported bottom margin⟪⁓bottom margin height⁓⟫】
+
+Set the bottom margin height in the version of the notebook exported to PDF, measured in points.
+
+* 【⌘⌘exported header offset⟪⁓offset⁓⟫】
+
+Set the header offset in the version of the notebook exported to PDF, measured in points.
+
+* 【⌘⌘exported footer offset⟪⁓offset⁓⟫】
+
+Set the header offset in the version of the notebook exported to PDF, measured in points.
+
+
+⌘end list．
+
+
+⌘subheader⟪See also:⟫
+
+⌘begin list．
+
+* ⌘intralink⟪Notebook configuration；Notebook configuration⟫
+
+* ⌘intralink⟪Notebook metadata；Customizing the notebook metadata⟫
+
+* ⌘intralink⟪Notebook styles；Customizing the notebook styles⟫
+
+* ⌘intralink⟪Notebook line and paragraph spacing；Customizing the notebook line and paragraph spacing⟫
+
+* ⌘intralink⟪Notebook PDF export settings；Customizing the PDF export settings⟫
+
+⌘end list．
+

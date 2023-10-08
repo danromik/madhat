@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Attributes block</string>
+		<key>code</key>
+		<string>＠⟪％
+attribute 1 name←attribute 1 value；％
+attribute 2 name←attribute 2 value；％
+⟫</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Lists</string>
+		<key>submenu</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Unnumbered List</string>
+				<key>code</key>
+				<string>⌘begin list．
+
+* first list item
+
+* second list item
+
+* third list item
+
+⌘end list．</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Numbered List</string>
+				<key>code</key>
+				<string>⌘begin list．
+
+*. first list item
+
+*. second list item
+
+*. third list item
+
+⌘end list．</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Graphics</string>
+		<key>submenu</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Graphics Canvas</string>
+				<key>code</key>
+				<string>⌘graphics canvas⟪％
+＠⟪％
+width←400；height←300；％
+min x←0；max x←4；min y←0；max y←3；％
+⟫％
+％ insert graphics primitives here
+⟫</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Primitives</string>
+				<key>submenu</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>Line</string>
+						<key>code</key>
+						<string>⌘line⟪x1；y1＃x2；y2＃x3；y3⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Polygon</string>
+						<key>code</key>
+						<string>⌘polygon⟪x1；y1＃x2；y2＃x3；y3⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Circle</string>
+						<key>code</key>
+						<string>⌘circle⟪x；y＃r⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Rectangle</string>
+						<key>code</key>
+						<string>⌘rectangle⟪x1；y1＃x2；y2⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Bézier curve</string>
+						<key>code</key>
+						<string>⌘bezier⟪x1；y1＃x2；y2＃x3；y3＃x4；y4⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Annotation</string>
+						<key>code</key>
+						<string>⌘annotation⟪x；y＃text⟫</string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>Text layout along a curve</string>
+						<key>code</key>
+						<string>⌘curved text layout⟪
+⌘bezier⟪0.3；1＃1；2＃1.5；1.3＃2；1⟫％
+⌘bezier⟪2；1＃2.5；0.6＃2.8；1.3＃3.6；1⟫； ％
+⌘font size⟪19⟫Laying out text along a curve
+⟫</string>
+					</dict>
+				</array>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Box</string>
+		<key>code</key>
+		<string>⌘begin box．
+
+Content of the box goes here.
+
+⌘end box．</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Table</string>
+		<key>code</key>
+		<string>⌘table⟪％
+＠⟪hlines←yynny；alignments←llcr⟫％
+First name；Last name；Student ID；GPA＃％
+Mickey；Mouse；1；3.5＃％
+Donald；Duck；2；3＃％
+Minnie；Mouse；3；3.8％
+⟫</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Slides</string>
+		<key>submenu</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Slide break</string>
+				<key>code</key>
+				<string>⌘pause．</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Slide fragment</string>
+				<key>code</key>
+				<string>⌘slide fragment⟪from slide；to slide；fragment content⟫</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
